@@ -31,10 +31,11 @@ import createTheme from "spectacle/lib/themes/default";
 // Import custom component
 import Interactive from "../assets/interactive";
 
+import AsciinemaPlayer from "./asciinema-player.jsx";
+
 // Require CSS
 require("normalize.css");
 require("spectacle/lib/themes/default/index.css");
-
 
 const images = {
   city: require("../assets/city.jpg"),
@@ -70,10 +71,7 @@ export default class Presentation extends React.Component {
             <Text textSize="1.5em" margin="20px 0px 0px" bold>Hit Your Right Arrow To Begin!</Text>
           </Slide>
           <Slide transition={["slide"]} bgColor="black" notes="You can even put notes on your slide. How awesome is that?">
-            <Image src={images.kat.replace("/", "")} margin="0px auto 40px" height="293px"/>
-            <Heading size={2} caps fit textColor="primary" textFont="primary">
-              Wait what?
-            </Heading>
+            <AsciinemaPlayer src="assets/jest-nocache.json" autoplay />
           </Slide>
           <Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
             <CodePane
@@ -84,7 +82,7 @@ export default class Presentation extends React.Component {
           </Slide>
           <Slide transition={["slide"]} bgImage={images.city.replace("/", "")} bgDarken={0.75}>
             <Appear fid="1">
-              <Heading size={1} caps fit textColor="primary">
+              <Heading size={1} caps textColor="primary">
                 Full Width
               </Heading>
             </Appear>
