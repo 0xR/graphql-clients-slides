@@ -150,7 +150,7 @@
   font-style: normal;
   font-weight: 400;
   src: local("Sauce Code Powerline Regular"),
-    url(assets/SourceCodePro.woff2) format("woff2");
+    url(SourceCodePro.woff2) format("woff2");
 }
 
 .asciinema-terminal .line {
