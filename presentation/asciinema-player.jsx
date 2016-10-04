@@ -3,6 +3,6 @@ import React from "react";
 export default function AsciinemaPlayer ({ src, autoplay }) {
   const autoplayAttribute = autoplay ? "autoplay" : "";
   // Set innerHtml to ensure src is set on element creation
-  const __html = `<asciinema-player src=\"${src}\" ${autoplayAttribute}></asciinema-player>`;
+  const __html = `<asciinema-player src=\"${src}\" ${autoplayAttribute} font-size="big"></asciinema-player>`;
   return <div dangerouslySetInnerHTML={{ __html }} />;
 }

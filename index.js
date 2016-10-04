@@ -1,6 +1,8 @@
-import 'prismjs';
-import 'prismjs/components/prism-jsx';
+import "prismjs";
+import "prismjs/components/prism-jsx";
 import "prismjs/themes/prism-solarizedlight.css";
+import "./assets/vendor/asciinema-player.css";
+import "./assets/google-fonts.css";
 
 import React from "react";
 import { render } from "react-dom";
