@@ -59,13 +59,14 @@ function TitleElement({ children }) {
   );
 }
 
+const slideProps = { maxWidth: '100%', maxHeight: '100%' };
 // Should be a proper component to ensure HMR works
 export default class Presentation extends React.Component {
   render() {
     return (
       <Spectacle>
         <Deck>
-          <Slide>
+          <Slide {...slideProps} >
             <Heading size={1} fit>
               Snapshot tests
             </Heading>
@@ -79,25 +80,17 @@ export default class Presentation extends React.Component {
             <TitleElement>https://github.com/0xR</TitleElement>
             </Layout>
           </Slide>
-          <Slide>
+          <Slide {...slideProps} >
             <Heading size={3} fit>
               About this talk
             </Heading>
           </Slide>
-          <Slide>
-            <Heading size={3} fit>
-              What is snapshot testing
-            </Heading>
-          </Slide>
-          <Slide>
+          <Slide {...slideProps} >
             <Heading size={4} fit>
               What is snapshot testing
             </Heading>
-            <List>
-              <ListItem>asdf</ListItem>
-            </List>
           </Slide>
-          <Slide>
+          <Slide {...slideProps} >
             <Heading size={3} fit>
               Alias jasmine and chai
             </Heading>
@@ -107,7 +100,7 @@ export default class Presentation extends React.Component {
               textSize="20pt"
             />
           </Slide>
-          <Slide>
+          <Slide {...slideProps} >
             <Heading size={3} fit>
             Combine jasmine and chai
             </Heading>
@@ -116,14 +109,31 @@ export default class Presentation extends React.Component {
               source={require("!raw!../includes/combine-jasmine-chai.js")}
             />
           </Slide>
-          <Slide>
+          <Slide {...slideProps} >
+            <Heading size={3} fit>
+            Combine jasmine and chai - example
+            </Heading>
+            <CodePane
+              lang="jsx"
+              source={require("!raw!../includes/combined-expect-example.js")}
+            />
+          </Slide>
+          <Slide {...slideProps} >
             <Heading size={3} fit>
               Ensure CSS modules still work
             </Heading>
             <CodePane
               lang="jsx"
               source={require("!raw!../includes/css-modules-preprocessor.js")}
-              margin="20px auto"
+            />
+          </Slide>
+          <Slide {...slideProps} >
+            <Heading size={3}>
+            Inject loader compatibility
+            </Heading>
+            <CodePane
+              lang="jsx"
+              source={require("!raw!../includes/inject-loader-compatibility-implementation.js")}
             />
           </Slide>
           <CodeSlide
@@ -141,6 +151,51 @@ export default class Presentation extends React.Component {
             ]}
             textSize="15pt"
           />
+          <Slide {...slideProps} >
+            <Heading size={3}>
+            css-modules-preprocessor.js
+            </Heading>
+            <CodePane
+              lang="jsx"
+              source={require("!raw!../includes/css-modules-preprocessor.js")}
+            />
+          </Slide>
+          <Slide {...slideProps} >
+            <Heading size={3}>
+            inject-loader.js
+            </Heading>
+            <CodePane
+              lang="jsx"
+              source={require("!raw!../includes/inject-loader.js")}
+            />
+          </Slide>
+          <Slide {...slideProps} >
+            <Heading size={3}>
+            Fail test on React warning
+            </Heading>
+            <CodePane
+              lang="jsx"
+              source={require("!raw!../includes/make-react-warnings-errors.js")}
+            />
+          </Slide>
+          <Slide {...slideProps} >
+            <Heading size={3}>
+            Supertest
+            </Heading>
+            <CodePane
+              lang="jsx"
+              source={require("!raw!../includes/supertest.js")}
+            />
+          </Slide>
+          <Slide {...slideProps} >
+            <Heading size={3}>
+            Supertest with Promises
+            </Heading>
+            <CodePane
+              lang="jsx"
+              source={require("!raw!../includes/supertest-as-promised.js")}
+            />
+          </Slide>
         </Deck>
       </Spectacle>
     );
@@ -150,6 +205,7 @@ export default class Presentation extends React.Component {
 /* what is snapshot testing
  * what problem does it solve
  * Conferencetalk Driven development, not gonna fall for free tool ;)
+ * twitter screenshots
  * Christoph worked on it for over a year, some months
  * chai-jest-snapshot
  * disadvantage: no way to hook into the CLI, doesn't clean up snapshots
@@ -163,3 +219,4 @@ export default class Presentation extends React.Component {
  * only error: user error
  * pros: nice console output, DX: console.log, watch, rerun failed tests first, nice diff when test fails, buffered console, mocks that work, coverage of not included files
  */
+
