@@ -81,9 +81,9 @@ export default class Presentation extends React.Component {
             </Heading>
             <Layout style={{ justifyContent: "space-between" }}>
             <TitleElement><Icon name="user" /> Ruben Oostinga</TitleElement>
-            <TitleElement><Icon name="building" /> Xebia</TitleElement>
             <TitleElement><Icon name="twitter" /> @RubenOostinga</TitleElement>
             <TitleElement><Icon name="github" /> https://github.com/0xR</TitleElement>
+            <TitleElement><Icon name="building" /> Xebia</TitleElement>
             </Layout>
           </Slide>
           <Slide {...slideProps} >
