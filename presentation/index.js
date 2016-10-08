@@ -8,7 +8,7 @@ import {
   Cite,
   CodePane,
   Deck,
-  Fill,
+  Fit,
   Heading,
   Image,
   Layout,
@@ -22,7 +22,7 @@ import {
   Text
 } from "spectacle";
 
-import CodeSlide from 'spectacle-code-slide';
+import CodeSlide from "spectacle-code-slide";
 // Import image preloader util
 import preloader from "spectacle/lib/utils/preloader";
 
@@ -49,17 +49,16 @@ preloader(images);
 
 function TitleElement({ children }) {
   const style = {
-    flex: '0 0 auto',
-    justifyContent: 'space-between'
+    flex: "0 0 auto",
   };
   return (
-    <Fill {...{ style }}>
+    <Fit {...{ style }}>
     {children}
-    </Fill>
+    </Fit>
   );
 }
 
-const slideProps = { maxWidth: '100%', maxHeight: '100%' };
+const slideProps = { maxWidth: "100%", maxHeight: "100%" };
 // Should be a proper component to ensure HMR works
 export default class Presentation extends React.Component {
   render() {
@@ -73,7 +72,7 @@ export default class Presentation extends React.Component {
             <Heading size={2} fit>
               with Mocha in Jest
             </Heading>
-            <Layout>
+            <Layout style={{ justifyContent: "space-between" }}>
             <TitleElement>Ruben Oostinga</TitleElement>
             <TitleElement>Xebia</TitleElement>
             <TitleElement>@RubenOostinga</TitleElement>
@@ -102,20 +101,21 @@ export default class Presentation extends React.Component {
           </Slide>
           <Slide {...slideProps} >
             <Heading size={3} fit>
-            Combine jasmine and chai
-            </Heading>
-            <CodePane
-              lang="jsx"
-              source={require("!raw!../includes/combine-jasmine-chai.js")}
-            />
-          </Slide>
-          <Slide {...slideProps} >
-            <Heading size={3} fit>
             Combine jasmine and chai - example
             </Heading>
             <CodePane
               lang="jsx"
               source={require("!raw!../includes/combined-expect-example.js")}
+            />
+          </Slide>
+          <Slide {...slideProps} >
+            <Heading size={3} fit>
+            Combine jasmine and chai
+            </Heading>
+            <CodePane
+              lang="jsx"
+              source={require("!raw!../includes/combine-jasmine-chai.js")}
+              textSize="0.7rem"
             />
           </Slide>
           <Slide {...slideProps} >
@@ -134,6 +134,7 @@ export default class Presentation extends React.Component {
             <CodePane
               lang="jsx"
               source={require("!raw!../includes/inject-loader-compatibility-implementation.js")}
+              textSize="0.7rem"
             />
           </Slide>
           <CodeSlide
@@ -208,7 +209,7 @@ export default class Presentation extends React.Component {
  * twitter screenshots
  * Christoph worked on it for over a year, some months
  * chai-jest-snapshot
- * disadvantage: no way to hook into the CLI, doesn't clean up snapshots
+ * disadvantage: no way to hook into the CLI, doesn"t clean up snapshots
  * migrating:
  * combining chai / jest
  * inject loader compatibility layer
