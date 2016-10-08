@@ -110,7 +110,7 @@ export default class Presentation extends React.Component {
             </Heading>
           </Slide>
           <Slide {...slideProps} >
-            <Heading size={3} fit>
+            <Heading size={3} >
               Contents
             </Heading>
           <List bold fontSize="1rem">
@@ -166,20 +166,24 @@ export default class Presentation extends React.Component {
           </Slide>
           <Slide {...slideProps} >
             <Heading size={3} fit>
-              Snapshots with CSS moduels
+              Snapshots with CSS modules
             </Heading>
             <Layout>
-              <Fill>
+              <Fill >
                 <CodePane
                   lang="jsx"
                   source={require("!raw!../includes/App.css")}
                   textSize="0.7rem"
+                  style={{ marginBottom: '25px' }}
                 />
                 <CodePane
                   lang="jsx"
                   source={require("!raw!../includes/App.jsx")}
                   textSize="0.7rem"
                 />
+              </Fill>
+              <Fill style={{maxWidth: '25px'}}>
+              &nbsp;
               </Fill>
               <Fill>
                 <CodePane
