@@ -20,47 +20,49 @@ module.exports = {
     new webpack.NoErrorsPlugin()
   ],
   module: {
-    loaders: [{
-      test: /\.md$/,
-      loader: "html-loader!markdown-loader?gfm=false"
-    }, {
-      test: /\.(js|jsx)$/,
-      exclude: /node_modules/,
-      loader: "babel-loader",
-      query: {
-        presets:['react', 'es2015'],
-        env: {
-          development: {
-            plugins: [["react-transform", {
-              transforms: [{
-                transform: "react-transform-hmr",
-                imports: ["react"],
-                locals: ["module"]
-              }]
-            }]]
+    loaders: [
+      {
+        test: /\.md$/,
+        loader: "html-loader!markdown-loader?gfm=false"
+      }, {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        loader: "babel-loader",
+        query: {
+          presets:['react', 'es2015'],
+          env: {
+            development: {
+              plugins: [["react-transform", {
+                transforms: [{
+                  transform: "react-transform-hmr",
+                  imports: ["react"],
+                  locals: ["module"]
+                }]
+              }]]
+            }
           }
         }
+      }, {
+        test: /\.css$/,
+        loaders: ["style", "css"],
+      }, {
+        test: /\.png$/,
+        loader: "url-loader?mimetype=image/png",
+      }, {
+        test: /\.gif$/,
+        loader: "url-loader?mimetype=image/gif",
+      }, {
+        test: /\.jpg$/,
+        loader: "url-loader?mimetype=image/jpg",
+      },
+      {
+        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: "url?limit=10000&mimetype=application/font-woff"
+      },
+      {
+        test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: "file"
       }
-    }, {
-      test: /\.css$/,
-      loaders: ["style", "raw"],
-      include: __dirname
-    }, {
-      test: /\.svg$/,
-      loader: "url?limit=10000&mimetype=image/svg+xml",
-      include: path.join(__dirname, "assets")
-    }, {
-      test: /\.png$/,
-      loader: "url-loader?mimetype=image/png",
-      include: path.join(__dirname, "assets")
-    }, {
-      test: /\.gif$/,
-      loader: "url-loader?mimetype=image/gif",
-      include: path.join(__dirname, "assets")
-    }, {
-      test: /\.jpg$/,
-      loader: "url-loader?mimetype=image/jpg",
-      include: path.join(__dirname, "assets")
-    }]
+  ]
   }
 };

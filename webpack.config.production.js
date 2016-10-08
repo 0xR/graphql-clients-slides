@@ -27,25 +27,35 @@ module.exports = {
     })
   ],
   module: {
-    loaders: [{
-      test: /\.md$/,
-      loader: "html-loader!markdown-loader?gfm=false"
-    }, {
-      test: /\.(js|jsx)$/,
-      exclude: /node_modules/,
-      loader: "babel-loader",
-      query: {
-        presets: ['es2015', 'react']
+    loaders: [
+      {
+        test: /\.md$/,
+        loader: "html-loader!markdown-loader?gfm=false"
+      }, {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        loader: "babel-loader",
+        query: {
+          presets: ['es2015', 'react']
+        }
+      }, {
+        test: /\.css$/,
+        loader: "style-loader!css-loader"
+      }, {
+        test: /\.(png|jpg|gif)$/,
+        loader: "url-loader?limit=8192"
+      }, {
+        test: /\.svg$/,
+        loader: "url?limit=10000&mimetype=image/svg+xml"
+      },
+      {
+        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: "url?limit=10000&mimetype=application/font-woff"
+      },
+      {
+        test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: "file"
       }
-    }, {
-      test: /\.css$/,
-      loader: "style-loader!css-loader"
-    }, {
-      test: /\.(png|jpg|gif)$/,
-      loader: "url-loader?limit=8192"
-    }, {
-      test: /\.svg$/,
-      loader: "url?limit=10000&mimetype=image/svg+xml"
-    }]
+    ]
   }
 };

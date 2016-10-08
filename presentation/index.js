@@ -37,6 +37,7 @@ import AsciinemaPlayer from "./asciinema-player.jsx";
 // Require CSS
 require("normalize.css");
 require("spectacle/lib/themes/default/index.css");
+require("font-awesome/css/font-awesome.css");
 
 const images = {
   city: require("../assets/city.jpg"),
@@ -53,9 +54,15 @@ function TitleElement({ children }) {
   };
   return (
     <Fit {...{ style }}>
+    <Text margin="20px 0px 0px" textSize="2rem">
     {children}
+    </Text>
     </Fit>
   );
+}
+
+function Icon({ name, ...rest }) {
+  return <i className={`fa fa-${name}`} aria-hidden="true"></i>;
 }
 
 const slideProps = { maxWidth: "100%", maxHeight: "100%" };
@@ -73,10 +80,10 @@ export default class Presentation extends React.Component {
               with Mocha in Jest
             </Heading>
             <Layout style={{ justifyContent: "space-between" }}>
-            <TitleElement>Ruben Oostinga</TitleElement>
-            <TitleElement>Xebia</TitleElement>
-            <TitleElement>@RubenOostinga</TitleElement>
-            <TitleElement>https://github.com/0xR</TitleElement>
+            <TitleElement><Icon name="user" /> Ruben Oostinga</TitleElement>
+            <TitleElement><Icon name="building" /> Xebia</TitleElement>
+            <TitleElement><Icon name="twitter" /> @RubenOostinga</TitleElement>
+            <TitleElement><Icon name="github" /> https://github.com/0xR</TitleElement>
             </Layout>
           </Slide>
           <Slide {...slideProps} >

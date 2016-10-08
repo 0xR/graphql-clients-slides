@@ -4,7 +4,7 @@
   font-style: normal;
   font-weight: 400;
   src: local('Lobster Two'), local('LobsterTwo'),
-       url('assets/lobster-two-v9-latin-regular.woff2') format('woff2');
+       url('lobster-two-v9-latin-regular.woff2') format('woff2');
 }
 /* lobster-two-700 - latin */
 @font-face {
@@ -12,7 +12,7 @@
   font-style: normal;
   font-weight: 700;
   src: local('Lobster Two Bold'), local('LobsterTwo-Bold'),
-       url('assets/lobster-two-v9-latin-700.woff2') format('woff2');
+       url('lobster-two-v9-latin-700.woff2') format('woff2');
 }
 /* open-sans-condensed-300 - latin */
 @font-face {
@@ -20,7 +20,7 @@
   font-style: normal;
   font-weight: 300;
   src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'),
-       url('assets/open-sans-condensed-v10-latin-300.woff2') format('woff2');
+       url('open-sans-condensed-v10-latin-300.woff2') format('woff2');
 }
 /* open-sans-condensed-700 - latin */
 @font-face {
@@ -28,5 +28,5 @@
   font-style: normal;
   font-weight: 700;
   src: local('Open Sans Condensed Bold'), local('OpenSans-CondensedBold'),
-       url('assets/open-sans-condensed-v10-latin-700.woff2') format('woff2');
+       url('open-sans-condensed-v10-latin-700.woff2') format('woff2');
 }
