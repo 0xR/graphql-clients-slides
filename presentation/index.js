@@ -62,7 +62,7 @@ function TitleElement({ children }) {
 }
 
 function Icon({ name, ...rest }) {
-  return <i className={`fa fa-${name}`} aria-hidden="true"></i>;
+  return <i className={`fa fa-${name}`} aria-hidden="true" {...rest} ></i>;
 }
 
 const slideProps = { maxWidth: "100%", maxHeight: "100%" };
