@@ -9,6 +9,7 @@ import {
   CodePane,
   Deck,
   Fit,
+  Fill,
   Heading,
   Image,
   Layout,
@@ -65,12 +66,24 @@ function Icon({ name, ...rest }) {
   return <i className={`fa fa-${name}`} aria-hidden="true" {...rest} ></i>;
 }
 
+const MyListItem = (props) => <ListItem textSize="2rem" {...props} />;
+const theme = createTheme({
+  primary: "#f9c300",
+  secondary: "#0fa4ff",
+  tertiary: "black",
+  quartenary: "white"
+}, {
+  primary: "Open Sans Condensed",
+  secondary: "PressStart2P",
+  tertiary: "Source Code Pro for Powerline",
+});
+
 const slideProps = { maxWidth: "100%", maxHeight: "100%" };
 // Should be a proper component to ensure HMR works
 export default class Presentation extends React.Component {
   render() {
     return (
-      <Spectacle>
+      <Spectacle theme={theme}>
         <Deck>
           <Slide {...slideProps} >
             <Heading size={1} fit>
@@ -92,9 +105,26 @@ export default class Presentation extends React.Component {
             </Heading>
           </Slide>
           <Slide {...slideProps} >
-            <Heading size={4} fit>
+            <Heading size={3} fit>
               What is snapshot testing
             </Heading>
+          </Slide>
+          <Slide {...slideProps} >
+            <Heading size={3} fit>
+              Contents
+            </Heading>
+          <List bold fontSize="1rem">
+            <MyListItem>About this talk</MyListItem>
+            <MyListItem>What is snapshot testing</MyListItem>
+            <MyListItem>Migrating to Jest</MyListItem>
+              <List margin="0 0 0 3rem">
+                <MyListItem>Describe</MyListItem>
+                <MyListItem>Async</MyListItem>
+                <MyListItem>Porting over expect</MyListItem>
+                <MyListItem>CSS modules</MyListItem>
+                <MyListItem>Webpack inject loader / proxyquire</MyListItem>
+              </List>
+          </List>
           </Slide>
           <Slide {...slideProps} >
             <Heading size={3} fit>
@@ -135,7 +165,33 @@ export default class Presentation extends React.Component {
             />
           </Slide>
           <Slide {...slideProps} >
-            <Heading size={3}>
+            <Heading size={3} fit>
+              Snapshots with CSS moduels
+            </Heading>
+            <Layout>
+              <Fill>
+                <CodePane
+                  lang="jsx"
+                  source={require("!raw!../includes/App.css")}
+                  textSize="0.7rem"
+                />
+                <CodePane
+                  lang="jsx"
+                  source={require("!raw!../includes/App.jsx")}
+                  textSize="0.7rem"
+                />
+              </Fill>
+              <Fill>
+                <CodePane
+                  lang="jsx"
+                  source={require("!raw!../includes/App.snap.js")}
+                  textSize="0.7rem"
+                />
+              </Fill>
+            </Layout>
+          </Slide>
+          <Slide {...slideProps} >
+            <Heading size={3} fit >
             Inject loader compatibility
             </Heading>
             <CodePane
@@ -160,17 +216,8 @@ export default class Presentation extends React.Component {
             textSize="15pt"
           />
           <Slide {...slideProps} >
-            <Heading size={3}>
-            css-modules-preprocessor.js
-            </Heading>
-            <CodePane
-              lang="jsx"
-              source={require("!raw!../includes/css-modules-preprocessor.js")}
-            />
-          </Slide>
-          <Slide {...slideProps} >
-            <Heading size={3}>
-            inject-loader.js
+            <Heading size={3} fit >
+            Webpack inject loader / proxyquire
             </Heading>
             <CodePane
               lang="jsx"
@@ -178,7 +225,7 @@ export default class Presentation extends React.Component {
             />
           </Slide>
           <Slide {...slideProps} >
-            <Heading size={3}>
+            <Heading size={3} fit>
             Fail test on React warning
             </Heading>
             <CodePane
@@ -187,7 +234,7 @@ export default class Presentation extends React.Component {
             />
           </Slide>
           <Slide {...slideProps} >
-            <Heading size={3}>
+            <Heading size={3} fit>
             Supertest
             </Heading>
             <CodePane
@@ -196,13 +243,23 @@ export default class Presentation extends React.Component {
             />
           </Slide>
           <Slide {...slideProps} >
-            <Heading size={3}>
+            <Heading size={3} fit>
             Supertest with Promises
             </Heading>
             <CodePane
               lang="jsx"
               source={require("!raw!../includes/supertest-as-promised.js")}
             />
+          </Slide>
+          <Slide {...slideProps} >
+            <Heading size={3} fit>
+            The End
+            </Heading>
+            <Text>
+              Code:&nbsp;
+              <Link href="https://github.com/0xR/snapshot-experiments/pull/1" >https://github.com/0xR/snapshot-experiments/pull/1</Link>
+            </Text>
+            <Text>Link to slides will be posted on <Icon name="twitter" /> @RubenOostinga</Text>
           </Slide>
         </Deck>
       </Spectacle>

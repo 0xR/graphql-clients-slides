@@ -1,11 +1,4 @@
-import babelJest from 'babel-jest';
-import path from 'path';
-import postcss from 'postcss';
-import LocalByDefault from 'postcss-modules-local-by-default';
-import ExtractImports from 'postcss-modules-extract-imports';
-import Scope from 'postcss-modules-scope';
-import ExtractExports from 'postcss-modules-extract-exports';
-import genericNames from 'generic-names';
+// many postcss imports...
 import { cssModuleNames } from '../webpack.config.babel.js';
 
 const rootDir = path.resolve(__dirname, '..');

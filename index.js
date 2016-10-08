@@ -1,6 +1,7 @@
 import "prismjs";
 import "prismjs/components/prism-jsx";
 import "prismjs/themes/prism-solarizedlight.css";
+import "./assets/prism-override.css";
 import "./assets/vendor/asciinema-player.css";
 import "./assets/google-fonts.css";
 
