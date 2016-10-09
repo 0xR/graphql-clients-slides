@@ -69,7 +69,7 @@ function Icon({ name, ...rest }) {
 const MyListItem = (props) => <ListItem textSize="2rem" {...props} />;
 const theme = createTheme({
   primary: "#f9c300",
-  secondary: "#0fa4ff",
+  secondary: "black",
   tertiary: "black",
   quartenary: "white"
 }, {
@@ -103,6 +103,41 @@ export default class Presentation extends React.Component {
             <Heading size={3} fit>
               About this talk
             </Heading>
+            <Layout style={{ alignItems: "center" }}>
+            <Fill style={{ flex: 2 }}>
+              <Appear><Image src="../assets/twitter-program-online.png" /></Appear>
+              <Appear><Image src="../assets/twitter-switching-jest.png" /></Appear>
+            </Fill>
+            <Fill style={{ flex: 3 }}>
+            <Appear><Text textSize="2rem" >What about chai and its plugins?</Text></Appear>
+            <Appear><Text textSize="2rem">What about css modules?</Text></Appear>
+            <Appear><Text textSize="2rem">What about webpack-inject-loader / proxyquire?</Text></Appear>
+            </Fill>
+            </Layout>
+          </Slide>
+          <Slide {...slideProps} >
+            <Heading size={3} fit>
+              About this talk
+            </Heading>
+            <Layout style={{ alignItems: "center" }}>
+            <Fill>
+              <Appear>
+              <div>
+              <Appear><Image src="../assets/github-jest-pr.png" /></Appear>
+              <Appear><Image src="../assets/jest-blog-chai.png" /></Appear>
+              </div>
+              </Appear>
+            </Fill>
+            <Fill>
+              <Appear>
+              <div>
+                <Image src="../assets/github-usejest.png" />
+                <Image src="../assets/test-passed.png" />
+              </div>
+              </Appear>
+              <Appear><Image src="../assets/twitter-pivot.png" /></Appear>
+            </Fill>
+            </Layout>
           </Slide>
           <Slide {...slideProps} >
             <Heading size={3} fit>
@@ -174,7 +209,7 @@ export default class Presentation extends React.Component {
                   lang="jsx"
                   source={require("!raw!../includes/App.css")}
                   textSize="0.7rem"
-                  style={{ marginBottom: '25px' }}
+                  style={{ marginBottom: "25px" }}
                 />
                 <CodePane
                   lang="jsx"
@@ -182,7 +217,7 @@ export default class Presentation extends React.Component {
                   textSize="0.7rem"
                 />
               </Fill>
-              <Fill style={{maxWidth: '25px'}}>
+              <Fill style={{maxWidth: "25px"}}>
               &nbsp;
               </Fill>
               <Fill>
