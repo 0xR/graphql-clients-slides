@@ -79,6 +79,179 @@ const theme = createTheme({
 });
 
 const slideProps = { maxWidth: "100%", maxHeight: "100%" };
+
+// Sections
+const talkBackgroundSection = [
+  <Slide {...slideProps} >
+    <Heading size={3} fit>
+      About this talk
+    </Heading>
+    <Layout style={{ alignItems: "center" }}>
+    <Fill style={{ flex: 2 }}>
+      <Appear><Image src="../assets/twitter-program-online.png" /></Appear>
+      <Appear><Image src="../assets/twitter-switching-jest.png" /></Appear>
+    </Fill>
+    <Fill style={{ flex: 3 }}>
+    <Appear><Text textSize="2rem" >What about chai and its plugins?</Text></Appear>
+    <Appear><Text textSize="2rem">What about css modules?</Text></Appear>
+    <Appear><Text textSize="2rem">What about webpack-inject-loader / proxyquire?</Text></Appear>
+    </Fill>
+    </Layout>
+  </Slide>,
+  <Slide {...slideProps} >
+    <Heading size={3} fit>
+      About this talk
+    </Heading>
+    <Layout style={{ alignItems: "center" }}>
+    <Fill>
+      <Image src="../assets/github-jest-pr.png" />
+      <Image src="../assets/jest-blog-chai.png" />
+    </Fill>
+    <Fill>
+      <Appear>
+      <div>
+        <Image src="../assets/github-usejest.png" />
+        <Image src="../assets/test-passed.png" />
+      </div>
+      </Appear>
+      <Appear><Image src="../assets/twitter-pivot.png" /></Appear>
+    </Fill>
+    </Layout>
+  </Slide>
+];
+
+const migrateExpectSection = [
+  <Slide {...slideProps} >
+    <Heading size={3} fit>
+      Alias jasmine and chai
+    </Heading>
+    <CodePane
+      lang="jsx"
+      source={require("!raw!../includes/alias-jasmine.js")}
+      textSize="20pt"
+    />
+  </Slide>,
+  <Slide {...slideProps} >
+    <Heading size={3} fit>
+    Combine jasmine and chai - example
+    </Heading>
+    <CodePane
+      lang="jsx"
+      source={require("!raw!../includes/combined-expect-example.js")}
+    />
+  </Slide>,
+  <Slide {...slideProps} >
+    <Heading size={3} fit>
+    Combine jasmine and chai
+    </Heading>
+    <CodePane
+      lang="jsx"
+      source={require("!raw!../includes/combine-jasmine-chai.js")}
+      textSize="0.7rem"
+    />
+  </Slide>
+];
+
+const cssModulesSection = [
+  <Slide {...slideProps} >
+    <Heading size={3} fit>
+      Ensure CSS modules still work
+    </Heading>
+    <CodePane
+      lang="jsx"
+      source={require("!raw!../includes/css-modules-preprocessor.js")}
+    />
+  </Slide>,
+  <Slide {...slideProps} >
+    <Heading size={3} fit>
+      Snapshots with CSS modules
+    </Heading>
+    <Layout>
+      <Fill >
+        <CodePane
+          lang="jsx"
+          source={require("!raw!../includes/App.css")}
+          textSize="0.7rem"
+          style={{ marginBottom: "25px" }}
+        />
+        <CodePane
+          lang="jsx"
+          source={require("!raw!../includes/App.jsx")}
+          textSize="0.7rem"
+        />
+      </Fill>
+      <Fill style={{maxWidth: "25px"}}>
+      &nbsp;
+      </Fill>
+      <Fill>
+        <CodePane
+          lang="jsx"
+          source={require("!raw!../includes/App.snap.js")}
+          textSize="0.7rem"
+        />
+      </Fill>
+    </Layout>
+  </Slide>
+];
+
+const injectLoaderSection = [
+  <Slide {...slideProps} >
+    <Heading size={3} fit >
+    Inject loader compatibility
+    </Heading>
+    <CodePane
+      lang="jsx"
+      source={require("!raw!../includes/inject-loader-compatibility-implementation.js")}
+      textSize="0.7rem"
+    />
+  </Slide>,
+  <CodeSlide
+    transition={[]}
+    lang="js"
+    code={require("!raw!../includes/inject-loader-compatibility-implementation.js")}
+    ranges={[
+      { loc: [0, 270], title: "injectLoaderCompatibility" },
+      { loc: [3, 5], title: "Reset the modules first" },
+      { loc: [6, 7], title: "Take the files to inject" },
+      { loc: [8, 16], title: "Iterate over the those" },
+      { loc: [13, 15], title: "Inject the mock using Jest" },
+      { loc: [18, 19], title: "Return the module" },
+      { loc: [21, 22], title: "Expose as a global" },
+    ]}
+    textSize="15pt"
+  />,
+  <Slide {...slideProps} >
+    <Heading size={3} fit >
+    Webpack inject loader / proxyquire
+    </Heading>
+    <CodePane
+      lang="jsx"
+      source={require("!raw!../includes/inject-loader.js")}
+    />
+  </Slide>
+];
+
+const supertestSection = [
+  <Slide {...slideProps} >
+    <Heading size={3} fit>
+    Supertest
+    </Heading>
+    <CodePane
+      lang="jsx"
+      source={require("!raw!../includes/supertest.js")}
+    />
+  </Slide>,
+  <Slide {...slideProps} >
+    <Heading size={3} fit>
+    Supertest with Promises
+    </Heading>
+    <CodePane
+      lang="jsx"
+      source={require("!raw!../includes/supertest-as-promised.js")}
+    />
+  </Slide>
+];
+
 // Should be a proper component to ensure HMR works
 export default class Presentation extends React.Component {
   render() {
@@ -99,170 +272,32 @@ export default class Presentation extends React.Component {
             <TitleElement><Icon name="building" /> Xebia</TitleElement>
             </Layout>
           </Slide>
+          {talkBackgroundSection}
           <Slide {...slideProps} >
-            <Heading size={3} fit>
-              About this talk
+            <Heading size={3} >
+              Contents
             </Heading>
-            <Layout style={{ alignItems: "center" }}>
-            <Fill style={{ flex: 2 }}>
-              <Appear><Image src="../assets/twitter-program-online.png" /></Appear>
-              <Appear><Image src="../assets/twitter-switching-jest.png" /></Appear>
-            </Fill>
-            <Fill style={{ flex: 3 }}>
-            <Appear><Text textSize="2rem" >What about chai and its plugins?</Text></Appear>
-            <Appear><Text textSize="2rem">What about css modules?</Text></Appear>
-            <Appear><Text textSize="2rem">What about webpack-inject-loader / proxyquire?</Text></Appear>
-            </Fill>
-            </Layout>
-          </Slide>
-          <Slide {...slideProps} >
-            <Heading size={3} fit>
-              About this talk
-            </Heading>
-            <Layout style={{ alignItems: "center" }}>
-            <Fill>
-              <Appear>
-              <div>
-              <Appear><Image src="../assets/github-jest-pr.png" /></Appear>
-              <Appear><Image src="../assets/jest-blog-chai.png" /></Appear>
-              </div>
-              </Appear>
-            </Fill>
-            <Fill>
-              <Appear>
-              <div>
-                <Image src="../assets/github-usejest.png" />
-                <Image src="../assets/test-passed.png" />
-              </div>
-              </Appear>
-              <Appear><Image src="../assets/twitter-pivot.png" /></Appear>
-            </Fill>
-            </Layout>
+          <List bold fontSize="1rem">
+            <MyListItem>What is snapshot testing</MyListItem>
+            <MyListItem>Migrating to Jest</MyListItem>
+              <List margin="0 0 0 3rem">
+                <MyListItem>Porting over expect</MyListItem>
+                <MyListItem>CSS modules</MyListItem>
+                <MyListItem>Webpack inject loader / proxyquire</MyListItem>
+                <MyListItem>Async</MyListItem>
+                <MyListItem>Failing tests on React warning</MyListItem>
+              </List>
+          </List>
           </Slide>
           <Slide {...slideProps} >
             <Heading size={3} fit>
               What is snapshot testing
             </Heading>
           </Slide>
-          <Slide {...slideProps} >
-            <Heading size={3} >
-              Contents
-            </Heading>
-          <List bold fontSize="1rem">
-            <MyListItem>About this talk</MyListItem>
-            <MyListItem>What is snapshot testing</MyListItem>
-            <MyListItem>Migrating to Jest</MyListItem>
-              <List margin="0 0 0 3rem">
-                <MyListItem>Describe</MyListItem>
-                <MyListItem>Async</MyListItem>
-                <MyListItem>Porting over expect</MyListItem>
-                <MyListItem>CSS modules</MyListItem>
-                <MyListItem>Webpack inject loader / proxyquire</MyListItem>
-              </List>
-          </List>
-          </Slide>
-          <Slide {...slideProps} >
-            <Heading size={3} fit>
-              Alias jasmine and chai
-            </Heading>
-            <CodePane
-              lang="jsx"
-              source={require("!raw!../includes/alias-jasmine.js")}
-              textSize="20pt"
-            />
-          </Slide>
-          <Slide {...slideProps} >
-            <Heading size={3} fit>
-            Combine jasmine and chai - example
-            </Heading>
-            <CodePane
-              lang="jsx"
-              source={require("!raw!../includes/combined-expect-example.js")}
-            />
-          </Slide>
-          <Slide {...slideProps} >
-            <Heading size={3} fit>
-            Combine jasmine and chai
-            </Heading>
-            <CodePane
-              lang="jsx"
-              source={require("!raw!../includes/combine-jasmine-chai.js")}
-              textSize="0.7rem"
-            />
-          </Slide>
-          <Slide {...slideProps} >
-            <Heading size={3} fit>
-              Ensure CSS modules still work
-            </Heading>
-            <CodePane
-              lang="jsx"
-              source={require("!raw!../includes/css-modules-preprocessor.js")}
-            />
-          </Slide>
-          <Slide {...slideProps} >
-            <Heading size={3} fit>
-              Snapshots with CSS modules
-            </Heading>
-            <Layout>
-              <Fill >
-                <CodePane
-                  lang="jsx"
-                  source={require("!raw!../includes/App.css")}
-                  textSize="0.7rem"
-                  style={{ marginBottom: "25px" }}
-                />
-                <CodePane
-                  lang="jsx"
-                  source={require("!raw!../includes/App.jsx")}
-                  textSize="0.7rem"
-                />
-              </Fill>
-              <Fill style={{maxWidth: "25px"}}>
-              &nbsp;
-              </Fill>
-              <Fill>
-                <CodePane
-                  lang="jsx"
-                  source={require("!raw!../includes/App.snap.js")}
-                  textSize="0.7rem"
-                />
-              </Fill>
-            </Layout>
-          </Slide>
-          <Slide {...slideProps} >
-            <Heading size={3} fit >
-            Inject loader compatibility
-            </Heading>
-            <CodePane
-              lang="jsx"
-              source={require("!raw!../includes/inject-loader-compatibility-implementation.js")}
-              textSize="0.7rem"
-            />
-          </Slide>
-          <CodeSlide
-            transition={[]}
-            lang="js"
-            code={require("!raw!../includes/inject-loader-compatibility-implementation.js")}
-            ranges={[
-              { loc: [0, 270], title: "injectLoaderCompatibility" },
-              { loc: [3, 5], title: "Reset the modules first" },
-              { loc: [6, 7], title: "Take the files to inject" },
-              { loc: [8, 16], title: "Iterate over the those" },
-              { loc: [13, 15], title: "Inject the mock using Jest" },
-              { loc: [18, 19], title: "Return the module" },
-              { loc: [21, 22], title: "Expose as a global" },
-            ]}
-            textSize="15pt"
-          />
-          <Slide {...slideProps} >
-            <Heading size={3} fit >
-            Webpack inject loader / proxyquire
-            </Heading>
-            <CodePane
-              lang="jsx"
-              source={require("!raw!../includes/inject-loader.js")}
-            />
-          </Slide>
+          {migrateExpectSection}
+          {cssModulesSection}
+          {injectLoaderSection}
+          {supertestSection}
           <Slide {...slideProps} >
             <Heading size={3} fit>
             Fail test on React warning
@@ -270,24 +305,6 @@ export default class Presentation extends React.Component {
             <CodePane
               lang="jsx"
               source={require("!raw!../includes/make-react-warnings-errors.js")}
-            />
-          </Slide>
-          <Slide {...slideProps} >
-            <Heading size={3} fit>
-            Supertest
-            </Heading>
-            <CodePane
-              lang="jsx"
-              source={require("!raw!../includes/supertest.js")}
-            />
-          </Slide>
-          <Slide {...slideProps} >
-            <Heading size={3} fit>
-            Supertest with Promises
-            </Heading>
-            <CodePane
-              lang="jsx"
-              source={require("!raw!../includes/supertest-as-promised.js")}
             />
           </Slide>
           <Slide {...slideProps} >
