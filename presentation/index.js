@@ -120,6 +120,35 @@ const talkBackgroundSection = [
   </Slide>
 ];
 
+const lessonsLearnedMigrationSection = [
+  <Slide {...slideProps} >
+    <Heading size={3} fit>Downsides of migration to Jest</Heading>
+    <List>
+      <MyListItem>Slow when you:</MyListItem>
+      <List margin="0 0 0 3rem">
+        <MyListItem>resetModules every test</MyListItem>
+        <MyListItem>Start express every test</MyListItem>
+        <MyListItem>Run coverage</MyListItem>
+        <MyListItem>Don't use the cache</MyListItem>
+      </List>
+      <MyListItem>Cache sometimes confusing</MyListItem>
+      <MyListItem>Migrating existing mock injectors is difficult</MyListItem>
+    </List>
+  </Slide>,
+  <Slide {...slideProps} >
+    <Heading size={3} fit>
+      Upsides of the migration
+    </Heading>
+    <List>
+      <MyListItem>Snapshot tests with CLI integration and cleanup</MyListItem>
+      <MyListItem>Mocking which actually works</MyListItem>
+      <MyListItem>Fast watch mode</MyListItem>
+      <MyListItem>Working stacktraces</MyListItem>
+      <MyListItem>Coverage of not imported files</MyListItem>
+    </List>
+  </Slide>
+];
+
 const migrateExpectSection = [
   <Slide {...slideProps} >
     <Heading size={3} fit>
@@ -274,7 +303,7 @@ const contentSlide = (
     <Heading size={3} >
       Contents
     </Heading>
-    <List bold fontSize="1rem">
+    <List>
       <MyListItem>What is snapshot testing</MyListItem>
       <MyListItem>Migrating to Jest</MyListItem>
         <List margin="0 0 0 3rem">
@@ -337,6 +366,7 @@ export default class Presentation extends React.Component {
             ...injectLoaderSection,
             ...supertestSection,
             ...reactWarningsSection,
+            ...lessonsLearnedMigrationSection,
             finalSlide,
           ]}
         </Deck>
