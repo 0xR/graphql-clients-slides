@@ -252,71 +252,93 @@ const supertestSection = [
   </Slide>
 ];
 
+const titleSlide = (
+  <Slide {...slideProps} >
+    <Heading size={1} fit>
+      Snapshot tests
+    </Heading>
+    <Heading size={2} fit>
+      with Mocha in Jest
+    </Heading>
+    <Layout style={{ justifyContent: "space-between" }}>
+    <TitleElement><Icon name="user" /> Ruben Oostinga</TitleElement>
+    <TitleElement><Icon name="twitter" /> @RubenOostinga</TitleElement>
+    <TitleElement><Icon name="github" /> https://github.com/0xR</TitleElement>
+    <TitleElement><Icon name="building" /> Xebia</TitleElement>
+    </Layout>
+  </Slide>
+);
+
+const contentSlide = (
+  <Slide {...slideProps} >
+    <Heading size={3} >
+      Contents
+    </Heading>
+    <List bold fontSize="1rem">
+      <MyListItem>What is snapshot testing</MyListItem>
+      <MyListItem>Migrating to Jest</MyListItem>
+        <List margin="0 0 0 3rem">
+          <MyListItem>Porting over expect</MyListItem>
+          <MyListItem>CSS modules</MyListItem>
+          <MyListItem>Webpack inject loader / proxyquire</MyListItem>
+          <MyListItem>Async</MyListItem>
+          <MyListItem>Failing tests on React warning</MyListItem>
+        </List>
+    </List>
+  </Slide>
+);
+
+const snapshotTestingSection = [
+  <Slide {...slideProps} >
+    <Heading size={3} fit>
+      What is snapshot testing
+    </Heading>
+  </Slide>
+];
+
+const reactWarningsSection = [
+  <Slide {...slideProps} >
+    <Heading size={3} fit>
+    Fail test on React warning
+    </Heading>
+    <CodePane
+      lang="jsx"
+      source={require("!raw!../includes/make-react-warnings-errors.js")}
+    />
+  </Slide>
+];
+
+const finalSlide = (
+  <Slide {...slideProps} >
+    <Heading size={3} fit>
+    The End
+    </Heading>
+    <Text>
+      Code:&nbsp;
+      <Link href="https://github.com/0xR/snapshot-experiments/pull/1" >https://github.com/0xR/snapshot-experiments/pull/1</Link>
+    </Text>
+    <Text>Link to slides will be posted on <Icon name="twitter" /> @RubenOostinga</Text>
+  </Slide>
+);
+
 // Should be a proper component to ensure HMR works
 export default class Presentation extends React.Component {
   render() {
     return (
       <Spectacle theme={theme}>
         <Deck>
-          <Slide {...slideProps} >
-            <Heading size={1} fit>
-              Snapshot tests
-            </Heading>
-            <Heading size={2} fit>
-              with Mocha in Jest
-            </Heading>
-            <Layout style={{ justifyContent: "space-between" }}>
-            <TitleElement><Icon name="user" /> Ruben Oostinga</TitleElement>
-            <TitleElement><Icon name="twitter" /> @RubenOostinga</TitleElement>
-            <TitleElement><Icon name="github" /> https://github.com/0xR</TitleElement>
-            <TitleElement><Icon name="building" /> Xebia</TitleElement>
-            </Layout>
-          </Slide>
-          {talkBackgroundSection}
-          <Slide {...slideProps} >
-            <Heading size={3} >
-              Contents
-            </Heading>
-          <List bold fontSize="1rem">
-            <MyListItem>What is snapshot testing</MyListItem>
-            <MyListItem>Migrating to Jest</MyListItem>
-              <List margin="0 0 0 3rem">
-                <MyListItem>Porting over expect</MyListItem>
-                <MyListItem>CSS modules</MyListItem>
-                <MyListItem>Webpack inject loader / proxyquire</MyListItem>
-                <MyListItem>Async</MyListItem>
-                <MyListItem>Failing tests on React warning</MyListItem>
-              </List>
-          </List>
-          </Slide>
-          <Slide {...slideProps} >
-            <Heading size={3} fit>
-              What is snapshot testing
-            </Heading>
-          </Slide>
-          {migrateExpectSection}
-          {cssModulesSection}
-          {injectLoaderSection}
-          {supertestSection}
-          <Slide {...slideProps} >
-            <Heading size={3} fit>
-            Fail test on React warning
-            </Heading>
-            <CodePane
-              lang="jsx"
-              source={require("!raw!../includes/make-react-warnings-errors.js")}
-            />
-          </Slide>
-          <Slide {...slideProps} >
-            <Heading size={3} fit>
-            The End
-            </Heading>
-            <Text>
-              Code:&nbsp;
-              <Link href="https://github.com/0xR/snapshot-experiments/pull/1" >https://github.com/0xR/snapshot-experiments/pull/1</Link>
-            </Text>
-            <Text>Link to slides will be posted on <Icon name="twitter" /> @RubenOostinga</Text>
-          </Slide>
+          {[
+            titleSlide,
+            ...talkBackgroundSection,
+            contentSlide,
+            ...snapshotTestingSection,
+            ...migrateExpectSection,
+            ...cssModulesSection,
+            ...injectLoaderSection,
+            ...supertestSection,
+            ...reactWarningsSection,
+            finalSlide,
+          ]}
         </Deck>
       </Spectacle>
     );
