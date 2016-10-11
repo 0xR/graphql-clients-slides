@@ -197,7 +197,7 @@ const cssModulesSection = [
           lang="jsx"
           source={require("!raw!../includes/App.css")}
           textSize="0.7rem"
-          style={{ marginBottom: "25px" }}
+          style={{ margin: "0 0 25px 0" }}
         />
         <CodePane
           lang="jsx"
@@ -205,9 +205,7 @@ const cssModulesSection = [
           textSize="0.7rem"
         />
       </Fill>
-      <Fill style={{maxWidth: "25px"}}>
-      &nbsp;
-      </Fill>
+      <div style={{width: "25px"}}/>
       <Fill>
         <CodePane
           lang="jsx"
@@ -228,6 +226,21 @@ const injectLoaderSection = [
       lang="jsx"
       source={require("!raw!../includes/inject-loader.js")}
     />
+  </Slide>,
+  <Slide {...slideProps} >
+    <Heading size={3} fit >
+    Use a wrapper to make it jest compatible
+    </Heading>
+    <CodePane
+      lang="jsx"
+      source={require("!raw!../includes/inject-loader-compatibility.js")}
+    />
+  </Slide>,
+  <Slide {...slideProps} >
+    <Heading size={3} fit >
+    Use a VIM macro to automate migration
+    </Heading>
+    <AsciinemaPlayer src="assets/inject-loader-compatibility-macro.json" autoplay fontSize="big"/>
   </Slide>,
   <Slide {...slideProps} >
     <Heading size={3} fit >

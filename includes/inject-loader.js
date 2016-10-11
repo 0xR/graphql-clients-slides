@@ -1,11 +1,14 @@
-import injector from 'inject!../src/my-module.js';
 
 describe('My module', () => {
   beforeEach(() => {
-    myModule = injector({
-      'events': eventsMock,
-      '../lib/dispatcher': dispatcherMock,
-      '../lib/handle-action': handleActionMock
-    });
+    myModule = injectLoaderCompatibility(
+      __dirname,
+      '../src/my-module.js',
+      {
+        'events': eventsMock,
+        '../lib/dispatcher': dispatcherMock,
+        '../lib/handle-action': handleActionMock
+      }
+    );
   });
 });

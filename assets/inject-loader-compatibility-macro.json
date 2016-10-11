@@ -1,0 +1,686 @@
+{
+  "version": 1,
+  "env": {
+    "TERM": "xterm-256color",
+    "SHELL": "/bin/zsh"
+  },
+  "duration": 24.009575,
+  "height": 26,
+  "command": null,
+  "title": null,
+  "width": 120,
+  "stdout": [
+    [
+      1.188146,
+      "\u001b[?25l"
+    ],
+    [
+      0.003991,
+      "[\u001b[90m..................\u001b[0m] \\ : \u001b[34;40mverb\u001b[0m \u001b[35mconfig\u001b[0m Skipping project config: /home/rjs/.npmrc. (matches userconfig)\u001b[K\r"
+    ],
+    [
+      0.001227,
+      "\r\u001b[K\u001b[?25h"
+    ],
+    [
+      0.02408,
+      "0: 1 windows (created Tue Oct 11 09:03:53 2016) [120x25]\r\n1: 2 windows (created Tue Oct 11 09:30:46 2016) [120x25]\r\n"
+    ],
+    [
+      0.003468,
+      "\u001b[?1049h\u001b(B\u001b[m\u001b[?1l\u001b>\u001b[H\u001b[2J\u001b[?12l\u001b[?25h\u001b[?1000l\u001b[?1002l\u001b[?1006l\u001b[?1005l\u001b[?1004h\u001b]112\u0007\u001b]0;0:1:nvim - \"nvim\" \u0007\u001b[?25l\u001b[32m\u001b[1;61H│\u001b[2;61H│\u001b[3;61H│\u001b[4;61H│\u001b[5;61H│\u001b[6;61H│\u001b[7;61H│\u001b[8;61H│\u001b[9;61H│\u001b[10;61H│\u001b[11;61H│\u001b[12;61H│\u001b[13;61H│\u001b(B\u001b[m\u001b[14;61H│\u001b[15;61H│\u001b[16;61H│\u001b[17;61H│\u001b[18;61H│\u001b[19;61H│\u001b[20;61H│\u001b[21;61H│\u001b[22;61H│\u001b[23;61H│\u001b[24;61H│\u001b[25;61H│\u001b[H\u001b(B\u001b[m\u001b[38;5;239m\u001b[48;5;235m  \u001b(B\u001b[m\u001b[93m1   \u001b[38;5;166m\u001b[48;5;235mimport\u001b[38;5;244m React \u001b[38;5;166mfrom\u001b[38;5;244m \u001b[38;5;37m'react'\u001b[38;5;244m;                            \u001b(B\u001b[m\r\n\u001b[38;5;239m\u001b[48;5;235m    1 \u001b(B\u001b[m\u001b[38;5;166mimport\u001b(B\u001b[m \u001b[38;5;244m{ shallow\u001b(B\u001b[m \u001b[38;5;244m} \u001b(B\u001b[m\u001b[38;5;166mfrom\u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;37m'enzyme'\u001b(B\u001b[m\u001b[38;5;244m;\u001b(B\u001b[m                     \r\n\u001b[38;5;64m\u001b[48;5;235m+ \u001b[38;5;239m  2 \u001b(B\u001b[m\u001b[38;5;166mimport\u001b(B\u001b[m\u001b[38;5;244m injector \u001b(B\u001b[m\u001b[38;5;166mfrom\u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;37m'inject!../../../../src/app/chec\u001b(B\u001b[m\u001b[38;5;240m\u001b[1m#\u001b(B\u001b[m\r\n\u001b[38;5;239m\u001b[48;5;235m    3 \u001b(B\u001b["
+    ],
+    [
+      3e-05,
+      "m                                                      \r\n\u001b[38;5;239m\u001b[48;5;235m    4 \u001b(B\u001b[m\u001b[38;5;244mdescribe\u001b(B\u001b[m\u001b[38;5;81m(\u001b(B\u001b[m\u001b[38;5;37m'CheckoutPage Component'\u001b(B\u001b[m\u001b[38;5;81m,\u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;229m()\u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;136m=>\u001b(B\u001b[m \u001b[38;5;244m{\u001b(B\u001b[m            \r\n\u001b[38;5;239m\u001b[48;5;235m    5 \u001b(B\u001b[m\u001b[38;5;244m  \u001b(B\u001b[m\u001b[38;5;136mlet\u001b(B\u001b[m\u001b[38;5;244m component;\u001b(B\u001b[m                                      \r\n\u001b[38;5;239m\u001b[48;5;235m    6 \u001b(B\u001b[m\u001b[38;5;244m  \u001b(B\u001b[m\u001b[38;5;136mconst\u001b(B\u001b[m\u001b[38;5;244m mockComponent\u001b(B\u001b[m \u001b[38;5;64m=\u001b(B\u001b[m\u001b[38;5;244m () \u001b(B\u001b[m\u001b[38;5;136m=>\u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;64m<\u001b(B\u001b[m\u001b[38;5;244mdiv\u001b(B\u001b[m\u001b[38;5;64m></\u001b(B\u001b[m\u001b[38;5;244mdiv\u001b(B\u001b[m\u001b[38;5;64m>\u001b(B\u001b[m\u001b[38;5;244m;\u001b(B\u001b[m            \r\n\u001b[38;5;239m\u001b[48;5;235m    7 \u001b(B\u001b[m                                                      \r\n\u001b[38;5;239m\u001b[48;5;235m    8 \u001b(B\u001b[m\u001b[38;5;244m  beforeEach(() \u001b(B\u001b[m\u001b[38;5;136m=>\u001b(B\u001b[m \u001b[38;5;244m{\u001b(B\u001b[m                                  \r\n\u001b[38;5;136m\u001b[48;5;235m! \u001b[38;5;239m  9 \u001b(B\u001b[m\u001b[3"
+    ],
+    [
+      1.4e-05,
+      "8;5;244m  \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;136mconst\u001b(B\u001b[m\u001b[38;5;244m Checkout\u001b(B\u001b[m \u001b[38;5;64m=\u001b(B\u001b[m\u001b[38;5;244m injector({\u001b(B\u001b[m                       \r\n\u001b[38;5;136m\u001b[48;5;235m! \u001b[38;5;239m 10 \u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m \u001b[38;5;242m\u001b[40m \u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;37m'../../../spaces/current/scripts/lib/components\u001b(B\u001b[m\u001b[38;5;240m\u001b[1m#\u001b(B\u001b[m\r\n\u001b[38;5;136m\u001b[48;5;235m!4\u001b[38;5;239m 11 \u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m });\u001b(B\u001b[m                                               \r\n\u001b[38;5;239m\u001b[48;5;235m   12 \u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m component\u001b(B\u001b[m \u001b[38;5;64m=\u001b(B\u001b[m \u001b[38;5;244mshallow(\u001b(B\u001b[m\u001b[38;5;64m<\u001b(B\u001b[m\u001b[38;5;244mCheckout\u001b(B\u001b[m \u001b[38;5;64m/>\u001b(B\u001b[m\u001b[38;5;244m);\u001b(B\u001b[m                \r\n\u001b[38;5;239m\u001b[48;5;235m   13 \u001b(B\u001b[m\u001b[38;5;244m  });\u001b(B\u001b[m                                                 \r\n\u001b[38;5;239m\u001b[48;5;235m   14 \u001b(B\u001b[m                                                      \r\n\u001b[38;5;239m\u001b[48;5;235m   15 \u001b(B\u001b[m\u001b[38;5;244m "
+    ],
+    [
+      1.3e-05,
+      " it(\u001b(B\u001b[m\u001b[38;5;37m'should render the checkout page'\u001b(B\u001b[m\u001b[38;5;244m,\u001b(B\u001b[m \u001b[38;5;244m()\u001b(B\u001b[m \u001b[38;5;136m=>\u001b(B\u001b[m \u001b[38;5;244m{\u001b(B\u001b[m       \r\n\u001b[38;5;239m\u001b[48;5;235m   16 \u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m expect(component.find(\u001b(B\u001b[m\u001b[38;5;37m'.page-header'\u001b(B\u001b[m\u001b[38;5;244m).find(\u001b(B\u001b[m\u001b[38;5;37m'h1'\u001b(B\u001b[m\u001b[38;5;244m).\u001b(B\u001b[m\u001b[38;5;240m\u001b[1m#\u001b(B\u001b[m\r\n\u001b[38;5;239m\u001b[48;5;235m   17 \u001b(B\u001b[m\u001b[38;5;244m  });\u001b(B\u001b[m                                                 \r\n\u001b[38;5;239m\u001b[48;5;235m   18 \u001b(B\u001b[m\u001b[38;5;244m}\u001b(B\u001b[m\u001b[38;5;81m)\u001b(B\u001b[m\u001b[38;5;244m;\u001b(B\u001b[m                                                   \r\n\u001b[38;5;239m\u001b[48;5;235m  \u001b(B\u001b[m\u001b[38;5;240m\u001b[1m~                                                         \u001b(B\u001b[m\r\n\u001b[38;5;239m\u001b[48;5;235m  \u001b(B\u001b[m\u001b[38;5;240m\u001b[1m~                                                         \u001b(B\u001b[m\r\n\u001b[38;5;239m\u001b[48;5;235m  \u001b(B\u001b[m\u001b[38;5;240m\u001b[1m~                                                         \u001b(B\u001b[m\r\n\u001b[38;5;239m\u001b[48;5;235m  \u001b(B\u001b[m\u001b[38;5;240m\u001b[1m~                          "
+    ],
+    [
+      1.3e-05,
+      "                               \u001b(B\u001b[m\r\n\u001b[38;5;230m\u001b[48;5;245m\u001b[1m NORMAL \u001b(B\u001b[m\u001b[38;5;245m\u001b[48;5;241m\u001b[38;5;241m\u001b[48;5;235m\u001b[38;5;240m \u001b(B\u001b[m\u001b[38;5;244m\u001b[1m<-spec.js  \u001b(B\u001b[m\u001b[38;5;240m\u001b[48;5;235m  \u001b[38;5;235m\u001b[38;5;240m javascript \u001b[38;5;241m\u001b[38;5;245m\u001b[48;5;241m\u001b[38;5;230m\u001b[48;5;245m   5% \u001b[1m   1/19☰\u001b(B\u001b[m\u001b[38;5;230m\u001b[48;5;245m :  1 \u001b(B\u001b[m\r\n\u001b[38;5;244m 4:webpack.server.test.config.js\u001b(B\u001b[m  \u001b[38;5;244m6:Checkout-spe\u001b(B\u001b[m \u001b[38;5;244m   \u001b(B\u001b[m        \u001b[1;62H\u001b[31m\u001b[1m\u001b[7m FAIL \u001b(B\u001b[m \u001b[2mtest/server_spec/checkout/components/\u001b(B\u001b[m\u001b[1mCheckout-spec.j\u001b(B\u001b[m\u001b[1;120H\u001b[2;62H\u001b[1ms\u001b(B\u001b[m\u001b[K\u001b[3;62H  \u001b[1m● \u001b(B\u001b[mTest suite failed to run\u001b[K\u001b[4;62H\u001b[K\n    Cannot find module 'inject!../../../../src/app/checkout\u001b[5;120H\u001b[6;62H/components/Checkout' from 'Checkout-spec.js'\u001b[K\u001b[7;62H\u001b[2m      \u001b(B\u001b[m\u001b[K\u001b[8;62H\u001b[2m      at Resolver.resolveModule (node_modules/jest-resolve/\u001b(B\u001b[m\u001b[8;120H\u001b[9;62H\u001b[2mbuild/index.js:144:17)\u001b(B\u001b[m\u001b[K\u001b[10;62H\u001b[2m      at Object.<anonymous> (\u001b(B\u001b[m\u001b[36mtest/server_spec/checkout/"
+    ],
+    [
+      2.6e-05,
+      "comp\u001b(B\u001b[m\u001b[10;120H\u001b[11;62H\u001b[36monents/Checkout-spec.js\u001b(B\u001b[m\u001b[2m:3:43)\u001b(B\u001b[m\u001b[K\u001b[12;62H\u001b[K\n\u001b[1mTest Suites: \u001b(B\u001b[m\u001b[31m\u001b[1m1 failed\u001b(B\u001b[m, 1 total\u001b[K\u001b[14;62H\u001b[1mTests:       \u001b(B\u001b[m0 total\u001b[K\u001b[15;62H\u001b[1mSnapshots:   \u001b(B\u001b[m0 total\u001b[K\u001b[16;62H\u001b[1mTime:\u001b(B\u001b[m        0.225s, estimated 1s\u001b[K\u001b[17;62H\u001b[2mRan all test suites matching \u001b(B\u001b[m\"components/Checkout-spec\"\u001b[2m.\u001b(B\u001b[m\u001b[K\u001b[18;62H\u001b[K\n\u001b[1mWatch Usage\u001b(B\u001b[m\u001b[K\u001b[20;62H\u001b[2m › Press \u001b(B\u001b[ma\u001b[2m to run all tests.\u001b(B\u001b[m\u001b[K\u001b[21;62H\u001b[2m › Press \u001b(B\u001b[mo\u001b[2m to only run tests related to changed files.\u001b(B\u001b[m\u001b[K\u001b[22;62H\u001b[2m › Press \u001b(B\u001b[mp\u001b[2m to filter by a filename regex pattern.\u001b(B\u001b[m\u001b[K\u001b[23;62H\u001b[2m › Press \u001b(B\u001b[mq\u001b[2m to quit watch mode.\u001b(B\u001b[m\u001b[K\u001b[24;62H\u001b[2m › Press \u001b(B\u001b[mEnter\u001b[2m to trigger a test run.\u001b(B\u001b[m\u001b[K\u001b[25;62H\u001b[K\r\n\u001b[30m\u001b[42m[0] 1:nvim*                                                                                       \"nvim\" 09:43 11-okt-16\u001b(B\u001b[m\u001b[26;1H\u001b[1;26r\u001b[H\u001b[6C\u001b[?12l\u001b[?25h\u001b[?1006h\u001b[?1002h\u001b[?2004h"
+    ],
+    [
+      0.000118,
+      "\u001b[1;25r\u001b[H\u001b[25;50H\u001b[38;5;244m~@ý\u001b[1;26r\u001b[H\u001b[6C\u001b(B\u001b[m"
+    ],
+    [
+      0.003402,
+      "\u001b[1;25r\u001b[H\u001b[25;50H\u001b[38;5;244m   \u001b[1;26r\u001b[H\u001b[6C\u001b(B\u001b[m"
+    ],
+    [
+      1.120466,
+      "\u001b[?25l\u001b[26;1H\u001b[30m\u001b[42m[0] 1:nvim*                                                                                       \"nvim\" 09:43 11-okt-16\u001b(B\u001b[m\u001b[1;7H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.006359,
+      "\u001b[?25l"
+    ],
+    [
+      0.006775,
+      "\u001b]0;0:1:nvim - \"npm run test:server:default -- --watch\" \u0007\u001b[54C│\u001b[2;61H│\u001b[3;61H│\u001b[4;61H│\u001b[5;61H│\u001b[6;61H│\u001b[7;61H│\u001b[8;61H│\u001b[9;61H│\u001b[10;61H│\u001b[11;61H│\u001b[12;61H│\u001b[13;61H│\u001b(B\u001b[m\u001b[32m\u001b[14;61H│\u001b[15;61H│\u001b[16;61H│\u001b[17;61H│\u001b[18;61H│\u001b[19;61H│\u001b[20;61H│\u001b[21;61H│\u001b[22;61H│\u001b[23;61H│\u001b[24;61H│\u001b[25;61H│\u001b(B\u001b[m\r\n\u001b[30m\u001b[42m[0] 1:nvim*                                                                      \"npm run test:server:d\" 09:43 11-okt-16\u001b(B\u001b[m\u001b[25;62H\u001b[?12l\u001b[?25h\u001b[?1002l\u001b[?1006l\u001b[?2004l"
+    ],
+    [
+      0.002117,
+      "\u001b[1;25r\u001b[H\u001b[25;50H\u001b[38;5;244m~@ý\u001b[1;26r\u001b[H\u001b[25;62H\u001b(B\u001b[m"
+    ],
+    [
+      0.001418,
+      "\u001b[1;25r\u001b[H\u001b[25;50H\u001b[38;5;244m   \u001b[1;26r\u001b[H\u001b[25;62H\u001b(B\u001b[m"
+    ],
+    [
+      0.557126,
+      "\u001b]0;0:1:npm - \"npm run test:server:default -- --watch\" \u0007\u001b[?25l\r\n\u001b[30m\u001b[42m[0] 1:npm*                                                                       \"npm run test:server:d\" 09:43 11-okt-16\u001b(B\u001b[m\u001b[25;62H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.000419,
+      "\u001b[1;25r\u001b[H\u001b[61C                                                           \u001b[2;62H                                                           \u001b[3;62H                                                           \u001b[4;62H                                                           \u001b[5;62H                                                           \u001b[6;62H                                                           \u001b[7;62H                                                           \u001b[8;62H                                                           \u001b[9;62H                                                           \u001b[10;62H                                                           \u001b[11;62H                                                           \u001b[12;62H                                                           \u001b[13;62H                                                           \u001b[14;62H                                                           \u001b[15;62H                                                           \u001b[16;62H            "
+    ],
+    [
+      2.3e-05,
+      "                                               \u001b[17;62H                                                           \u001b[18;62H                                                           \u001b[19;62H                                                           \u001b[20;62H                                                           \u001b[21;62H                                                           \u001b[22;62H                                                           \u001b[23;62H                                                           \u001b[24;62H                                                           \u001b[25;62H                                                           \u001b[25;1H\u001b[1;26r\u001b[H\u001b[61C"
+    ],
+    [
+      0.001055,
+      "\u001b[1;25r\u001b[H\u001b[61C\u001b[1m\u001b[2mDetermining test suites to run...\u001b[1;26r\u001b[H\u001b[94C\u001b(B\u001b[m"
+    ],
+    [
+      0.065128,
+      "\u001b[33D                                                           \u001b[2;62H                                                           \u001b[1;62H"
+    ],
+    [
+      0.000103,
+      "\u001b[1;25r\u001b[H\u001b[2;62H\u001b[33m\u001b[1m\u001b[7m RUNS \u001b(B\u001b[m \u001b[2m.../server_spec/checkout/components/\u001b(B\u001b[m\u001b[1mCheckout-spec.js\u001b[2;1H\u001b[1;26r\u001b[H\u001b[3;62H\u001b(B\u001b[m"
+    ],
+    [
+      0.243617,
+      "                                                           \u001b[2;62H                                                           \u001b[2;1H\u001b[1;25r\u001b[H\u001b[61C\u001b[31m\u001b[1m\u001b[7m FAIL \u001b(B\u001b[m \u001b[2mtest/server_spec/checkout/components/\u001b(B\u001b[m\u001b[1mCheckout-spec.j\u001b[2;62Hs\u001b[1;26r\u001b[H\u001b[3;62H\u001b(B\u001b[m\u001b[1;25r\u001b[H\u001b[4;62H\u001b[33m\u001b[1m\u001b[7m RUNS \u001b(B\u001b[m \u001b[2m.../server_spec/checkout/components/\u001b(B\u001b[m\u001b[1mCheckout-spec.js\u001b(B\u001b[m\u001b[5;62H                                                           \u001b[4;62H                                                           \u001b[3;62H  \u001b[1m● \u001b(B\u001b[mTest suite failed to run\u001b[5;62H    Cannot find module 'inject!../../../../src/app/checkout\u001b[6;62H/components/Checkout' from 'Checkout-spec.js'\u001b[7;62H\u001b[2m      \u001b[8;62H      at Resolver.resolveModule (node_modules/jest-resolve/\u001b[9;62Hbuild/index.js:144:17)\u001b[10;62H      at Object.<anonymous> (\u001b(B\u001b[m\u001b[36mtest/server_spec/checkout/comp\u001b[11;62Honents/Checkout-spec.js\u001b(B\u001b[m\u001b[2m:3:43)\u001b[14;62H\u001b(B\u001b[m\u001b[33m\u001b[1m\u001b[7m RUNS \u001b(B\u001b[m \u001b[2m.../server_spec/checkout/components/\u001b(B\u001b[m\u001b[1mCheckout-spec.js"
+    ],
+    [
+      3.4e-05,
+      "\u001b[14;1H\u001b[1;26r\u001b[H\u001b[15;62H\u001b(B\u001b[m"
+    ],
+    [
+      0.000201,
+      "                                                           \u001b[14;62H                                                           \u001b[13;62H                                                           \u001b[13;62H"
+    ],
+    [
+      0.000169,
+      "\u001b[1;25r\u001b[H\u001b[13;62H\u001b[1mTest Suites: \u001b(B\u001b[m\u001b[31m\u001b[1m1 failed\u001b(B\u001b[m, 1 total\u001b[14;62H\u001b[1mTests:       \u001b(B\u001b[m0 total\u001b[15;62H\u001b[1mSnapshots:   \u001b(B\u001b[m0 total\u001b[16;62H\u001b[1mTime:\u001b(B\u001b[m        0.244s\u001b[17;62H\u001b[2mRan all test suites matching \u001b(B\u001b[m\"components/Checkout-spec\"\u001b[2m.\u001b[1;26r\u001b[H\u001b[18;62H\u001b(B\u001b[m"
+    ],
+    [
+      0.000352,
+      "\u001b[1;25r\u001b[H\u001b[19;62H\u001b[1mWatch Usage\u001b[20;62H\u001b(B\u001b[m\u001b[2m › Press \u001b(B\u001b[ma\u001b[2m to run all tests.\u001b[21;62H › Press \u001b(B\u001b[mo\u001b[2m to only run tests related to changed files.\u001b[22;62H › Press \u001b(B\u001b[mp\u001b[2m to filter by a filename regex pattern.\u001b[23;62H › Press \u001b(B\u001b[mq\u001b[2m to quit watch mode.\u001b[24;62H › Press \u001b(B\u001b[mEnter\u001b[2m to trigger a test run.\u001b[1;26r\u001b[H\u001b[25;62H\u001b(B\u001b[m"
+    ],
+    [
+      0.739923,
+      "\u001b[1;25r\u001b[H\u001b[61C                                                           \u001b[2;62H                                                           \u001b[3;62H                                                           \u001b[4;62H                                                           \u001b[5;62H                                                           \u001b[6;62H                                                           \u001b[7;62H                                                           \u001b[8;62H                                                           \u001b[9;62H                                                           \u001b[10;62H                                                           \u001b[11;62H                                                           \u001b[12;62H                                                           \u001b[13;62H                                                           \u001b[14;62H                                                           \u001b[15;62H                                                           \u001b[16;62H            "
+    ],
+    [
+      2.6e-05,
+      "                                               \u001b[17;62H                                                           \u001b[18;62H                                                           \u001b[19;62H                                                           \u001b[20;62H                                                           \u001b[21;62H                                                           \u001b[22;62H                                                           \u001b[23;62H                                                           \u001b[24;62H                                                           \u001b[25;62H                                                           \u001b[25;1H\u001b[1;26r\u001b[H\u001b[61C"
+    ],
+    [
+      0.00105,
+      "\u001b[1;25r\u001b[H\u001b[61C\u001b[1m\u001b[2mDetermining test suites to run...\u001b[1;26r\u001b[H\u001b[94C\u001b(B\u001b[m"
+    ],
+    [
+      0.016863,
+      "\u001b[33D                                                           \u001b[2;62H                                                           \u001b[1;62H"
+    ],
+    [
+      0.000128,
+      "\u001b[1;25r\u001b[H\u001b[2;62H\u001b[33m\u001b[1m\u001b[7m RUNS \u001b(B\u001b[m \u001b[2m.../server_spec/checkout/components/\u001b(B\u001b[m\u001b[1mCheckout-spec.js\u001b[2;1H\u001b[1;26r\u001b[H\u001b[3;62H\u001b(B\u001b[m"
+    ],
+    [
+      0.251269,
+      "                                                           \u001b[2;62H                                                           \u001b[2;1H\u001b[1;25r\u001b[H\u001b[61C\u001b[31m\u001b[1m\u001b[7m FAIL \u001b(B\u001b[m \u001b[2mtest/server_spec/checkout/components/\u001b(B\u001b[m\u001b[1mCheckout-spec.j\u001b[2;62Hs\u001b[1;26r\u001b[H\u001b[3;62H\u001b(B\u001b[m\u001b[1;25r\u001b[H\u001b[4;62H\u001b[33m\u001b[1m\u001b[7m RUNS \u001b(B\u001b[m \u001b[2m.../server_spec/checkout/components/\u001b(B\u001b[m\u001b[1mCheckout-spec.js\u001b(B\u001b[m\u001b[5;62H                                                           \u001b[4;62H                                                           \u001b[3;62H  \u001b[1m● \u001b(B\u001b[mTest suite failed to run\u001b[5;62H    Cannot find module 'inject!../../../../src/app/checkout\u001b[6;62H/components/Checkout' from 'Checkout-spec.js'\u001b[7;62H\u001b[2m      \u001b[8;62H      at Resolver.resolveModule (node_modules/jest-resolve/\u001b[9;62Hbuild/index.js:144:17)\u001b[10;62H      at Object.<anonymous> (\u001b(B\u001b[m\u001b[36mtest/server_spec/checkout/comp\u001b[11;62Honents/Checkout-spec.js\u001b(B\u001b[m\u001b[2m:3:43)\u001b[14;62H\u001b(B\u001b[m\u001b[33m\u001b[1m\u001b[7m RUNS \u001b(B\u001b[m \u001b[2m.../server_spec/checkout/components/\u001b(B\u001b[m\u001b[1mCheckout-spec.js"
+    ],
+    [
+      3e-05,
+      "\u001b[14;1H\u001b[1;26r\u001b[H\u001b[15;62H\u001b(B\u001b[m"
+    ],
+    [
+      0.000188,
+      "                                                           \u001b[14;62H                                                           \u001b[13;62H                                                           \u001b[13;62H"
+    ],
+    [
+      0.000329,
+      "\u001b[1;25r\u001b[H\u001b[13;62H\u001b[1mTest Suites: \u001b(B\u001b[m\u001b[31m\u001b[1m1 failed\u001b(B\u001b[m, 1 total\u001b[14;62H\u001b[1mTests:       \u001b(B\u001b[m0 total\u001b[15;62H\u001b[1mSnapshots:   \u001b(B\u001b[m0 total\u001b[16;62H\u001b[1mTime:\u001b(B\u001b[m        0.252s\u001b[17;62H\u001b[2mRan all test suites matching \u001b(B\u001b[m\"components/Checkout-spec\"\u001b[2m.\u001b[1;26r\u001b[H\u001b[18;62H\u001b(B\u001b[m"
+    ],
+    [
+      0.000505,
+      "\u001b[1;25r\u001b[H\u001b[19;62H\u001b[1mWatch Usage\u001b[20;62H\u001b(B\u001b[m\u001b[2m › Press \u001b(B\u001b[ma\u001b[2m to run all tests.\u001b[21;62H › Press \u001b(B\u001b[mo\u001b[2m to only run tests related to changed files.\u001b[22;62H › Press \u001b(B\u001b[mp\u001b[2m to filter by a filename regex pattern.\u001b[23;62H › Press \u001b(B\u001b[mq\u001b[2m to quit watch mode.\u001b[24;62H › Press \u001b(B\u001b[mEnter\u001b[2m to trigger a test run.\u001b[1;26r\u001b[H\u001b[25;62H\u001b(B\u001b[m"
+    ],
+    [
+      0.843036,
+      "\u001b[?25l\r\n\u001b[30m\u001b[42m[0] 1:npm*                                                                       \"npm run test:server:d\" 09:43 11-okt-16\u001b(B\u001b[m\u001b[25;62H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.004619,
+      "\u001b]0;0:1:npm - \"nvim\" \u0007\u001b[?25l\u001b[32m\u001b[1;61H│\u001b[2;61H│\u001b[3;61H│\u001b[4;61H│\u001b[5;61H│\u001b[6;61H│\u001b[7;61H│\u001b[8;61H│\u001b[9;61H│\u001b[10;61H│\u001b[11;61H│\u001b[12;61H│\u001b[13;61H│\u001b(B\u001b[m\u001b[14;61H│\u001b[15;61H│\u001b[16;61H│\u001b[17;61H│\u001b[18;61H│\u001b[19;61H│\u001b[20;61H│\u001b[21;61H│\u001b[22;61H│\u001b[23;61H│\u001b[24;61H│\u001b[25;61H│\u001b(B\u001b[m\r\n\u001b[30m\u001b[42m[0] 1:npm*                                                                                        \"nvim\" 09:43 11-okt-16\u001b(B\u001b[m\u001b[1;7H\u001b[?12l\u001b[?25h\u001b[?1006h\u001b[?1002h\u001b[?2004h"
+    ],
+    [
+      0.000414,
+      "\u001b]0;0:1:nvim - \"nvim\" \u0007\u001b[?25l\u001b[26;1H\u001b[30m\u001b[42m[0] 1:nvim*                                                                                       \"nvim\" 09:43 11-okt-16\u001b(B\u001b[m\u001b[1;7H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      2.5e-05,
+      "\u001b[1;25r\u001b[H\u001b[25;50H\u001b[38;5;244m~@ý\u001b[1;26r\u001b[H\u001b[6C\u001b(B\u001b[m"
+    ],
+    [
+      0.003356,
+      "\u001b[1;25r\u001b[H\u001b[25;50H\u001b[38;5;244m   \u001b[1;26r\u001b[H\u001b[6C\u001b(B\u001b[m"
+    ],
+    [
+      0.385582,
+      "\u001b[1;25r\u001b[H\u001b[25;50H\u001b[38;5;244mgj\u001b[1;26r\u001b[H\u001b[6C\u001b(B\u001b[m"
+    ],
+    [
+      0.006094,
+      "\u001b[1;25r\u001b[H\u001b[25;50H\u001b[38;5;244m  \u001b[1;3H\u001b[38;5;239m\u001b[48;5;235m  1 \u001b(B\u001b[m\u001b[38;5;166mimport\u001b(B\u001b[m\u001b[38;5;244m React \u001b(B\u001b[m\u001b[38;5;166mfrom\u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;37m'react'\u001b(B\u001b[m\u001b[38;5;244m;\u001b(B\u001b[m                            \u001b[2;3H\u001b[93m2   \u001b[38;5;166m\u001b[48;5;235mimport\u001b[38;5;244m { shallow } \u001b[38;5;166mfrom\u001b[38;5;244m \u001b[38;5;37m'enzyme'\u001b[38;5;244m;                     \u001b[3;5H\u001b[38;5;239m1\u001b[4;5H2\u001b[5;5H3\u001b[6;5H4\u001b[7;5H5\u001b[8;5H6\u001b[9;5H7\u001b[10;5H8\u001b[11;4H 9\u001b[12;5H0\u001b[13;5H1\u001b[14;5H2\u001b[15;5H3\u001b[16;5H4\u001b[17;5H5\u001b[18;5H6\u001b[19;5H7\u001b[24;42H\u001b[38;5;230m\u001b[48;5;245m10\u001b[6C\u001b[1m2\u001b[1;26r\u001b[H\u001b[2;7H\u001b(B\u001b[m"
+    ],
+    [
+      0.134169,
+      "\u001b[1;25r\u001b[H\u001b[25;50H\u001b[38;5;244mgj\u001b[1;26r\u001b[H\u001b[2;7H\u001b(B\u001b[m"
+    ],
+    [
+      0.006258,
+      "\u001b[1;25r\u001b[H\u001b[25;50H\u001b[38;5;244m  \u001b[1;5H\u001b[38;5;239m\u001b[48;5;235m2\u001b[2;3H  1 \u001b(B\u001b[m\u001b[38;5;166mimport\u001b(B\u001b[m\u001b[38;5;244m { shallow } \u001b(B\u001b[m\u001b[38;5;166mfrom\u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;37m'enzyme'\u001b(B\u001b[m\u001b[38;5;244m;\u001b(B\u001b[m                     \u001b[3;3H\u001b[93m3   \u001b[38;5;166m\u001b[48;5;235mimport\u001b[38;5;244m injector \u001b[38;5;166mfrom\u001b[38;5;244m \u001b[38;5;37m'inject!../../../../src/app/chec\u001b[4;5H\u001b[38;5;239m1\u001b[5;5H2\u001b[6;5H3\u001b[7;5H4\u001b[8;5H5\u001b[9;5H6\u001b[10;5H7\u001b[11;5H8\u001b[12;4H 9\u001b[13;5H0\u001b[14;5H1\u001b[15;5H2\u001b[16;5H3\u001b[17;5H4\u001b[18;5H5\u001b[19;5H6\u001b[24;43H\u001b[38;5;230m\u001b[48;5;245m5\u001b[6C\u001b[1m3\u001b[1;26r\u001b[H\u001b[3;7H\u001b(B\u001b[m"
+    ],
+    [
+      0.338113,
+      "\u001b[1;25r\u001b[H\u001b[25;50H\u001b[38;5;244mw\u001b[1;26r\u001b[H\u001b[3;7H\u001b(B\u001b[m"
+    ],
+    [
+      0.005291,
+      "\u001b[1;25r\u001b[H\u001b[25;50H\u001b[38;5;244m \u001b[24;59H\u001b[38;5;230m\u001b[48;5;245m8\u001b[1;26r\u001b[H\u001b[3;14H\u001b(B\u001b[m"
+    ],
+    [
+      0.252791,
+      "\u001b[?25l\u001b[26;1H\u001b[30m\u001b[42m[0] 1:nvim*                                                                                       \"nvim\" 09:43 11-okt-16\u001b(B\u001b[m\u001b[3;14H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.411783,
+      "\u001b[1;25r\u001b[H\u001b[25;50H\u001b[38;5;244m*\u001b[1;26r\u001b[H\u001b[3;14H\u001b(B\u001b[m\u001b[1;25r\u001b[H\u001b[25d\u001b[38;5;244m/\\<injector\\>\u001b(B\u001b[m                                               \u001b[1;26r\u001b[H\u001b[25d"
+    ],
+    [
+      0.006988,
+      "\u001b[1;25r\u001b[H\u001b[4C\u001b[38;5;239m\u001b[48;5;235m9\u001b[2;5H8\u001b[3;3H  7 \u001b(B\u001b[m\u001b[38;5;166mimport\u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;136m\u001b[7minjector\u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;166mfrom\u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;37m'inject!../../../../src/app/chec\u001b[4;5H\u001b[38;5;239m\u001b[48;5;235m6\u001b[5;5H5\u001b[6;5H4\u001b[7;5H3\u001b[8;5H2\u001b[9;5H1\u001b[10;3H\u001b(B\u001b[m\u001b[93m10  \u001b[38;5;244m\u001b[48;5;235m  \u001b[30m\u001b[48;5;242m \u001b[38;5;244m\u001b[48;5;235m \u001b[38;5;136mconst\u001b[38;5;244m Checkout \u001b[38;5;64m=\u001b[38;5;244m \u001b[38;5;136m\u001b[7minjector\u001b(B\u001b[m\u001b[38;5;244m\u001b[48;5;235m({                       \u001b[11;5H\u001b[38;5;239m1\u001b[12;5H2\u001b[13;4H 3\u001b[14;4H 4\u001b[15;4H 5\u001b[16;4H 6\u001b[17;4H 7\u001b[18;4H 8\u001b[19;4H 9\u001b[24;42H\u001b[38;5;230m\u001b[48;5;245m52\u001b[5C\u001b[1m10\u001b[7C\u001b(B\u001b[m\u001b[38;5;230m\u001b[48;5;245m22\u001b[1;26r\u001b[H\u001b[10;28H\u001b(B\u001b[m"
+    ],
+    [
+      0.833075,
+      "\u001b[1;25r\u001b[H\u001b[25;50H\u001b[38;5;244mn\u001b(B\u001b[m\b           \u001b[1;26r\u001b[H\u001b[25d"
+    ],
+    [
+      7.9e-05,
+      "\u001b[1;25r\u001b[H\u001b[25d\u001b[38;5;124m\u001b[1mzoeken bereikte BODEM, verder vanaf TOP\u001b[1;26r\u001b[H\u001b[25;40H\u001b(B\u001b[m"
+    ],
+    [
+      0.004715,
+      "\u001b[1;25r\u001b[H\u001b[4C\u001b[38;5;239m\u001b[48;5;235m2\u001b[2;5H1\u001b[3;3H\u001b(B\u001b[m\u001b[93m3   \u001b[38;5;166m\u001b[48;5;235mimport\u001b[38;5;244m \u001b[38;5;136m\u001b[7minjector\u001b(B\u001b[m\u001b[38;5;244m\u001b[48;5;235m \u001b[38;5;166mfrom\u001b[38;5;244m \u001b[38;5;37m'inject!../../../../src/app/chec\u001b[4;5H\u001b[38;5;239m1\u001b[5;5H2\u001b[6;5H3\u001b[7;5H4\u001b[8;5H5\u001b[9;5H6\u001b[10;3H  7 \u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;136mconst\u001b(B\u001b[m\u001b[38;5;244m Checkout \u001b(B\u001b[m\u001b[38;5;64m=\u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;136m\u001b[7minjector\u001b(B\u001b[m\u001b[38;5;244m({\u001b(B\u001b[m                       \u001b[11;5H\u001b[38;5;239m\u001b[48;5;235m8\u001b[12;5H9\u001b[13;4H10\u001b[14;4H11\u001b[15;4H12\u001b[16;4H13\u001b[17;4H14\u001b[18;4H15\u001b[19;4H16\u001b[1;26r\u001b[H\u001b[19;6H\u001b(B\u001b[m"
+    ],
+    [
+      0.001442,
+      "\u001b[1;25r\u001b[H\u001b[24;42H\u001b[38;5;230m\u001b[48;5;245m15\u001b[5C\u001b[1m 3\u001b[7C\u001b(B\u001b[m\u001b[38;5;230m\u001b[48;5;245m 8\u001b[1;26r\u001b[H\u001b[3;14H\u001b(B\u001b[m"
+    ],
+    [
+      0.694108,
+      "\u001b[1;25r\u001b[H\u001b[25;50H\u001b[38;5;244m@\u001b[1;26r\u001b[H\u001b[3;14H\u001b(B\u001b[m"
+    ],
+    [
+      0.391445,
+      "\u001b[1;25r\u001b[H\u001b[25;51H\u001b[38;5;244ma\u001b[1;26r\u001b[H\u001b[3;14H\u001b(B\u001b[m"
+    ],
+    [
+      0.065407,
+      "\u001b[1;25r\u001b[H\u001b[25;50H\u001b[38;5;244m  \u001b[24;58H\u001b[38;5;230m\u001b[48;5;245m22\b3\u001b[3;29H\u001b[38;5;37m\u001b[48;5;235m../../.\u001b[C/.\u001b[C/src\u001b[Capp/checkout/co\u001b[24;11H\u001b[38;5;245m \u001b[9C\u001b(B\u001b[m\u001b[38;5;244m\u001b[1m+\u001b[C\u001b(B\u001b[m\u001b[38;5;245m\u001b[48;5;235m  \u001b[3;27H\u001b[38;5;244m;                                 \u001b[24;59H\u001b[38;5;230m\u001b[48;5;245m1\r\n\u001b(B\u001b[m\u001b[38;5;244m/\\<injector\\>\u001b(B\u001b[m                                               \u001b[1;26r\u001b[H\u001b[25d"
+    ],
+    [
+      0.019776,
+      "\u001b[1;25r\u001b[H\u001b[4C\u001b[38;5;239m\u001b[48;5;235m9\u001b[2;5H8\u001b[3;3H  7 \u001b(B\u001b[m\u001b[38;5;166mimport\u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;136m\u001b[7minjector\u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;166mfrom\u001b(B\u001b[m\u001b[38;5;244m;\u001b(B\u001b[m                                 \u001b[4;5H\u001b[38;5;239m\u001b[48;5;235m6\u001b[5;5H5\u001b[6;5H4\u001b[7;5H3\u001b[8;5H2\u001b[9;5H1\u001b[10;3H\u001b(B\u001b[m\u001b[93m10  \u001b[38;5;244m\u001b[48;5;235m  \u001b[30m\u001b[48;5;242m \u001b[38;5;244m\u001b[48;5;235m \u001b[38;5;136mconst\u001b[38;5;244m Checkout \u001b[38;5;64m=\u001b[38;5;244m \u001b[38;5;136m\u001b[7minjector\u001b(B\u001b[m\u001b[38;5;244m\u001b[48;5;235m({                       \u001b[11;5H\u001b[38;5;239m1\u001b[12;5H2\u001b[13;4H 3\u001b[14;4H 4\u001b[15;4H 5\u001b[16;4H 6\u001b[17;4H 7\u001b[18;4H 8\u001b[19;4H 9\u001b[24;42H\u001b[38;5;230m\u001b[48;5;245m52\u001b[5C\u001b[1m10\u001b[8C\u001b(B\u001b[m\u001b[38;5;230m\u001b[48;5;245m2\u001b(B\u001b[m\r\n                                                            \u001b[1;26r\u001b[H\u001b[25d"
+    ],
+    [
+      0.044367,
+      "\u001b[1;25r\u001b[H\u001b[10;28H\u001b[38;5;244m\u001b[48;5;235minjectLoaderCompatibility({\u001b[24;58H\u001b[38;5;230m\u001b[48;5;245m46\u001b[10;53H\u001b[38;5;124m\u001b[48;5;239m\u001b[1m(\u001b[12;12H)\u001b[24;59H\u001b(B\u001b[m\u001b[38;5;230m\u001b[48;5;245m7\u001b[1;26r\u001b[H\u001b[10;53H\u001b(B\u001b[m"
+    ],
+    [
+      0.018338,
+      "\u001b[1;25r\u001b[H\u001b[3C\u001b[38;5;239m\u001b[48;5;235m11\u001b(B\u001b[m\u001b[C                                                      \u001b[2;4H\u001b[38;5;239m\u001b[48;5;235m10\u001b[C\u001b(B\u001b[m\u001b[38;5;37mzyme'\u001b(B\u001b[m\u001b[38;5;244m;\u001b(B\u001b[m\u001b[C                                               \u001b[3;5H\u001b[38;5;239m\u001b[48;5;235m9\u001b(B\u001b[m\u001b[C                                                      \u001b[4;5H\u001b[38;5;239m\u001b[48;5;235m8\u001b[5;5H7\u001b[C\u001b(B\u001b[m\u001b[38;5;37monent'\u001b(B\u001b[m\u001b[38;5;81m,\u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;229m()\u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;136m=>\u001b(B\u001b[m\u001b[38;5;244m {\u001b(B\u001b[m                                       \u001b[6;5H\u001b[38;5;239m\u001b[48;5;235m6\u001b(B\u001b[m\u001b[3C                                                    \u001b[7;5H\u001b[38;5;239m\u001b[48;5;235m5\u001b[C\u001b(B\u001b[m\u001b[38;5;136m=>\u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;64m<\u001b(B\u001b[m\u001b[38;5;244mdiv\u001b(B\u001b[m\u001b[38;5;64m></\u001b(B\u001b[m\u001b[38;5;244mdiv\u001b(B\u001b[m\u001b[38;5;64m>\u001b(B\u001b[m\u001b[38;5;244m;\u001b(B\u001b[m                                       \u001b[8;5H\u001b[38;5;239m\u001b[48;5;235m4\u001b[9;5H3\u001b(B\u001b[m\u001b[3C                                                    \u001b[10;3H\u001b[38;5;239m\u001b[48;5;235m  2 \u001b(B\u001b[m\u001b[38;5;244mLoaderCompatibility(\u001b(B"
+    ],
+    [
+      4.6e-05,
+      "\u001b[m                                  \r\n\u001b[38;5;239m\u001b[48;5;235m  \u001b[1;26r\u001b[H\u001b[11;9H\u001b[?25l\u001b(B\u001b[m"
+    ],
+    [
+      0.000104,
+      "                                                    \u001b[1;25r\u001b[H\u001b[11B\u001b[38;5;239m\u001b[48;5;235m  \u001b(B\u001b[m\u001b[93m12  \u001b[38;5;37m\u001b[48;5;235m/checkout/components/Checkout'\u001b[38;5;244m,{                      \r\n\u001b[38;5;136m! \u001b[2C\u001b[38;5;239m1\u001b[C\u001b(B\u001b[m\u001b[38;5;37ment/scripts/lib/components/PrimaryUsps.js'\u001b(B\u001b[m\u001b[38;5;244m:\u001b[CmockCompo\u001b(B\u001b[m\u001b[38;5;240m\u001b[1m#\r\n\u001b(B\u001b[m\u001b[38;5;136m\u001b[48;5;235m!4\u001b[2C\u001b[38;5;239m2\u001b(B\u001b[m\u001b[3C                                                    \u001b[15;5H\u001b[38;5;239m\u001b[48;5;235m3\u001b[C\u001b(B\u001b[m\u001b[38;5;244meckout\u001b[C\u001b(B\u001b[m\u001b[38;5;64m/>\u001b(B\u001b[m\u001b[38;5;244m);\u001b[16;5H\u001b[38;5;239m\u001b[48;5;235m4\u001b(B\u001b[m\u001b[3C                                                    \u001b[17;5H\u001b[38;5;239m\u001b[48;5;235m5\u001b(B\u001b[m\u001b[3C                                                    \u001b[18;5H\u001b[38;5;239m\u001b[48;5;235m6\u001b[C\u001b(B\u001b[m\u001b[38;5;37mckout page'\u001b(B\u001b[m\u001b[38;5;244m,\u001b[C()\u001b[C\u001b(B\u001b[m\u001b[38;5;136m=>\u001b[C\u001b(B\u001b[m\u001b[38;5;244m{\u001b[19;5H\u001b[38;5;239m\u001b[48;5;235m7\u001b[C\u001b(B\u001b[m\u001b[38;5;37m.page-header'\u001b(B\u001b[m\u001b[38;5;244m).find(\u001b[1;26r\u001b[H\u001b[19;27H\u001b(B\u001b[m"
+    ],
+    [
+      0.00014,
+      "\u001b[1;25r\u001b[H\u001b[19;27H\u001b[38;5;37m'h1'\u001b(B\u001b[m\u001b[38;5;244m).text()).to.equal(\u001b(B\u001b[m\u001b[38;5;37m'Kassa'\u001b(B\u001b[m\u001b[38;5;244m);\u001b[20;3H\u001b[38;5;239m\u001b[48;5;235m  8 \u001b(B\u001b[m                                                      \u001b[21;3H\u001b[38;5;239m\u001b[48;5;235m  9 \u001b(B\u001b[m                                                      \u001b[24;43H\u001b[38;5;230m\u001b[48;5;245m7\u001b[6C\u001b[1m2\u001b[C21\u001b[4C\u001b(B\u001b[m\u001b[38;5;230m\u001b[48;5;245m58\r\n\u001b(B\u001b[m\u001b[38;5;244m:call\u001b[CWrapRelativeMotion(\"0\")\u001b[1;26r\u001b[H\u001b[25d\u001b[?12l\u001b[?25h\u001b(B\u001b[m"
+    ],
+    [
+      0.021244,
+      "\u001b[1;25r\u001b[H\u001b[6C\u001b[38;5;166mimport\u001b[C\u001b(B\u001b[m\u001b[38;5;244mReact\u001b[C\u001b(B\u001b[m\u001b[38;5;166mfrom\u001b[C\u001b(B\u001b[m\u001b[38;5;37m'react'\u001b(B\u001b[m\u001b[38;5;244m;\u001b[2;7H\u001b(B\u001b[m\u001b[38;5;166mimport\u001b[C\u001b(B\u001b[m\u001b[38;5;244m{\u001b[Cshallow\u001b[C}\u001b[C\u001b(B\u001b[m\u001b[38;5;166mfrom\u001b[C\u001b(B\u001b[m\u001b[38;5;37m'enzyme'\u001b(B\u001b[m\u001b[38;5;244m;\u001b[3;7H\u001b(B\u001b[m\u001b[38;5;166mimport\u001b[C\u001b(B\u001b[m\u001b[38;5;136m\u001b[7minjector\u001b[C\u001b(B\u001b[m\u001b[38;5;166mfrom\u001b(B\u001b[m\u001b[38;5;244m;\u001b[5;7Hdescribe\u001b(B\u001b[m\u001b[38;5;81m(\u001b(B\u001b[m\u001b[38;5;37m'CheckoutPage Component'\u001b(B\u001b[m\u001b[38;5;81m,\u001b[C\u001b(B\u001b[m\u001b[38;5;229m()\u001b[C\u001b(B\u001b[m\u001b[38;5;136m=>\u001b[C\u001b(B\u001b[m\u001b[38;5;244m{\u001b[6;9H\u001b(B\u001b[m\u001b[38;5;136mlet\u001b[C\u001b(B\u001b[m\u001b[38;5;244mcomponent;\u001b[7;7H  \u001b(B\u001b[m\u001b[38;5;136mconst\u001b(B\u001b[m\u001b[38;5;244m mockComponent\u001b[C\u001b(B\u001b[m\u001b[38;5;64m=\u001b[C\u001b(B\u001b[m\u001b[38;5;244m()\u001b[C\u001b(B\u001b[m\u001b[38;5;136m=>\u001b[C\u001b(B\u001b[m\u001b[38;5;64m<\u001b(B\u001b[m\u001b[38;5;244mdiv\u001b(B\u001b[m\u001b[38;5;64m></\u001b(B\u001b[m\u001b[38;5;244mdiv\u001b(B\u001b[m\u001b[38;5;64m>\u001b(B\u001b[m\u001b[38;5;244m;\u001b[9;9HbeforeEach(()\u001b[C\u001b(B\u001b[m\u001b[38;5;136m=>\u001b[C\u001b(B\u001b[m\u001b[38;5;244m{\u001b[10;7H  \u001b[30m\u001b[48;5;242m \u001b[1;26r\u001b[H\u001b[10;10H\u001b[?25l\u001b(B\u001b[m"
+    ],
+    [
+      0.000199,
+      "\u001b[1;25r\u001b[H\u001b[10;10H\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;136mconst\u001b(B\u001b[m\u001b[38;5;244m Checkou\u001b[C \u001b(B\u001b[m\u001b[38;5;64m=\u001b[C\u001b(B\u001b[m\u001b[38;5;244minjectLoaderCompatibility(\u001b[11;9H\u001b[30m\u001b[48;5;242m \u001b[C\u001b[38;5;242m\u001b[40m \u001b[C\u001b(B\u001b[m\u001b[38;5;244m__dirname,\u001b[12;7H\u001b[48;5;235m  \u001b[30m\u001b[48;5;242m \u001b[38;5;244m\u001b[48;5;235m \u001b[38;5;242m\u001b[40m \u001b[38;5;244m\u001b[48;5;235m \u001b[30m\u001b[48;5;242m \u001b[38;5;37m\u001b[48;5;235m'../../../../src/app/checkout/components/Check\u001b(B\u001b[m\u001b[38;5;240m\u001b[1m#\u001b[13;7H\u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m \u001b[38;5;242m\u001b[40m \u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;37m'../../..\u001b[Cspaces/current/script\u001b[C/lib/components\u001b[14;9H\u001b[30m\u001b[48;5;242m \u001b[C\u001b(B\u001b[m\u001b[38;5;244m});\u001b[15;7H  \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m component\u001b[C\u001b(B\u001b[m\u001b[38;5;64m=\u001b[C\u001b(B\u001b[m\u001b[38;5;244mshallow(\u001b(B\u001b[m\u001b[38;5;64m<\u001b(B\u001b[m\u001b[38;5;244mCheckout\u001b[C\u001b(B\u001b[m\u001b[38;5;64m/>\u001b(B\u001b[m\u001b[38;5;244m);\u001b[16;9H});\u001b[18;7H  it(\u001b(B\u001b[m\u001b[38;5;37m'should render the checkout page'\u001b[1;26r\u001b[H\u001b[18;45H\u001b(B\u001b[m"
+    ],
+    [
+      0.00014,
+      "\u001b[1;25r\u001b[H\u001b[18;45H\u001b[38;5;244m,\u001b[C()\u001b[C\u001b(B\u001b[m\u001b[38;5;136m=>\u001b[C\u001b(B\u001b[m\u001b[38;5;244m{\u001b[19;7H  \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m expect(component.find(\u001b(B\u001b[m\u001b[38;5;37m'.page-header'\u001b(B\u001b[m\u001b[38;5;244m).find(\u001b(B\u001b[m\u001b[38;5;37m'h1'\u001b(B\u001b[m\u001b[38;5;244m).\u001b(B\u001b[m\u001b[38;5;240m\u001b[1m#\u001b[20;9H\u001b(B\u001b[m\u001b[38;5;244m});\u001b[21;7H}\u001b(B\u001b[m\u001b[38;5;81m)\u001b(B\u001b[m\u001b[38;5;244m;\u001b[24;58H\u001b[38;5;230m\u001b[48;5;245m 1\u001b[12;13H\u001b[38;5;37m\u001b[48;5;235m'.\u001b[C/.\u001b[C/.\u001b[C/.\u001b[C/src/ap\u001b[C/checkout/components/Checko\u001b(B\u001b[m\u001b[25;1H                                                            \r\u001b[38;5;244m:call\u001b[CWrapRelativeMotion(\"$\")\u001b[1;26r\u001b[H\u001b[25d\u001b[?12l\u001b[?25h\u001b(B\u001b[m"
+    ],
+    [
+      0.007525,
+      "\u001b[1;7H                                                      \u001b[1;25r\u001b[H\u001b[2;7H\u001b[38;5;37me'\u001b(B\u001b[m\u001b[38;5;244m;\u001b(B\u001b[m                                                   \u001b[3;7H                                                      \u001b[5;7H\u001b[38;5;37mnt'\u001b(B\u001b[m\u001b[38;5;81m,\u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;229m()\u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;136m=>\u001b(B\u001b[m\u001b[38;5;244m {\u001b(B\u001b[m                                          \u001b[6;9H                                                    \u001b[7;7H\u001b[38;5;64m<\u001b(B\u001b[m\u001b[38;5;244mdiv\u001b(B\u001b[m\u001b[38;5;64m></\u001b(B\u001b[m\u001b[38;5;244mdiv\u001b(B\u001b[m\u001b[38;5;64m>\u001b(B\u001b[m\u001b[38;5;244m;\u001b(B\u001b[m                                          \u001b[9;9H                                                    \u001b[10;7H\u001b[38;5;244mderCompatibility(\u001b(B\u001b[m                                     \u001b[11;9H                                                    \u001b[12;7H\u001b[38;5;37m\u001b[48;5;235mckout/components/Checkout'\u001b[38;5;244m,\u001b[38;5;124m\u001b[48;5;239m\u001b[1m{\u001b(B\u001b[m\u001b[38;5;244m\u001b[48;5;235m                          \u001b[13;7H\u001b(B\u001b[m\u001b[38;5;37m/scripts/lib\u001b[Ccomponents/P\u001b[CimaryUsps.j\u001b"
+    ],
+    [
+      3.1e-05,
+      "[C'\u001b(B\u001b[m\u001b[38;5;244m: mockComponent\u001b(B\u001b[m\u001b[14;9H                                                    \u001b[15;7H\u001b[38;5;244mout\u001b[1;26r\u001b[H\u001b[15;11H\u001b[?25l\u001b(B\u001b[m"
+    ],
+    [
+      3e-05,
+      "\u001b[1;25r\u001b[H\u001b[15;11H\u001b[38;5;64m/>\u001b(B\u001b[m\u001b[38;5;244m);\u001b(B\u001b[m                                              \u001b[16;9H                                                    \u001b[18;7H\u001b[38;5;37mut page'\u001b(B\u001b[m\u001b[38;5;244m, () \u001b(B\u001b[m\u001b[38;5;136m=>\u001b(B\u001b[m\u001b[38;5;244m {\u001b(B\u001b[m                                     \u001b[19;7H\u001b[38;5;37mge-header'\u001b(B\u001b[m\u001b[38;5;244m).find(\u001b(B\u001b[m\u001b[38;5;37m'h1'\u001b(B\u001b[m\u001b[38;5;244m).text()).to.equal(\u001b(B\u001b[m\u001b[38;5;37m'Kassa'\u001b(B\u001b[m\u001b[38;5;244m);\u001b(B\u001b[m     \u001b[20;9H                                                    \u001b[21;7H                                                      \u001b[24;58H\u001b[38;5;230m\u001b[48;5;245m58\u001b(B\u001b[m\r\n                                                            \u001b[1;26r\u001b[H\u001b[25d\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.160771,
+      "\u001b[1;25r\u001b[H\u001b[4C\u001b[38;5;239m\u001b[48;5;235m2\u001b[C\u001b(B\u001b[m\u001b[38;5;166mimport\u001b[C\u001b(B\u001b[m\u001b[38;5;244mReact\u001b[C\u001b(B\u001b[m\u001b[38;5;166mfrom\u001b[C\u001b(B\u001b[m\u001b[38;5;37m'react'\u001b(B\u001b[m\u001b[38;5;244m;\u001b[2;5H\u001b[38;5;239m\u001b[48;5;235m1\u001b[C\u001b(B\u001b[m\u001b[38;5;166mimport\u001b[C\u001b(B\u001b[m\u001b[38;5;244m{\u001b[Cshallow\u001b[C}\u001b[C\u001b(B\u001b[m\u001b[38;5;166mfrom\u001b[C\u001b(B\u001b[m\u001b[38;5;37m'enzyme'\u001b(B\u001b[m\u001b[38;5;244m;\u001b[3;4H\u001b[38;5;239m\u001b[48;5;235m10\u001b[C\u001b(B\u001b[m\u001b[38;5;166mimport\u001b[C\u001b(B\u001b[m\u001b[38;5;136m\u001b[7minjector\u001b[C\u001b(B\u001b[m\u001b[38;5;166mfrom\u001b(B\u001b[m\u001b[38;5;244m;\u001b[4;5H\u001b[38;5;239m\u001b[48;5;235m9\u001b[5;5H8\u001b[C\u001b(B\u001b[m\u001b[38;5;244mdescribe\u001b(B\u001b[m\u001b[38;5;81m(\u001b(B\u001b[m\u001b[38;5;37m'CheckoutPage Component'\u001b(B\u001b[m\u001b[38;5;81m,\u001b[C\u001b(B\u001b[m\u001b[38;5;229m()\u001b[C\u001b(B\u001b[m\u001b[38;5;136m=>\u001b[C\u001b(B\u001b[m\u001b[38;5;244m{\u001b[6;5H\u001b[38;5;239m\u001b[48;5;235m7\u001b[3C\u001b(B\u001b[m\u001b[38;5;136mlet\u001b[C\u001b(B\u001b[m\u001b[38;5;244mcomponent;\u001b[7;5H\u001b[38;5;239m\u001b[48;5;235m6\u001b[C\u001b(B\u001b[m\u001b[38;5;244m  \u001b(B\u001b[m\u001b[38;5;136mconst\u001b(B\u001b[m\u001b[38;5;244m mockComponent\u001b[C\u001b(B\u001b[m\u001b[38;5;64m=\u001b[C\u001b(B\u001b[m\u001b[38;5;244m()\u001b[C\u001b(B\u001b[m\u001b[38;5;136m=>\u001b[1;26r\u001b[H\u001b[7;36H\u001b[?25l\u001b(B\u001b[m"
+    ],
+    [
+      0.000135,
+      "\u001b[1;25r\u001b[H\u001b[7;37H\u001b[38;5;64m<\u001b(B\u001b[m\u001b[38;5;244mdiv\u001b(B\u001b[m\u001b[38;5;64m></\u001b(B\u001b[m\u001b[38;5;244mdiv\u001b(B\u001b[m\u001b[38;5;64m>\u001b(B\u001b[m\u001b[38;5;244m;\u001b[8;5H\u001b[38;5;239m\u001b[48;5;235m5\u001b[9;5H4\u001b[3C\u001b(B\u001b[m\u001b[38;5;244mbeforeEach(()\u001b[C\u001b(B\u001b[m\u001b[38;5;136m=>\u001b[C\u001b(B\u001b[m\u001b[38;5;244m{\u001b[10;5H\u001b[38;5;239m\u001b[48;5;235m3\u001b[C\u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;136mconst\u001b(B\u001b[m\u001b[38;5;244m Checkout\u001b[C\u001b(B\u001b[m\u001b[38;5;64m=\u001b[C\u001b(B\u001b[m\u001b[38;5;244minjectLoaderCompatibility(\u001b[11;5H\u001b[38;5;239m\u001b[48;5;235m2\u001b[3C\u001b[30m\u001b[48;5;242m \u001b[C\u001b[38;5;242m\u001b[40m \u001b[C\u001b(B\u001b[m\u001b[38;5;244m__dirname,\u001b[12;3H\u001b[38;5;239m\u001b[48;5;235m  1 \u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m \u001b[38;5;242m\u001b[40m \u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;37m'../../../../src/app/checkout/components/Checko\u001b(B\u001b[m\u001b[38;5;240m\u001b[1m#\r\n\u001b(B\u001b[m\u001b[38;5;239m\u001b[48;5;235m  \u001b(B\u001b[m\u001b[93m13  \u001b[38;5;244m\u001b[48;5;235m  \u001b[30m\u001b[48;5;242m \u001b[38;5;244m\u001b[48;5;235m \u001b[38;5;242m\u001b[40m \u001b[38;5;244m\u001b[48;5;235m {            \u001b[1;26r\u001b[H\u001b[13;26H\u001b(B\u001b[m"
+    ],
+    [
+      0.000177,
+      "\u001b[1;25r\u001b[H\u001b[13;26H\u001b[38;5;244m\u001b[48;5;235m                                   \u001b[14;2H\u001b[38;5;136m \u001b[2C\u001b[38;5;239m1\u001b[3C\u001b[30m\u001b[48;5;242m \u001b[C\u001b[38;5;242m\u001b[40m \u001b[C\u001b(B\u001b[m\u001b[38;5;37m'../../../spaces/current/scripts/lib/components\u001b(B\u001b[m\u001b[38;5;240m\u001b[1m#\r\n\u001b(B\u001b[m\u001b[38;5;136m\u001b[48;5;235m!4\u001b[2C\u001b[38;5;239m2\u001b[C\u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b[C\u001b(B\u001b[m\u001b[38;5;244m});\u001b(B\u001b[m                                               \u001b[16;5H\u001b[38;5;239m\u001b[48;5;235m3\u001b[3C\u001b[30m\u001b[48;5;242m \u001b[C\u001b(B\u001b[m\u001b[38;5;244mcomponent\u001b[C\u001b(B\u001b[m\u001b[38;5;64m=\u001b[C\u001b(B\u001b[m\u001b[38;5;244mshallow(\u001b(B\u001b[m\u001b[38;5;64m<\u001b(B\u001b[m\u001b[38;5;244mCheckout\u001b[C\u001b(B\u001b[m\u001b[38;5;64m/>\u001b(B\u001b[m\u001b[38;5;244m);\u001b[17;5H\u001b[38;5;239m\u001b[48;5;235m4\u001b[3C\u001b(B\u001b[m\u001b[38;5;244m});\u001b[18;5H\u001b[38;5;239m\u001b[48;5;235m5\u001b(B\u001b[m\u001b[C                                                      \u001b[19;5H\u001b[38;5;239m\u001b[48;5;235m6\u001b[C\u001b(B\u001b[m\u001b[38;5;244m  it(\u001b(B\u001b[m\u001b[38;5;37m'should render the checkout page'\u001b(B\u001b[m\u001b[38;5;244m, () \u001b(B\u001b[m\u001b[38;5;136m=>\u001b(B\u001b[m\u001b[38;5;244m {\u001b[1;26r\u001b[H\u001b[19;54H\u001b(B\u001b[m"
+    ],
+    [
+      0.000174,
+      "       \u001b[1;25r\u001b[H\u001b[20;5H\u001b[38;5;239m\u001b[48;5;235m7\u001b[3C\u001b[30m\u001b[48;5;242m \u001b[C\u001b(B\u001b[m\u001b[38;5;244mexpect(component.find(\u001b(B\u001b[m\u001b[38;5;37m'.page-header'\u001b(B\u001b[m\u001b[38;5;244m).find(\u001b(B\u001b[m\u001b[38;5;37m'h1'\u001b(B\u001b[m\u001b[38;5;244m).\u001b(B\u001b[m\u001b[38;5;240m\u001b[1m#\u001b[21;5H\u001b(B\u001b[m\u001b[38;5;239m\u001b[48;5;235m8\u001b[3C\u001b(B\u001b[m\u001b[38;5;244m});\u001b[22;3H\u001b[38;5;239m\u001b[48;5;235m  9 \u001b(B\u001b[m\u001b[38;5;244m}\u001b(B\u001b[m\u001b[38;5;81m)\u001b(B\u001b[m\u001b[38;5;244m;\u001b(B\u001b[m                                                   \u001b[24;43H\u001b[38;5;230m\u001b[48;5;245m9\u001b[6C\u001b[1m3\u001b[2C2\u001b[4C\u001b(B\u001b[m\u001b[38;5;230m\u001b[48;5;245m 6\u001b[1;5H\u001b[38;5;239m\u001b[48;5;235m3\u001b[2;5H2\u001b[3;5H1\u001b[4;4H10\u001b[5;5H9\u001b[6;5H8\u001b[7;5H7\u001b[8;5H6\u001b[9;5H5\u001b[10;5H4\u001b[11;5H3\u001b[12;5H2\u001b[13;3H  1 \u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m \u001b[C {\u001b(B\u001b[m                                               \u001b[14;3H\u001b[93m14  \u001b[38;5;244m\u001b[48;5;235m  \u001b[30m\u001b[48;5;242m \u001b[38;5;244m\u001b[48;5;235m \u001b[C \u001b[38;5;37m'../../../spaces/current/scripts/lib/components\u001b[1;26r\u001b[H\u001b[15;5H\u001b(B\u001b[m"
+    ],
+    [
+      0.00017,
+      "\u001b[1;25r\u001b[H\u001b[15;5H\u001b[38;5;239m\u001b[48;5;235m1\u001b[16;5H2\u001b[17;5H3\u001b[18;5H4\u001b[19;5H5\u001b[20;5H6\u001b[21;5H7\u001b[22;5H8\u001b[24;42H\u001b[38;5;230m\u001b[48;5;245m63\u001b[6C\u001b[1m4\u001b[14;7H\u001b(B\u001b[m\u001b[38;5;239m\u001b[48;5;234m\u001b[7m     \u001b(B\u001b[m\u001b[38;5;244m \u001b[38;5;239m\u001b[48;5;234m\u001b[7m'../../../spaces/current/scripts/lib/components\u001b[24;1H\u001b(B\u001b[m\u001b[38;5;230m\u001b[48;5;125m\u001b[1m V-LINE \u001b(B\u001b[m\u001b[38;5;125m\u001b[48;5;241m\u001b[29C\u001b[38;5;230m\u001b[48;5;125m  63% \u001b[1m  14/22☰\u001b(B\u001b[m\u001b[38;5;230m\u001b[48;5;125m :  6 \u001b[1;5H\u001b[38;5;239m\u001b[48;5;235m4\u001b[2;5H3\u001b[3;5H2\u001b[4;5H1\u001b[5;4H10\u001b[6;5H9\u001b[7;5H8\u001b[8;5H7\u001b[9;5H6\u001b[10;5H5\u001b[11;5H4\u001b[12;5H3\u001b[13;5H2\u001b[7C\u001b[38;5;124m\u001b[48;5;239m\u001b[1m{\u001b[14;3H\u001b(B\u001b[m\u001b[38;5;239m\u001b[48;5;235m  1 \u001b[5C\u001b[48;5;234m\u001b[7m \u001b[15;3H\u001b(B\u001b[m\u001b[93m15  \u001b[38;5;239m\u001b[48;5;234m\u001b[7m    \u001b(B\u001b[m\u001b[38;5;124m\u001b[48;5;239m\u001b[1m}\u001b(B\u001b[m\u001b[38;5;239m\u001b[48;5;234m\u001b[7m);\u001b[16;5H\u001b(B\u001b[m\u001b[38;5;239m\u001b[48;5;235m1\u001b[17;5H2\u001b[18;5H3\u001b[19;5H4\u001b[20;5H5\u001b[21;5H6\u001b[22;5H7\u001b[24;43H\u001b[38;5;230m\u001b[48;5;125m8\u001b[1;26r\u001b[H\u001b[24;44H\u001b(B\u001b[m"
+    ],
+    [
+      0.000157,
+      "\u001b[1;25r\u001b[H\u001b[24;50H\u001b[38;5;230m\u001b[48;5;125m\u001b[1m5\u001b[8C\u001b(B\u001b[m\u001b[38;5;230m\u001b[48;5;125m5\u001b[1;5H\u001b[38;5;239m\u001b[48;5;235m3\u001b[2;5H2\u001b[3;5H1\u001b[4;5H0\u001b[5;4H 9\u001b[6;5H8\u001b[7;5H7\u001b[8;5H6\u001b[9;5H5\u001b[10;5H4\u001b[11;5H3\u001b[12;5H2\u001b[13;5H1\u001b[7C\u001b(B\u001b[m\u001b[38;5;244m{\u001b[14;3H\u001b(B\u001b[m\u001b[93m14  \u001b[38;5;244m\u001b[48;5;235m  \u001b[30m\u001b[48;5;242m \u001b[38;5;244m\u001b[48;5;235m \u001b[38;5;242m\u001b[40m \u001b[38;5;244m\u001b[48;5;235m \u001b[30m\u001b[48;5;242m \u001b[38;5;244m\u001b[48;5;235m \u001b[38;5;37m'../../../spaces/current/scripts/lib/componen\u001b[15;3H\u001b[38;5;239m  1 \u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m \u001b[38;5;242m\u001b[40m \u001b(B\u001b[m\u001b[38;5;244m });\u001b[16;5H\u001b[38;5;239m\u001b[48;5;235m2\u001b[17;5H3\u001b[18;5H4\u001b[19;5H5\u001b[20;5H6\u001b[21;5H7\u001b[22;5H8\u001b[24;1H\u001b[38;5;230m\u001b[48;5;245m\u001b[1m NORMAL \u001b(B\u001b[m\u001b[38;5;245m\u001b[48;5;241m\u001b[29C\u001b[38;5;230m\u001b[48;5;245m  63% \u001b[1m  14/22☰\u001b(B\u001b[m\u001b[38;5;230m\u001b[48;5;245m :  9 \u001b[1;5H\u001b[38;5;239m\u001b[48;5;235m4\u001b[2;5H3\u001b[1;26r\u001b[H\u001b[2;6H\u001b(B\u001b[m"
+    ],
+    [
+      0.000165,
+      "\u001b[1;25r\u001b[H\u001b[3;5H\u001b[38;5;239m\u001b[48;5;235m2\u001b[4;5H1\u001b[5;4H10\u001b[6;5H9\u001b[7;5H8\u001b[8;5H7\u001b[9;5H6\u001b[10;5H5\u001b[11;5H4\u001b[12;5H3\u001b[13;5H2\u001b[14;3H  1 \u001b[48;5;234m\u001b[7m        '../../../spaces/current/scripts/lib/componen\u001b[15;3H\u001b(B\u001b[m\u001b[93m15  \u001b[38;5;239m\u001b[48;5;234m\u001b[7m    \u001b[C });\u001b[16;5H\u001b(B\u001b[m\u001b[38;5;239m\u001b[48;5;235m1\u001b[17;5H2\u001b[18;5H3\u001b[19;5H4\u001b[20;5H5\u001b[21;5H6\u001b[22;5H7\u001b[24;1H\u001b[38;5;230m\u001b[48;5;125m\u001b[1m V-LINE \u001b(B\u001b[m\u001b[38;5;125m\u001b[48;5;241m\u001b[29C\u001b[38;5;230m\u001b[48;5;125m  68% \u001b[1m  15/22☰\u001b(B\u001b[m\u001b[38;5;230m\u001b[48;5;125m :  5 \u001b[14;7H\u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m \u001b[38;5;242m\u001b[40m \u001b(B\u001b[m\u001b[38;5;244m \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;37m'../../../spaces/current/scripts/lib/componen\u001b[15;7H\u001b[38;5;244m\u001b[48;5;235m  \u001b[30m\u001b[48;5;242m \u001b[38;5;244m\u001b[48;5;235m \u001b[C });                                             \u001b[24;1H\u001b[38;5;230m\u001b[48;5;245m\u001b[1m NORMAL \u001b(B\u001b[m\u001b[38;5;245m\u001b[48;5;241m\u001b[29C\u001b[1;26r\u001b[H\u001b[24;40H\u001b(B\u001b[m"
+    ],
+    [
+      3.4e-05,
+      "\u001b[1;25r\u001b[H\u001b[24;40H\u001b[38;5;230m\u001b[48;5;245m  68% \u001b[1m  15/22☰\u001b(B\u001b[m\u001b[38;5;230m\u001b[48;5;245m :  5 \u001b[10;53H\u001b[38;5;124m\u001b[48;5;239m\u001b[1m(\u001b[15;14H)\u001b[24;59H\u001b(B\u001b[m\u001b[38;5;230m\u001b[48;5;245m8\u001b[1;26r\u001b[H\u001b[15;14H\u001b[?12l\u001b[?25h\u001b(B\u001b[m"
+    ],
+    [
+      0.022294,
+      "\u001b[1;25r\u001b[H\u001b[4C\u001b[38;5;239m\u001b[48;5;235m5\u001b[2;5H4\u001b[3;5H3\u001b[4;5H2\u001b[5;5H1\u001b[6;4H10\u001b[7;5H9\u001b[8;5H8\u001b[9;5H7\u001b[10;5H6\u001b[47C\u001b(B\u001b[m\u001b[38;5;244m(\u001b[11;5H\u001b[38;5;239m\u001b[48;5;235m5\u001b[12;5H4\u001b[13;5H3\u001b[14;5H2\u001b[15;3H  1 \u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m \u001b[C }\u001b(B\u001b[m                                               \u001b[16;3H\u001b[93m16  \u001b[38;5;244m\u001b[48;5;235m  \u001b[30m\u001b[48;5;242m \u001b[38;5;244m\u001b[48;5;235m );                                                \u001b[17;5H\u001b[38;5;239m1\u001b[3C\u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m component\u001b[C\u001b(B\u001b[m\u001b[38;5;64m=\u001b[C\u001b(B\u001b[m\u001b[38;5;244mshallow(\u001b(B\u001b[m\u001b[38;5;64m<\u001b(B\u001b[m\u001b[38;5;244mCheckout\u001b[C\u001b(B\u001b[m\u001b[38;5;64m/>\u001b(B\u001b[m\u001b[38;5;244m);\u001b[18;5H\u001b[38;5;239m\u001b[48;5;235m2\u001b[3C\u001b(B\u001b[m\u001b[38;5;244m});\u001b[19;5H\u001b[38;5;239m\u001b[48;5;235m3\u001b(B\u001b[m\u001b[3C                                                    \u001b[20;5H\u001b[38;5;239m\u001b[48;5;235m4\u001b[3C\u001b(B\u001b[m\u001b[38;5;244mit(\u001b(B\u001b[m\u001b[38;5;37m'should render the checkout page'\u001b(B\u001b[m\u001b[38;5;244m, () \u001b(B\u001b[m\u001b[38;5;136m=>\u001b(B\u001b[m\u001b[38;5;244m {\u001b[1;26r\u001b[H\u001b[20;54H\u001b[?25l\u001b(B\u001b[m"
+    ],
+    [
+      0.000138,
+      "       \u001b[1;25r\u001b[H\u001b[21;5H\u001b[38;5;239m\u001b[48;5;235m5\u001b[3C\u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m expect(component.find(\u001b(B\u001b[m\u001b[38;5;37m'.page-header'\u001b(B\u001b[m\u001b[38;5;244m).find(\u001b(B\u001b[m\u001b[38;5;37m'h1'\u001b(B\u001b[m\u001b[38;5;244m).\u001b(B\u001b[m\u001b[38;5;240m\u001b[1m#\u001b[22;5H\u001b(B\u001b[m\u001b[38;5;239m\u001b[48;5;235m6\u001b[C\u001b(B\u001b[m\u001b[38;5;244m  });\u001b[23;3H\u001b[38;5;239m\u001b[48;5;235m  7 \u001b(B\u001b[m\u001b[38;5;244m}\u001b(B\u001b[m\u001b[38;5;81m)\u001b(B\u001b[m\u001b[38;5;244m;\u001b(B\u001b[m                                                   \u001b[24;43H\u001b[38;5;230m\u001b[48;5;245m9\u001b[6C\u001b[1m6\u001b[2C3\u001b[5C\u001b(B\u001b[m\u001b[38;5;230m\u001b[48;5;245m4\u001b[1;4H\u001b[38;5;239m\u001b[48;5;235m22\u001b[2;4H21\u001b[3;4H20\u001b[4;5H9\u001b[5;5H8\u001b[42C\u001b[38;5;124m\u001b[48;5;239m\u001b[1m{\u001b[6;5H\u001b(B\u001b[m\u001b[38;5;239m\u001b[48;5;235m7\u001b[7;4H16\u001b[8;4H15\u001b[9;4H14\u001b[10;4H13\u001b[11;4H12\u001b[12;4H11\u001b[13;4H10\u001b[14;5H9\u001b[15;5H8\u001b[16;3H  7 \u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m );\u001b(B\u001b[m                                                \u001b[17;5H\u001b[38;5;239m\u001b[48;5;235m6\u001b[18;5H5\u001b[19;5H4\u001b[20;5H3\u001b[21;5H2\u001b[22;5H1\u001b[23;3H\u001b(B\u001b[m\u001b[93m23  \u001b[1;26r\u001b[H\u001b[23;7H\u001b(B\u001b[m"
+    ],
+    [
+      9.7e-05,
+      "\u001b[1;25r\u001b[H\u001b[23;7H\u001b[38;5;124m\u001b[48;5;239m\u001b[1m}\u001b(B\u001b[m\u001b[38;5;81m\u001b[48;5;235m)\u001b[38;5;244m;                                                   \u001b[24;41H\u001b[38;5;230m\u001b[48;5;245m100\u001b[5C\u001b[1m23\u001b[8C\u001b(B\u001b[m\u001b[38;5;230m\u001b[48;5;245m1\r\n\u001b(B\u001b[m\u001b[38;5;244m/\\<injector\\>\r\u001b(B\u001b[m\u001b[38;5;124m\u001b[1mzoeken bereikte BODEM, verder vanaf TOP\u001b[1;26r\u001b[H\u001b[25;40H\u001b[?12l\u001b[?25h\u001b(B\u001b[m"
+    ],
+    [
+      0.004203,
+      "\u001b[1;25r\u001b[H\u001b[3C\u001b[38;5;239m\u001b[48;5;235m \u001b[2;4H \u001b[3;3H\u001b(B\u001b[m\u001b[93m3   \u001b[38;5;166m\u001b[48;5;235mimport\u001b[38;5;244m \u001b[38;5;136m\u001b[7minjector\u001b(B\u001b[m\u001b[38;5;244m\u001b[48;5;235m \u001b[38;5;166mfrom\u001b[38;5;244m;                                 \u001b[4;4H\u001b[38;5;239m 1\u001b[5;4H 2\u001b[42C\u001b(B\u001b[m\u001b[38;5;244m{\u001b[6;4H\u001b[38;5;239m\u001b[48;5;235m 3\u001b[7;4H 4\u001b[8;4H \u001b[9;4H 6\u001b[10;4H 7\u001b[11;4H 8\u001b[12;4H 9\u001b[14;4H11\u001b[15;4H12\u001b[16;4H13\u001b[17;4H14\u001b[18;4H1\u001b[19;4H16\u001b[20;4H17\u001b[21;4H18\u001b[22;4H19\u001b[23;3H 20 \u001b(B\u001b[m\u001b[38;5;244m}\u001b(B\u001b[m\u001b[38;5;81m)\u001b(B\u001b[m\u001b[38;5;244m;\u001b(B\u001b[m                                                   \u001b[1;26r\u001b[H\u001b[23;10H"
+    ],
+    [
+      0.002641,
+      "\u001b[1;25r\u001b[H\u001b[24;41H\u001b[38;5;230m\u001b[48;5;245m 13\u001b[5C\u001b[1m \u001b[9C\u001b(B\u001b[m\u001b[38;5;230m\u001b[48;5;245m8\u001b[25;50H\u001b(B\u001b[m\u001b[38;5;244mdd\u001b[1;26r\u001b[H\u001b[3;14H\u001b(B\u001b[m"
+    ],
+    [
+      0.013406,
+      "\u001b[1;25r\u001b[H\u001b[25;50H\u001b[38;5;244m  \u001b[3;7H\u001b[48;5;235m      \u001b[C        \u001b[C     \u001b[4;7H\u001b(B\u001b[m\u001b[38;5;244mdescribe\u001b(B\u001b[m\u001b[38;5;81m(\u001b(B\u001b[m\u001b[38;5;37m'CheckoutPage Component'\u001b(B\u001b[m\u001b[38;5;81m,\u001b[C\u001b(B\u001b[m\u001b[38;5;229m()\u001b[C\u001b(B\u001b[m\u001b[38;5;136m=>\u001b[C\u001b(B\u001b[m\u001b[38;5;244m{\u001b[5;7H  \u001b(B\u001b[m\u001b[38;5;136mlet\u001b(B\u001b[m\u001b[38;5;244m component;\u001b(B\u001b[m                                      \u001b[6;9H\u001b[38;5;136mconst\u001b(B\u001b[m\u001b[38;5;244m \u001b[CockComponent\u001b[C\u001b(B\u001b[m\u001b[38;5;64m=\u001b[C\u001b(B\u001b[m\u001b[38;5;244m()\u001b[C\u001b(B\u001b[m\u001b[38;5;136m=>\u001b[C\u001b(B\u001b[m\u001b[38;5;64m<\u001b(B\u001b[m\u001b[38;5;244mdiv\u001b(B\u001b[m\u001b[38;5;64m></\u001b(B\u001b[m\u001b[38;5;244mdiv\u001b(B\u001b[m\u001b[38;5;64m>\u001b(B\u001b[m\u001b[38;5;244m;\u001b(B\u001b[m\u001b[7;9H                                                    \u001b[8;9H\u001b[38;5;244mbeforeEach(()\u001b[C\u001b(B\u001b[m\u001b[38;5;136m=>\u001b[C\u001b(B\u001b[m\u001b[38;5;244m{\r\n\u001b[38;5;136m\u001b[48;5;235m! \u001b[6C\u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;136mconst\u001b(B\u001b[m\u001b[38;5;244m C\u001b[Ceckout\u001b[C\u001b(B\u001b[m\u001b[38;5;64m=\u001b[C\u001b(B\u001b[m\u001b[38;5;244minjectLoaderCompatibility(\r\n\u001b[38;5;239m\u001b[48;5;235m  \u001b[8C\u001b[38;5;242m\u001b[40m \u001b[1;26r\u001b[H\u001b[10;12H\u001b[?25l\u001b(B\u001b[m"
+    ],
+    [
+      0.00028,
+      "\u001b[1;25r\u001b[H\u001b[10;12H\u001b[38;5;244m __dirname,\u001b(B\u001b[m                                      \u001b[11;13H\u001b[38;5;37m'../../../../src/app/checkout/components/Checko\u001b(B\u001b[m\u001b[38;5;240m\u001b[1m#\u001b[12;13H\u001b(B\u001b[m\u001b[38;5;244m{\u001b(B\u001b[m                                               \r\n\u001b[38;5;136m\u001b[48;5;235m! \u001b[10C\u001b[30m\u001b[48;5;242m \u001b[C\u001b(B\u001b[m\u001b[38;5;37m'../../../spaces/current/scripts/lib/componen\u001b(B\u001b[m\u001b[38;5;240m\u001b[1m#\u001b[14;2H\u001b(B\u001b[m\u001b[38;5;136m\u001b[48;5;235m4\u001b[10C\u001b(B\u001b[m\u001b[38;5;244m}\u001b(B\u001b[m\u001b[C                                              \r\n\u001b[38;5;239m\u001b[48;5;235m  \u001b[8C\u001b(B\u001b[m\u001b[38;5;244m);\u001b(B\u001b[m                                                \u001b[16;11H\u001b[38;5;244mcomponent\u001b[C\u001b(B\u001b[m\u001b[38;5;64m=\u001b[C\u001b(B\u001b[m\u001b[38;5;244mshallow(\u001b(B\u001b[m\u001b[38;5;64m<\u001b(B\u001b[m\u001b[38;5;244mCheckout\u001b[C\u001b(B\u001b[m\u001b[38;5;64m/>\u001b(B\u001b[m\u001b[38;5;244m);\u001b[17;9H});\u001b(B\u001b[m                                                 \u001b[18;9H                                                    \u001b[19;9H\u001b[38;5;244mit(\u001b(B\u001b[m\u001b[38;5;37m'should render the checkout page'\u001b(B\u001b[m\u001b[38;5;244m,\u001b[C()\u001b[C\u001b(B\u001b[m\u001b[38;5;136m=>\u001b[C\u001b(B\u001b[m\u001b[38;5;244m{\u001b[1;2"
+    ],
+    [
+      2.1e-05,
+      "6r\u001b[H\u001b[20;9H\u001b(B\u001b[m"
+    ],
+    [
+      0.00013,
+      "\u001b[1;25r\u001b[H\u001b[20;9H\u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m expect(component.find(\u001b(B\u001b[m\u001b[38;5;37m'.page-header'\u001b(B\u001b[m\u001b[38;5;244m).find(\u001b(B\u001b[m\u001b[38;5;37m'h1'\u001b(B\u001b[m\u001b[38;5;244m).\u001b(B\u001b[m\u001b[38;5;240m\u001b[1m#\u001b[21;9H\u001b(B\u001b[m\u001b[38;5;244m});\u001b(B\u001b[m                                                 \u001b[22;7H\u001b[38;5;244m}\u001b(B\u001b[m\u001b[38;5;81m)\u001b(B\u001b[m\u001b[38;5;244m;\u001b(B\u001b[m                                                   \u001b[23;3H\u001b[38;5;240m\u001b[1m~                                                         \u001b[24;53H\u001b[38;5;230m\u001b[48;5;245m2\u001b[5C\u001b(B\u001b[m\u001b[38;5;230m\u001b[48;5;245m1\u001b[1;26r\u001b[H\u001b[3;7H\u001b[?12l\u001b[?25h\u001b(B\u001b[m"
+    ],
+    [
+      0.003106,
+      "\u001b[1;25r\u001b[H\u001b[25d\u001b[38;5;244m 4:webpack.server.test.config.js  6:Checkout-spe\u001b[1;26r\u001b[H\u001b[25;49H\u001b(B\u001b[m"
+    ],
+    [
+      0.007143,
+      "\u001b[3;7H"
+    ],
+    [
+      0.750851,
+      "\u001b[1;25r\u001b[H\u001b[25;50H\u001b[38;5;244m^[\u001b[1;26r\u001b[H\u001b[3;7H\u001b(B\u001b[m"
+    ],
+    [
+      0.001427,
+      "\u001b[1;25r\u001b[H\u001b[25;50H\u001b[38;5;244m  \u001b[1;26r\u001b[H\u001b[3;7H\u001b(B\u001b[m"
+    ],
+    [
+      0.00011,
+      "\u001b[?25l\u001b[26;1H\u001b[30m\u001b[43mBell in window 1                                                                                                        \u001b(B\u001b[m\u001b[3;7H"
+    ],
+    [
+      0.613478,
+      "\u001b[32m\u001b[1;61H│\u001b[2;61H│\u001b[3;61H│\u001b[4;61H│\u001b[5;61H│\u001b[6;61H│\u001b[7;61H│\u001b[8;61H│\u001b[9;61H│\u001b[10;61H│\u001b[11;61H│\u001b[12;61H│\u001b[13;61H│\u001b(B\u001b[m\u001b[14;61H│\u001b[15;61H│\u001b[16;61H│\u001b[17;61H│\u001b[18;61H│\u001b[19;61H│\u001b[20;61H│\u001b[21;61H│\u001b[22;61H│\u001b[23;61H│\u001b[24;61H│\u001b[25;61H│\u001b[H\u001b(B\u001b[m\u001b[38;5;239m\u001b[48;5;235m    2 \u001b(B\u001b[m\u001b[38;5;166mimport\u001b(B\u001b[m \u001b[38;5;244mReact\u001b(B\u001b[m \u001b[38;5;166mfrom\u001b(B\u001b[m \u001b[38;5;37m'react'\u001b(B\u001b[m\u001b[38;5;244m;\u001b(B\u001b[m                            \r\n\u001b[38;5;239m\u001b[48;5;235m    1 \u001b(B\u001b[m\u001b[38;5;166mimport\u001b(B\u001b[m \u001b[38;5;244m{\u001b(B\u001b[m \u001b[38;5;244mshallow\u001b(B\u001b[m \u001b[38;5;244m}\u001b(B\u001b[m \u001b[38;5;166mfrom\u001b(B\u001b[m \u001b[38;5;37m'enzyme'\u001b(B\u001b[m\u001b[38;5;244m;\u001b(B\u001b[m                     \r\n\u001b[38;5;64m\u001b[48;5;235m+ \u001b(B\u001b[m\u001b[93m3   \u001b[38;5;244m\u001b[48;5;235m                                                      \u001b(B\u001b[m\r\n\u001b[38;5;239m\u001b[48;5;235m    1 \u001b(B\u001b[m\u001b[38;5;244mdescribe\u001b(B\u001b[m\u001b[38;5;81m(\u001b(B\u001b[m\u001b[38;5;37m'CheckoutPage Component'\u001b(B\u001b[m\u001b[38;5;81m,\u001b(B\u001b[m \u001b[38;5;229m()\u001b(B\u001b[m \u001b[38;5;136m=>\u001b(B\u001b[m \u001b[38;5;244m{\u001b(B\u001b[m            \r\n\u001b[38;5;239m\u001b[48;5;235m    2 "
+    ],
+    [
+      3.2e-05,
+      "\u001b(B\u001b[m\u001b[38;5;244m  \u001b(B\u001b[m\u001b[38;5;136mlet\u001b(B\u001b[m\u001b[38;5;244m component;\u001b(B\u001b[m                                      \r\n\u001b[38;5;239m\u001b[48;5;235m    3 \u001b(B\u001b[m\u001b[38;5;244m  \u001b(B\u001b[m\u001b[38;5;136mconst\u001b(B\u001b[m\u001b[38;5;244m mockComponent\u001b(B\u001b[m \u001b[38;5;64m=\u001b(B\u001b[m \u001b[38;5;244m()\u001b(B\u001b[m \u001b[38;5;136m=>\u001b(B\u001b[m \u001b[38;5;64m<\u001b(B\u001b[m\u001b[38;5;244mdiv\u001b(B\u001b[m\u001b[38;5;64m></\u001b(B\u001b[m\u001b[38;5;244mdiv\u001b(B\u001b[m\u001b[38;5;64m>\u001b(B\u001b[m\u001b[38;5;244m;\u001b(B\u001b[m            \r\n\u001b[38;5;239m\u001b[48;5;235m    4 \u001b(B\u001b[m\u001b[38;5;244m  \u001b(B\u001b[m                                                    \r\n\u001b[38;5;239m\u001b[48;5;235m    5 \u001b(B\u001b[m  \u001b[38;5;244mbeforeEach(()\u001b(B\u001b[m \u001b[38;5;136m=>\u001b(B\u001b[m \u001b[38;5;244m{\u001b(B\u001b[m                                  \r\n\u001b[38;5;136m\u001b[48;5;235m! \u001b[38;5;239m  6 \u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;136mconst\u001b(B\u001b[m\u001b[38;5;244m Checkout\u001b(B\u001b[m \u001b[38;5;64m=\u001b(B\u001b[m \u001b[38;5;244minjectLoaderCompatibility(\u001b(B\u001b[m       \r\n\u001b[38;5;239m\u001b[48;5;235m    7 \u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m \u001b[38;5;242m\u001b[40m \u001b(B\u001b[m\u001b[38;5;244m __dirname,\u001b(B\u001b[m                      "
+    ],
+    [
+      2.5e-05,
+      "                \r\n\u001b[38;5;239m\u001b[48;5;235m    8 \u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m \u001b[38;5;242m\u001b[40m \u001b(B\u001b[m \u001b[38;5;37m'../../../../src/app/checkout/components/Checko\u001b(B\u001b[m\u001b[38;5;240m\u001b[1m#\u001b(B\u001b[m\r\n\u001b[38;5;239m\u001b[48;5;235m    9 \u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m \u001b[38;5;242m\u001b[40m \u001b(B\u001b[m\u001b[38;5;244m {\u001b(B\u001b[m                                               \r\n\u001b[38;5;136m\u001b[48;5;235m! \u001b[38;5;239m 10 \u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m \u001b[38;5;242m\u001b[40m \u001b(B\u001b[m\u001b[38;5;244m \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m \u001b[38;5;37m'../../../spaces/current/scripts/lib/componen\u001b(B\u001b[m\u001b[38;5;240m\u001b[1m#\u001b(B\u001b[m\r\n\u001b[38;5;136m\u001b[48;5;235m!4\u001b[38;5;239m 11 \u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m \u001b[38;5;242m\u001b[40m \u001b(B\u001b[m\u001b[38;5;244m } \u001b(B\u001b[m                                              \r\n\u001b[38;5;239m\u001b[48;5;235m   12 \u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m );\u001b(B\u001b[m                                                \r\n\u001b[38;5;239m\u001b[48;5;235m   13 \u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m componen"
+    ],
+    [
+      1.8e-05,
+      "t\u001b(B\u001b[m \u001b[38;5;64m=\u001b(B\u001b[m \u001b[38;5;244mshallow(\u001b(B\u001b[m\u001b[38;5;64m<\u001b(B\u001b[m\u001b[38;5;244mCheckout\u001b(B\u001b[m \u001b[38;5;64m/>\u001b(B\u001b[m\u001b[38;5;244m);\u001b(B\u001b[m                \r\n\u001b[38;5;239m\u001b[48;5;235m   14 \u001b(B\u001b[m\u001b[38;5;244m  });\u001b(B\u001b[m                                                 \r\n\u001b[38;5;239m\u001b[48;5;235m   15 \u001b(B\u001b[m                                                      \r\n\u001b[38;5;239m\u001b[48;5;235m   16 \u001b(B\u001b[m\u001b[38;5;244m  it(\u001b(B\u001b[m\u001b[38;5;37m'should render the checkout page'\u001b(B\u001b[m\u001b[38;5;244m,\u001b(B\u001b[m \u001b[38;5;244m()\u001b(B\u001b[m \u001b[38;5;136m=>\u001b(B\u001b[m \u001b[38;5;244m{\u001b(B\u001b[m       \r\n\u001b[38;5;239m\u001b[48;5;235m   17 \u001b(B\u001b[m  \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m expect(component.find(\u001b(B\u001b[m\u001b[38;5;37m'.page-header'\u001b(B\u001b[m\u001b[38;5;244m).find(\u001b(B\u001b[m\u001b[38;5;37m'h1'\u001b(B\u001b[m\u001b[38;5;244m).\u001b(B\u001b[m\u001b[38;5;240m\u001b[1m#\u001b(B\u001b[m\r\n\u001b[38;5;239m\u001b[48;5;235m   18 \u001b(B\u001b[m  \u001b[38;5;244m});\u001b(B\u001b[m                                                 \r\n\u001b[38;5;239m\u001b[48;5;235m   19 \u001b(B\u001b[m\u001b[38;5;244m}\u001b(B\u001b[m\u001b[38;5;81m)\u001b(B\u001b[m\u001b[38;5;244m;\u001b(B\u001b[m                                                   \r\n\u001b[38;5;239m\u001b[48;5;235m  "
+    ],
+    [
+      1.6e-05,
+      "\u001b(B\u001b[m\u001b[38;5;240m\u001b[1m~                                                         \u001b(B\u001b[m\r\n\u001b[38;5;230m\u001b[48;5;245m\u001b[1m NORMAL \u001b(B\u001b[m\u001b[38;5;245m\u001b[48;5;241m\u001b[38;5;241m\u001b[48;5;235m\u001b[38;5;245m \u001b(B\u001b[m\u001b[38;5;244m\u001b[1m<-spec.js+ \u001b(B\u001b[m\u001b[38;5;245m\u001b[48;5;235m  \u001b[38;5;235m\u001b[38;5;240m javascript \u001b[38;5;241m\u001b[38;5;245m\u001b[48;5;241m\u001b[38;5;230m\u001b[48;5;245m  13% \u001b[1m   3/22☰\u001b(B\u001b[m\u001b[38;5;230m\u001b[48;5;245m :  1 \u001b(B\u001b[m\r\n\u001b[38;5;244m 4:webpack.server.test.config.js  6:Checkout-spe\u001b(B\u001b[m \u001b[38;5;244m  \u001b(B\u001b[m         \u001b[1;62H\u001b[31m\u001b[1m\u001b[7m FAIL \u001b(B\u001b[m \u001b[2mtest/server_spec/checkout/components/\u001b(B\u001b[m\u001b[1mCheckout-spec.j\u001b(B\u001b[m\u001b[1;120H\u001b[2;62H\u001b[1ms\u001b(B\u001b[m\u001b[K\u001b[3;62H  \u001b[1m● \u001b(B\u001b[mTest suite failed to run\u001b[K\u001b[4;62H\u001b[K\n    Cannot find module 'inject!../../../../src/app/checkout\u001b[5;120H\u001b[6;62H/components/Checkout' from 'Checkout-spec.js'\u001b[K\u001b[7;62H\u001b[2m      \u001b(B\u001b[m\u001b[K\u001b[8;62H\u001b[2m      at Resolver.resolveModule (node_modules/jest-resolve/\u001b(B\u001b[m\u001b[8;120H\u001b[9;62H\u001b[2mbuild/index.js:144:17)\u001b(B\u001b[m\u001b[K\u001b[10;62H\u001b[2m      at Object.<anonymous> (\u001b(B\u001b[m"
+    ],
+    [
+      1.3e-05,
+      "\u001b[36mtest/server_spec/checkout/comp\u001b(B\u001b[m\u001b[10;120H\u001b[11;62H\u001b[36monents/Checkout-spec.js\u001b(B\u001b[m\u001b[2m:3:43)\u001b(B\u001b[m\u001b[K\u001b[12;62H\u001b[K\n\u001b[1mTest Suites: \u001b(B\u001b[m\u001b[31m\u001b[1m1 failed\u001b(B\u001b[m, 1 total\u001b[K\u001b[14;62H\u001b[1mTests:       \u001b(B\u001b[m0 total\u001b[K\u001b[15;62H\u001b[1mSnapshots:   \u001b(B\u001b[m0 total\u001b[K\u001b[16;62H\u001b[1mTime:\u001b(B\u001b[m        0.252s\u001b[K\u001b[17;62H\u001b[2mRan all test suites matching \u001b(B\u001b[m\"components/Checkout-spec\"\u001b[2m.\u001b(B\u001b[m\u001b[K\u001b[18;62H\u001b[K\n\u001b[1mWatch Usage\u001b(B\u001b[m\u001b[K\u001b[20;62H\u001b[2m › Press \u001b(B\u001b[ma\u001b[2m to run all tests.\u001b(B\u001b[m\u001b[K\u001b[21;62H\u001b[2m › Press \u001b(B\u001b[mo\u001b[2m to only run tests related to changed files.\u001b(B\u001b[m\u001b[K\u001b[22;62H\u001b[2m › Press \u001b(B\u001b[mp\u001b[2m to filter by a filename regex pattern.\u001b(B\u001b[m\u001b[K\u001b[23;62H\u001b[2m › Press \u001b(B\u001b[mq\u001b[2m to quit watch mode.\u001b(B\u001b[m\u001b[K\u001b[24;62H\u001b[2m › Press \u001b(B\u001b[mEnter\u001b[2m to trigger a test run.\u001b(B\u001b[m\u001b[K\u001b[25;62H\u001b[K\r\n\u001b[30m\u001b[42m[0] 1:nvim*                                                                                       \"nvim\" 09:43 11-okt-16\u001b(B\u001b[m\u001b[3;7H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.000102,
+      "\u001b[1;25r\u001b[H\u001b[25;50H\u001b[38;5;244m:\u001b[1;26r\u001b[H\u001b[3;7H\u001b(B\u001b[m\u001b[25;2H                                                           \u001b[1;25r\u001b[H\u001b[25d\u001b[38;5;244m:\u001b[1;26r\u001b[H\u001b[25;2H\u001b(B\u001b[m"
+    ],
+    [
+      0.342668,
+      "\u001b[1;25r\u001b[H\u001b[25;2H\u001b[38;5;244mw\u001b[1;26r\u001b[H\u001b[25;2H\u001b(B\u001b[m"
+    ],
+    [
+      0.408043,
+      "\u001b[1;25r\u001b[H\u001b[25;2H\u001b[38;5;244m \bw\u001b[1;26r\u001b[H\u001b[25d\u001b(B\u001b[m"
+    ],
+    [
+      0.000466,
+      "\u001b[1;25r\u001b[H\u001b[25d\u001b[38;5;244m\"Checkout-spec.js\"\u001b[1;26r\u001b[H\u001b[25;19H\u001b(B\u001b[m"
+    ],
+    [
+      0.00541,
+      "\u001b[1;25r\u001b[H\u001b[25;20H\u001b[38;5;244m22L,\u001b[C604C\u001b[Copgeslagen\u001b[1;26r\u001b[H\u001b[25;40H\u001b(B\u001b[m"
+    ],
+    [
+      0.003898,
+      "\u001b[?25l"
+    ],
+    [
+      0.01738,
+      "\u001b[1;25r\u001b[H\u001b[2B\u001b[38;5;239m\u001b[48;5;235m  \u001b[14;1H  \u001b[13;1H  \u001b[1d2\u001b[C\u001b(B\u001b[m\u001b[38;5;166mimport\u001b(B\u001b[m\u001b[38;5;244m React \u001b(B\u001b[m\u001b[38;5;166mfrom\u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;37m'react'\u001b(B\u001b[m\u001b[38;5;244m;\u001b(B\u001b[m                              \u001b[2;3H\u001b[38;5;239m\u001b[48;5;235m1\u001b[C\u001b(B\u001b[m\u001b[38;5;166mimport\u001b(B\u001b[m\u001b[38;5;244m {\u001b[Cshallow }\u001b[C\u001b(B\u001b[m\u001b[38;5;166mfrom\u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;37m'enzyme'\u001b(B\u001b[m\u001b[38;5;244m;\u001b(B\u001b[m                       \r\n\u001b[93m3  \u001b[C\u001b[38;5;244m\u001b[48;5;235m  \u001b[4;3H\u001b[38;5;239m1\u001b[C\u001b(B\u001b[m\u001b[38;5;244mdescribe\u001b(B\u001b[m\u001b[38;5;81m(\u001b(B\u001b[m\u001b[38;5;37m'CheckoutPage Compone\u001b[Ct'\u001b(B\u001b[m\u001b[38;5;81m,\u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;229m()\u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;136m=>\u001b(B\u001b[m\u001b[38;5;244m {\u001b(B\u001b[m\u001b[C             \u001b[5;3H\u001b[38;5;239m\u001b[48;5;235m2\u001b[C\u001b(B\u001b[m\u001b[38;5;244m  \u001b(B\u001b[m\u001b[38;5;136mlet\u001b(B\u001b[m\u001b[38;5;244m compone\u001b[Ct;\u001b(B\u001b[m                                        \u001b[6;3H\u001b[38;5;239m\u001b[48;5;235m3\u001b[C\u001b(B\u001b[m\u001b[38;5;244m  \u001b(B\u001b[m\u001b[38;5;136mconst\u001b[1;26r\u001b[H\u001b[6;12H\u001b(B\u001b[m"
+    ],
+    [
+      0.000118,
+      "\u001b[1;25r\u001b[H\u001b[6;12H\u001b[38;5;244m mockCompone\u001b[Ct \u001b(B\u001b[m\u001b[38;5;64m=\u001b[C\u001b(B\u001b[m\u001b[38;5;244m() \u001b(B\u001b[m\u001b[38;5;136m=>\u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;64m<\u001b(B\u001b[m\u001b[38;5;244mdiv\u001b(B\u001b[m\u001b[38;5;64m></\u001b(B\u001b[m\u001b[38;5;244mdiv\u001b(B\u001b[m\u001b[38;5;64m>\u001b(B\u001b[m\u001b[38;5;244m;\u001b(B\u001b[m              \u001b[7;3H\u001b[38;5;239m\u001b[48;5;235m4\u001b(B\u001b[m\u001b[C                                                        \u001b[8;3H\u001b[38;5;239m\u001b[48;5;235m5\u001b[C\u001b(B\u001b[m\u001b[38;5;244m  beforeEach(() \u001b(B\u001b[m\u001b[38;5;136m=>\u001b(B\u001b[m\u001b[38;5;244m {\u001b(B\u001b[m\u001b[C                                   \r\n\u001b[38;5;239m\u001b[48;5;235m  6\u001b[C\u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b[C\u001b(B\u001b[m\u001b[38;5;136mconst\u001b(B\u001b[m\u001b[38;5;244m Checkout \u001b(B\u001b[m\u001b[38;5;64m=\u001b[C\u001b(B\u001b[m\u001b[38;5;244minjectLoaderCompatib\u001b[Cl\u001b[Cty(\u001b(B\u001b[m         \u001b[10;3H\u001b[38;5;239m\u001b[48;5;235m7\u001b[C\u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b[C\u001b[38;5;242m\u001b[40m \u001b[C\u001b(B\u001b[m\u001b[38;5;244m__dirname,\u001b(B\u001b[m                                        \u001b[11;3H\u001b[38;5;239m\u001b[48;5;235m8\u001b[C\u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b[1;26r\u001b[H\u001b[11;9H\u001b(B\u001b[m"
+    ],
+    [
+      0.000225,
+      "\u001b[1;25r\u001b[H\u001b[11;9H\u001b[38;5;242m\u001b[40m \u001b[C\u001b(B\u001b[m\u001b[38;5;37m'../\u001b[C./\u001b[C./\u001b[C./src/app/checkout/compone\u001b[Cts/Checkout\u001b[12;3H\u001b[38;5;239m\u001b[48;5;235m9\u001b[C\u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b[C\u001b[38;5;242m\u001b[40m \u001b[C\u001b(B\u001b[m\u001b[38;5;244m{\u001b(B\u001b[m\u001b[C                                                \u001b[13;2H\u001b[38;5;239m\u001b[48;5;235m10 \u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b[C\u001b[38;5;242m\u001b[40m \u001b[C\u001b[30m\u001b[48;5;242m \u001b[C\u001b(B\u001b[m\u001b[38;5;37m'../\u001b[C./\u001b[C./spaces/current/scripts/lib/compone\u001b[Cts\u001b[14;2H\u001b[38;5;239m\u001b[48;5;235m11 \u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b[C\u001b[38;5;242m\u001b[40m \u001b[C\u001b(B\u001b[m\u001b[38;5;244m}\u001b(B\u001b[m\u001b[C                                                \u001b[15;2H\u001b[38;5;239m\u001b[48;5;235m12 \u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b[C\u001b(B\u001b[m\u001b[38;5;244m);\u001b(B\u001b[m                                                  \u001b[16;2H\u001b[38;5;239m\u001b[48;5;235m13 \u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b[C\u001b(B\u001b[m\u001b[38;5;244mcompone\u001b[Ct \u001b(B\u001b[m\u001b[38;5;64m=\u001b[C\u001b(B\u001b[m\u001b[38;5;244mshallow(\u001b[1;26r\u001b[H\u001b[16;29H\u001b(B\u001b[m"
+    ],
+    [
+      0.000192,
+      "\u001b[1;25r\u001b[H\u001b[16;29H\u001b[38;5;64m<\u001b(B\u001b[m\u001b[38;5;244mCheckout \u001b(B\u001b[m\u001b[38;5;64m/>\u001b(B\u001b[m\u001b[38;5;244m);\u001b(B\u001b[m                  \u001b[17;2H\u001b[38;5;239m\u001b[48;5;235m14 \u001b(B\u001b[m\u001b[38;5;244m  });\u001b(B\u001b[m                                                   \u001b[18;2H\u001b[38;5;239m\u001b[48;5;235m15 \u001b(B\u001b[m                                                        \u001b[19;2H\u001b[38;5;239m\u001b[48;5;235m16 \u001b(B\u001b[m\u001b[38;5;244m  it(\u001b(B\u001b[m\u001b[38;5;37m'should render the checkout page'\u001b(B\u001b[m\u001b[38;5;244m, () \u001b(B\u001b[m\u001b[38;5;136m=>\u001b(B\u001b[m\u001b[38;5;244m {\u001b(B\u001b[m\u001b[C        \u001b[20;2H\u001b[38;5;239m\u001b[48;5;235m17 \u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b[C\u001b(B\u001b[m\u001b[38;5;244mexpect(compone\u001b[Ct.find(\u001b(B\u001b[m\u001b[38;5;37m'.page-header'\u001b(B\u001b[m\u001b[38;5;244m).find(\u001b(B\u001b[m\u001b[38;5;37m'h1'\u001b(B\u001b[m\u001b[38;5;244m).te\u001b[21;2H\u001b[38;5;239m\u001b[48;5;235m18 \u001b(B\u001b[m\u001b[38;5;244m  });\u001b(B\u001b[m                                                   \u001b[22;2H\u001b[38;5;239m\u001b[48;5;235m19 \u001b(B\u001b[m\u001b[38;5;244m}\u001b(B\u001b[m\u001b[38;5;81m)\u001b(B\u001b[m\u001b[38;5;244m;\u001b(B\u001b[m                                                     \r\n\u001b[38;5;240m\u001b[1m~  \u001b[1;26r\u001b[H\u001b[25d\u001b(B\u001b[m"
+    ],
+    [
+      0.119409,
+      "\r\n\u001b[30m\u001b[42m[0] 1:nvim*                                                                                       \"nvim\" 09:43 11-okt-16\u001b(B\u001b[m\u001b[25;1H"
+    ],
+    [
+      0.07626,
+      "\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.019232,
+      "\u001b[1;25r\u001b[H\u001b[24;11H\u001b[38;5;240m\u001b[48;5;235m \u001b[9C\u001b(B\u001b[m\u001b[38;5;244m\u001b[1m \u001b[C\u001b(B\u001b[m\u001b[38;5;240m\u001b[48;5;235m  \u001b[1;26r\u001b[H\u001b[24;25H\u001b(B\u001b[m"
+    ],
+    [
+      0.000932,
+      "\u001b[3;5H"
+    ],
+    [
+      0.026235,
+      "\u001b[1;25r\u001b[H\u001b[61C                                                           \u001b[2;62H                                                           \u001b[3;62H                                                           \u001b[4;62H                                                           \u001b[5;62H                                                           \u001b[6;62H                                                           \u001b[7;62H                                                           \u001b[8;62H                                                           \u001b[9;62H                                                           \u001b[10;62H                                                           \u001b[11;62H                                                           \u001b[12;62H                                                           \u001b[13;62H                                                           \u001b[14;62H                                                           \u001b[15;62H                                                           \u001b[16;62H            "
+    ],
+    [
+      3.4e-05,
+      "                                               \u001b[17;62H                                                           \u001b[18;62H                                                           \u001b[19;62H                                                           \u001b[20;62H                                                           \u001b[21;62H                                                           \u001b[22;62H                                                           \u001b[23;62H                                                           \u001b[24;62H                                                           \u001b[25;62H                                                           \u001b[25;1H\u001b[1;26r\u001b[H\u001b[3;5H"
+    ],
+    [
+      0.001054,
+      "\u001b[1;25r\u001b[H\u001b[61C\u001b[1m\u001b[2mDetermining test suites to run...\u001b[1;26r\u001b[H\u001b[3;5H\u001b(B\u001b[m"
+    ],
+    [
+      0.099923,
+      "\u001b[1;62H                                                           \u001b[3;5H"
+    ],
+    [
+      0.000614,
+      "\u001b[2;62H                                                           \u001b[3;5H"
+    ],
+    [
+      0.000529,
+      "\u001b[1;25r\u001b[H\u001b[2;62H\u001b[33m\u001b[1m\u001b[7m RUNS \u001b(B\u001b[m \u001b[2m.../server_spec/checkout/components/\u001b(B\u001b[m\u001b[1mCheckout-spec.js\u001b[2;1H\u001b[1;26r\u001b[H\u001b[3;5H\u001b(B\u001b[m"
+    ],
+    [
+      0.262795,
+      "\u001b[57C                                                           \u001b[2;62H                                                           \u001b[2;1H\u001b[1;25r\u001b[H\u001b[61C\u001b[32m\u001b[1m\u001b[7m PASS \u001b(B\u001b[m \u001b[2mtest/server_spec/checkout/components/\u001b(B\u001b[m\u001b[1mCheckout-spec.j\u001b[2;62Hs\u001b[1;26r\u001b[H\u001b[3;5H\u001b(B\u001b[m\u001b[1;25r\u001b[H\u001b[4;62H\u001b[33m\u001b[1m\u001b[7m RUNS \u001b(B\u001b[m \u001b[2m.../server_spec/checkout/components/\u001b(B\u001b[m\u001b[1mCheckout-spec.js"
+    ],
+    [
+      2.3e-05,
+      "\u001b[4;1H\u001b[1;26r\u001b[H\u001b[3;5H\u001b(B\u001b[m\u001b[5;62H                                                           \u001b[4;62H                                                           \u001b[4;1H\u001b[1;25r\u001b[H\u001b[3;62H  CheckoutPage Component\u001b[5;62H\u001b[33m\u001b[1m\u001b[7m RUNS \u001b(B\u001b[m \u001b[2m.../server_spec/checkout/components/\u001b(B\u001b[m\u001b[1mCheckout-spec.js"
+    ],
+    [
+      9.5e-05,
+      "\u001b[5;1H\u001b[1;26r\u001b[H\u001b[3;5H\u001b(B\u001b[m\u001b[6;62H                                                           \u001b[5;62H                                                           \u001b[5;1H\u001b[1;25r\u001b[H\u001b[4;62H    \u001b[32m✓\u001b(B\u001b[m \u001b[2mshould render the checkout page (13ms)\u001b[6;62H\u001b(B\u001b[m\u001b[33m\u001b[1m\u001b[7m RUNS \u001b(B\u001b[m \u001b[2m.../server_spec/checkout/components/\u001b(B\u001b[m\u001b[1mCheckout-spec.js"
+    ],
+    [
+      8.7e-05,
+      "\u001b[6;1H\u001b[1;26r\u001b[H\u001b[3;5H\u001b(B\u001b[m\u001b[7;62H                                                           \u001b[6;62H                                                           \u001b[6;1H\u001b[1;25r\u001b[H\u001b[7;62H\u001b[33m\u001b[1m\u001b[7m RUNS \u001b(B\u001b[m \u001b[2m.../server_spec/checkout/components/\u001b(B\u001b[m\u001b[1mCheckout-spec.js\u001b[7;1H\u001b[1;26r\u001b[H\u001b[3;5H\u001b(B\u001b[m"
+    ],
+    [
+      0.000468,
+      "\u001b[8;62H                                                           \u001b[7;62H                                                           \u001b[3;5H\u001b[6;62H                                                           \u001b[3;5H"
+    ],
+    [
+      0.000245,
+      "\u001b[1;25r\u001b[H\u001b[6;62H\u001b[1mTest Suites: \u001b(B\u001b[m\u001b[32m\u001b[1m1 passed\u001b(B\u001b[m, 1 total\u001b[7;62H\u001b[1mTests:       \u001b(B\u001b[m\u001b[32m\u001b[1m1 passed\u001b(B\u001b[m, 1 total\u001b[8;62H\u001b[1mSnapshots:   \u001b(B\u001b[m0 total\u001b[9;62H\u001b[1mTime:\u001b(B\u001b[m        0.265s\u001b[10;62H\u001b[2mRan all test suites matching \u001b(B\u001b[m\"components/Checkout-spec\"\u001b[2m.\u001b[1;26r\u001b[H\u001b[3;5H\u001b(B\u001b[m"
+    ],
+    [
+      0.000285,
+      "\u001b[1;25r\u001b[H\u001b[12;62H\u001b[1mWatch Usage\u001b[13;62H\u001b(B\u001b[m\u001b[2m › Press \u001b(B\u001b[ma\u001b[2m to run all tests.\u001b[14;62H › Press \u001b(B\u001b[mo\u001b[2m to only run tests related to changed files.\u001b[15;62H › Press \u001b(B\u001b[mp\u001b[2m to filter by a filename regex pattern.\u001b[16;62H › Press \u001b(B\u001b[mq\u001b[2m to quit watch mode.\u001b[17;62H › Press \u001b(B\u001b[mEnter\u001b[2m to trigger a test run.\u001b[1;26r\u001b[H\u001b[3;5H\u001b(B\u001b[m"
+    ],
+    [
+      0.229145,
+      "\u001b[1;25r\u001b[H\u001b[25d\u001b[38;5;244mNeoma\u001b[Ce: e\u001b[Clint complete with exit code\u001b[C0\u001b[1;26r\u001b[H\u001b[25;42H\u001b(B\u001b[m"
+    ],
+    [
+      0.001342,
+      "\u001b[3;5H"
+    ],
+    [
+      0.52351,
+      "\u001b[?25l\u001b[26;1H\u001b[30m\u001b[42m[0] 1:nvim*                                                                                       \"nvim\" 09:43 11-okt-16\u001b(B\u001b[m\u001b[3;5H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.00621,
+      "\u001b[?25l"
+    ],
+    [
+      0.006737,
+      "\u001b]0;0:1:nvim - \"npm run test:server:default -- --watch\" \u0007\u001b[1;61H│\u001b[2;61H│\u001b[3;61H│\u001b[4;61H│\u001b[5;61H│\u001b[6;61H│\u001b[7;61H│\u001b[8;61H│\u001b[9;61H│\u001b[10;61H│\u001b[11;61H│\u001b[12;61H│\u001b[13;61H│\u001b(B\u001b[m\u001b[32m\u001b[14;61H│\u001b[15;61H│\u001b[16;61H│\u001b[17;61H│\u001b[18;61H│\u001b[19;61H│\u001b[20;61H│\u001b[21;61H│\u001b[22;61H│\u001b[23;61H│\u001b[24;61H│\u001b[25;61H│\u001b(B\u001b[m\r\n\u001b[30m\u001b[42m[0] 1:nvim*                                                                      \"npm run test:server:d\" 09:43 11-okt-16\u001b(B\u001b[m\u001b[18;62H\u001b[?12l\u001b[?25h\u001b[?1002l\u001b[?1006l\u001b[?2004l"
+    ],
+    [
+      0.001788,
+      "\u001b[1;25r\u001b[H\u001b[25;50H\u001b[38;5;244m~@ý\u001b[1;26r\u001b[H\u001b[18;62H\u001b(B\u001b[m"
+    ],
+    [
+      0.001209,
+      "\u001b[1;25r\u001b[H\u001b[25;50H\u001b[38;5;244m   \u001b[1;26r\u001b[H\u001b[18;62H\u001b(B\u001b[m"
+    ],
+    [
+      0.513076,
+      "\u001b]0;0:1:npm - \"npm run test:server:default -- --watch\" \u0007\u001b[?25l\u001b[26;1H\u001b[30m\u001b[42m[0] 1:npm*                                                                       \"npm run test:server:d\" 09:43 11-okt-16\u001b(B\u001b[m\u001b[18;62H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.000342,
+      "\u001b[1;25r\u001b[H\u001b[61C                                                           \u001b[2;62H                                                           \u001b[3;62H                                                           \u001b[4;62H                                                           \u001b[5;62H                                                           \u001b[6;62H                                                           \u001b[7;62H                                                           \u001b[8;62H                                                           \u001b[9;62H                                                           \u001b[10;62H                                                           \u001b[11;62H                                                           \u001b[12;62H                                                           \u001b[13;62H                                                           \u001b[14;62H                                                           \u001b[15;62H                                                           \u001b[16;62H            "
+    ],
+    [
+      1.4e-05,
+      "                                               \u001b[17;62H                                                           \u001b[18;62H                                                           \u001b[19;62H                                                           \u001b[20;62H                                                           \u001b[21;62H                                                           \u001b[22;62H                                                           \u001b[23;62H                                                           \u001b[24;62H                                                           \u001b[25;62H                                                           \u001b[25;1H\u001b[1;26r\u001b[H\u001b[61C"
+    ],
+    [
+      0.001146,
+      "\u001b[1;25r\u001b[H\u001b[61C\u001b[1m\u001b[2mDetermining test suites to run...\u001b[1;26r\u001b[H\u001b[94C\u001b(B\u001b[m"
+    ],
+    [
+      0.017249,
+      "\u001b[33D                                                           \u001b[2;62H                                                           \u001b[1;62H"
+    ],
+    [
+      0.000115,
+      "\u001b[1;25r\u001b[H\u001b[2;62H\u001b[33m\u001b[1m\u001b[7m RUNS \u001b(B\u001b[m \u001b[2m.../server_spec/checkout/components/\u001b(B\u001b[m\u001b[1mCheckout-spec.js\u001b[2;1H\u001b[1;26r\u001b[H\u001b[3;62H\u001b(B\u001b[m"
+    ],
+    [
+      0.27794,
+      "                                                           \u001b[2;62H                                                           \u001b[2;1H\u001b[1;25r\u001b[H\u001b[61C\u001b[32m\u001b[1m\u001b[7m PASS \u001b(B\u001b[m \u001b[2mtest/server_spec/checkout/components/\u001b(B\u001b[m\u001b[1mCheckout-spec.j\u001b[2;62Hs\u001b[1;26r\u001b[H\u001b[3;62H\u001b(B\u001b[m\u001b[1;25r\u001b[H\u001b[4;62H\u001b[33m\u001b[1m\u001b[7m RUNS \u001b(B\u001b[m \u001b[2m.../server_spec/checkout/components/\u001b(B\u001b[m\u001b[1mCheckout-spec.js\u001b(B\u001b[m\u001b[5;62H                                                           \u001b[4;62H                                                           \u001b[3;62H  CheckoutPage Component\u001b[5;62H\u001b[33m\u001b[1m\u001b[7m RUNS \u001b(B\u001b[m \u001b[2m.../server_spec/checkout/components/\u001b(B\u001b[m\u001b[1mCheckout-spec.js"
+    ],
+    [
+      3.1e-05,
+      "\u001b[5;1H\u001b[1;26r\u001b[H\u001b[6;62H\u001b(B\u001b[m                                                           \u001b[5;62H                                                           \u001b[5;1H\u001b[1;25r\u001b[H\u001b[4;62H    \u001b[32m✓\u001b(B\u001b[m \u001b[2mshould render the checkout page (13ms)\u001b[6;62H\u001b(B\u001b[m\u001b[33m\u001b[1m\u001b[7m RUNS \u001b(B\u001b[m \u001b[2m.../server_spec/checkout/components/\u001b(B\u001b[m\u001b[1mCheckout-spec.js\u001b(B\u001b[m\u001b[7;62H                                                           \u001b[6;62H                                                           \u001b[7;62H\u001b[33m\u001b[1m\u001b[7m RUNS \u001b(B\u001b[m \u001b[2m.../server_spec/checkout/components/\u001b(B\u001b[m\u001b[1mCheckout-spec.js\u001b[7;1H\u001b[1;26r\u001b[H\u001b[8;62H\u001b(B\u001b[m"
+    ],
+    [
+      0.000433,
+      "                                                           \u001b[7;62H                                                           \u001b[6;62H                                                           \u001b[6;62H"
+    ],
+    [
+      0.000214,
+      "\u001b[1;25r\u001b[H\u001b[6;62H\u001b[1mTest Suites: \u001b(B\u001b[m\u001b[32m\u001b[1m1 passed\u001b(B\u001b[m, 1 total\u001b[7;62H\u001b[1mTests:       \u001b(B\u001b[m\u001b[32m\u001b[1m1 passed\u001b(B\u001b[m, 1 total\u001b[8;62H\u001b[1mSnapshots:   \u001b(B\u001b[m0 total\u001b[9;62H\u001b[1mTime:\u001b(B\u001b[m        0.279s, estimated 1s\u001b[10;62H\u001b[2mRan all test suites matching \u001b(B\u001b[m\"components/Checkout-spec\"\u001b[2m.\u001b[1;26r\u001b[H\u001b[11;62H\u001b(B\u001b[m"
+    ],
+    [
+      0.000305,
+      "\u001b[1;25r\u001b[H\u001b[12;62H\u001b[1mWatch Usage\u001b[13;62H\u001b(B\u001b[m\u001b[2m › Press \u001b(B\u001b[ma\u001b[2m to run all tests.\u001b[14;62H › Press \u001b(B\u001b[mo\u001b[2m to only run tests related to changed files.\u001b[15;62H › Press \u001b(B\u001b[mp\u001b[2m to filter by a filename regex pattern.\u001b[16;62H › Press \u001b(B\u001b[mq\u001b[2m to quit watch mode.\u001b[17;62H › Press \u001b(B\u001b[mEnter\u001b[2m to trigger a test run.\u001b[1;26r\u001b[H\u001b[18;62H\u001b(B\u001b[m"
+    ],
+    [
+      2.933709,
+      "\u001b[?25l\u001b[26;1H\u001b[30m\u001b[42m[0] 1:npm*                                                                       \"npm run test:server:d\" 09:43 11-okt-16\u001b(B\u001b[m\u001b[18;62H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.256326,
+      "\u001b[1;25r\u001b[H\u001b[25d\u001b[38;5;244m 4:webpack.server.test.config.js  6:Ch\u001b[Cckout-spe\u001b[1;26r\u001b[H\u001b[18;62H\u001b(B\u001b[m"
+    ],
+    [
+      0.304171,
+      "\u001b[?25l\u001b[26;1H\u001b[30m\u001b[42m[0] 1:npm*                                                                       \"npm run test:server:d\" 09:43 11-okt-16\u001b(B\u001b[m\u001b[18;62H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.004449,
+      "\u001b]0;0:1:npm - \"nvim\" \u0007\u001b[?25l\u001b[32m\u001b[1;61H│\u001b[2;61H│\u001b[3;61H│\u001b[4;61H│\u001b[5;61H│\u001b[6;61H│\u001b[7;61H│\u001b[8;61H│\u001b[9;61H│\u001b[10;61H│\u001b[11;61H│\u001b[12;61H│\u001b[13;61H│\u001b(B\u001b[m\u001b[14;61H│\u001b[15;61H│\u001b[16;61H│\u001b[17;61H│\u001b[18;61H│\u001b[19;61H│\u001b[20;61H│\u001b[21;61H│\u001b[22;61H│\u001b[23;61H│\u001b[24;61H│\u001b[25;61H│\u001b(B\u001b[m\r\n\u001b[30m\u001b[42m[0] 1:npm*                                                                                        \"nvim\" 09:43 11-okt-16\u001b(B\u001b[m\u001b[3;5H\u001b[?12l\u001b[?25h\u001b[?1006h\u001b[?1002h\u001b[?2004h"
+    ],
+    [
+      0.000236,
+      "\u001b]0;0:1:nvim - \"nvim\" \u0007\u001b[?25l\u001b[26;1H\u001b[30m\u001b[42m[0] 1:nvim*                                                                                       \"nvim\" 09:43 11-okt-16\u001b(B\u001b[m\u001b[3;5H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      2.2e-05,
+      "\u001b[1;25r\u001b[H\u001b[25;50H\u001b[38;5;244m~@ý\u001b[1;26r\u001b[H\u001b[3;5H\u001b(B\u001b[m"
+    ],
+    [
+      0.003162,
+      "\u001b[1;25r\u001b[H\u001b[25;50H\u001b[38;5;244m   \u001b[1;26r\u001b[H\u001b[3;5H\u001b(B\u001b[m"
+    ],
+    [
+      0.677757,
+      "\u001b[?25l\u001b[26;1H\u001b[30m\u001b[42m[0] 1:nvim*                                                                                       \"nvim\" 09:43 11-okt-16\u001b(B\u001b[m\u001b[3;5H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.74693,
+      "\u001b[?25l\u001b[H\u001b[38;5;239m\u001b[48;5;235m  2 \u001b(B\u001b[m\u001b[38;5;166mimport\u001b(B\u001b[m\u001b[38;5;244m React \u001b(B\u001b[m\u001b[38;5;166mfrom\u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;37m'react'\u001b(B\u001b[m\u001b[38;5;244m;\u001b(B\u001b[m\u001b[K\r\n\u001b[38;5;239m\u001b[48;5;235m  1 \u001b(B\u001b[m\u001b[38;5;166mimport\u001b(B\u001b[m\u001b[38;5;244m {\u001b(B\u001b[m \u001b[38;5;244mshallow }\u001b(B\u001b[m \u001b[38;5;166mfrom\u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;37m'enzyme'\u001b(B\u001b[m\u001b[38;5;244m;\u001b(B\u001b[m\u001b[K\r\n\u001b[93m3   \u001b[38;5;244m\u001b[48;5;235m                                                        \u001b(B\u001b[m\u001b[K\r\n\u001b[38;5;239m\u001b[48;5;235m  1 \u001b(B\u001b[m\u001b[38;5;244mdescribe\u001b(B\u001b[m\u001b[38;5;81m(\u001b(B\u001b[m\u001b[38;5;37m'CheckoutPage Component'\u001b(B\u001b[m\u001b[38;5;81m,\u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;229m()\u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;136m=>\u001b(B\u001b[m\u001b[38;5;244m {\u001b(B\u001b[m \u001b[K\r\n\u001b[38;5;239m\u001b[48;5;235m  2 \u001b(B\u001b[m\u001b[38;5;244m  \u001b(B\u001b[m\u001b[38;5;136mlet\u001b(B\u001b[m\u001b[38;5;244m component;\u001b(B\u001b[m\u001b[K\r\n\u001b[38;5;239m\u001b[48;5;235m  3 \u001b(B\u001b[m\u001b[38;5;244m  \u001b(B\u001b[m\u001b[38;5;136mconst\u001b(B\u001b[m\u001b[38;5;244m mockComponent \u001b(B\u001b[m\u001b[38;5;64m=\u001b(B\u001b[m \u001b[38;5;244m() \u001b(B\u001b[m\u001b[38;5;136m=>\u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;64m<\u001b(B\u001b[m\u001b[38;5;244mdiv\u001b(B\u001b[m\u001b[38;5;64m></\u001b"
+    ],
+    [
+      2.6e-05,
+      "(B\u001b[m\u001b[38;5;244mdiv\u001b(B\u001b[m\u001b[38;5;64m>\u001b(B\u001b[m\u001b[38;5;244m;\u001b(B\u001b[m\u001b[K\r\n\u001b[38;5;239m\u001b[48;5;235m  4 \u001b(B\u001b[m\u001b[K\r\n\u001b[38;5;239m\u001b[48;5;235m  5 \u001b(B\u001b[m\u001b[38;5;244m  beforeEach(() \u001b(B\u001b[m\u001b[38;5;136m=>\u001b(B\u001b[m\u001b[38;5;244m {\u001b(B\u001b[m \u001b[K\r\n\u001b[38;5;239m\u001b[48;5;235m  6 \u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m \u001b(B\u001b[m\u001b[38;5;136mconst\u001b(B\u001b[m\u001b[38;5;244m Checkout \u001b(B\u001b[m\u001b[38;5;64m=\u001b(B\u001b[m \u001b[38;5;244minjectLoaderCompatibility(\u001b(B\u001b[m\u001b[K\r\n\u001b[38;5;239m\u001b[48;5;235m  7 \u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m \u001b[38;5;242m\u001b[40m \u001b(B\u001b[m\u001b[38;5;244m __dirname,\u001b(B\u001b[m\u001b[K\r\n\u001b[38;5;239m\u001b[48;5;235m  8 \u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m \u001b[38;5;242m\u001b[40m \u001b(B\u001b[m \u001b[38;5;37m'../../../../src/app/checkout/components/Checkout\u001b(B\u001b[m\u001b[38;5;240m\u001b[1m#\u001b(B\u001b[m\u001b[K\r\n\u001b[38;5;239m\u001b[48;5;235m  9 \u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m \u001b[38;5;242m\u001b[40m \u001b(B\u001b[m\u001b[38;5;244m { \u001b(B\u001b[m\u001b[K\r\n\u001b[38;5;239m\u001b[48;5;235m 10 \u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m \u001b[38;5;242m\u001b[40m \u001b(B\u001b[m\u001b[38;5;244m \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m \u001b("
+    ],
+    [
+      1.2e-05,
+      "B\u001b[m\u001b[38;5;37m'../../../spaces/current/scripts/lib/components\u001b(B\u001b[m\u001b[38;5;240m\u001b[1m#\u001b(B\u001b[m\u001b[K\r\n\u001b[38;5;239m\u001b[48;5;235m 11 \u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m \u001b[38;5;242m\u001b[40m \u001b(B\u001b[m\u001b[38;5;244m } \u001b(B\u001b[m\u001b[K\r\n\u001b[38;5;239m\u001b[48;5;235m 12 \u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m );\u001b(B\u001b[m\u001b[K\r\n\u001b[38;5;239m\u001b[48;5;235m 13 \u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m\u001b[38;5;244m component \u001b(B\u001b[m\u001b[38;5;64m=\u001b(B\u001b[m \u001b[38;5;244mshallow(\u001b(B\u001b[m\u001b[38;5;64m<\u001b(B\u001b[m\u001b[38;5;244mCheckout \u001b(B\u001b[m\u001b[38;5;64m/>\u001b(B\u001b[m\u001b[38;5;244m);\u001b(B\u001b[m\u001b[K\r\n\u001b[38;5;239m\u001b[48;5;235m 14 \u001b(B\u001b[m\u001b[38;5;244m  });\u001b(B\u001b[m\u001b[K\r\n\u001b[38;5;239m\u001b[48;5;235m 15 \u001b(B\u001b[m\u001b[K\r\n\u001b[38;5;239m\u001b[48;5;235m 16 \u001b(B\u001b[m\u001b[38;5;244m  it(\u001b(B\u001b[m\u001b[38;5;37m'should render the checkout page'\u001b(B\u001b[m\u001b[38;5;244m, () \u001b(B\u001b[m\u001b[38;5;136m=>\u001b(B\u001b[m\u001b[38;5;244m {\u001b(B\u001b[m \u001b[K\r\n\u001b[38;5;239m\u001b[48;5;235m 17 \u001b(B\u001b[m\u001b[38;5;244m  \u001b[30m\u001b[48;5;242m \u001b(B\u001b[m \u001b[38;5;244mexpect(component.find(\u001b(B\u001b[m\u001b[38;5;37m'.page-header'\u001b(B\u001b[m\u001b[38;5;244m).find(\u001b(B\u001b[m\u001b[38;5;37m'h1'\u001b(B\u001b[m\u001b[38;5;244m).te\u001b(B\u001b[m\u001b[38;5;240m\u001b[1m#\u001b"
+    ],
+    [
+      1.4e-05,
+      "(B\u001b[m\u001b[K\r\n\u001b[38;5;239m\u001b[48;5;235m 18 \u001b(B\u001b[m\u001b[38;5;244m  });\u001b(B\u001b[m\u001b[K\r\n\u001b[38;5;239m\u001b[48;5;235m 19 \u001b(B\u001b[m\u001b[38;5;244m}\u001b(B\u001b[m\u001b[38;5;81m)\u001b(B\u001b[m\u001b[38;5;244m;\u001b(B\u001b[m\u001b[K\r\n\u001b[38;5;240m\u001b[1m~                                                           \u001b(B\u001b[m\u001b[K\r\n\u001b[38;5;230m\u001b[48;5;245m\u001b[1m NORMAL \u001b(B\u001b[m\u001b[38;5;245m\u001b[48;5;241m\u001b[38;5;241m\u001b[48;5;235m\u001b[38;5;240m \u001b(B\u001b[m\u001b[38;5;244m\u001b[1m<-spec.js  \u001b(B\u001b[m\u001b[38;5;240m\u001b[48;5;235m  \u001b[38;5;235m\u001b[38;5;240m javascript \u001b[38;5;241m\u001b[38;5;245m\u001b[48;5;241m\u001b[38;5;230m\u001b[48;5;245m  13% \u001b[1m   3/22☰\u001b(B\u001b[m\u001b[38;5;230m\u001b[48;5;245m :  1 \u001b(B\u001b[m\u001b[K\r\n\u001b[38;5;244m 4:webpack.server.test.config.js  6:Checkout-spe\u001b(B\u001b[m \u001b[38;5;244m   \u001b(B\u001b[m\u001b[K\r\n\u001b[30m\u001b[42m[0] 1:nvim*Z                                                                                      \"nvim\" 09:43 11-okt-16\u001b(B\u001b[m\u001b[3;5H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.03279,
+      "\u001b[1;25r\u001b[H\u001b[K\u001b[1B\u001b[K\u001b[1B\u001b[K\u001b[1B\u001b[K\u001b[1B\u001b[K\u001b[1B\u001b[K\u001b[1B\u001b[K\u001b[1B\u001b[K\u001b[1B\u001b[K\u001b[1B\u001b[K\u001b[1B\u001b[K\u001b[1B\u001b[K\u001b[1B\u001b[K\u001b[1B\u001b[K\u001b[1B\u001b[K\u001b[1B\u001b[K\u001b[1B\u001b[K\u001b[1B\u001b[K\u001b[1B\u001b[K\u001b[1B\u001b[K\u001b[1B\u001b[K\u001b[1B\u001b[K\u001b[1B\u001b[K\u001b[1B\u001b[K\u001b[1B\u001b[K\u001b[H\u001b[38;5;239m\u001b[48;5;235m  2 \u001b(B\u001b[m\u001b[38;5;166mimport\u001b[C\u001b(B\u001b[m\u001b[38;5;244mReact\u001b[C\u001b(B\u001b[m\u001b[38;5;166mfrom\u001b[C\u001b(B\u001b[m\u001b[38;5;37m'react'\u001b(B\u001b[m\u001b[38;5;244m;\r\n\u001b[38;5;239m\u001b[48;5;235m  1 \u001b(B\u001b[m\u001b[38;5;166mimport\u001b[C\u001b(B\u001b[m\u001b[38;5;244m{\u001b[Cshallow\u001b[C}\u001b[C\u001b(B\u001b[m\u001b[38;5;166mfrom\u001b[C\u001b(B\u001b[m\u001b[38;5;37m'enzyme'\u001b(B\u001b[m\u001b[38;5;244m;\r\n\u001b(B\u001b[m\u001b[93m3   \u001b[38;5;244m\u001b[48;5;235m                                                                                                                    \u001b[4;1H\u001b[38;5;239m  1 \u001b(B\u001b[m\u001b[38;5;244mdescribe\u001b(B\u001b[m\u001b[38;5;81m(\u001b(B\u001b[m\u001b[38;5;37m'CheckoutPage Component'\u001b(B\u001b[m\u001b[38;5;81m,\u001b[C\u001b(B\u001b[m\u001b[38;5;229m()\u001b[C\u001b(B\u001b[m\u001b[38;5;136m=>\u001b[C\u001b(B\u001b[m\u001b[38;5;244m{\r\n\u001b[38;5;239m\u001b[48;5;235m  2 \u001b[2C\u001b(B\u001b[m\u001b[38;5;136mlet\u001b[C\u001b(B\u001b[m\u001b[38;5;244mcomponent;\r\n\u001b[38;5;239m\u001b[48;5;235m  3 \u001b[2C\u001b(B\u001b[m\u001b[38;5;136mconst\u001b[C\u001b(B\u001b[m\u001b[38;5;244mmockComponent\u001b[C\u001b(B\u001b[m\u001b[38;5;64m=\u001b[C\u001b(B\u001b[m\u001b[38;"
+    ],
+    [
+      2.5e-05,
+      "5;244m()\u001b[1;26r\u001b[H\u001b[6;32H\u001b[?25l\u001b(B\u001b[m"
+    ],
+    [
+      9.4e-05,
+      "\u001b[1;25r\u001b[H\u001b[6;32H\u001b[38;5;136m=>\u001b[C\u001b(B\u001b[m\u001b[38;5;64m<\u001b(B\u001b[m\u001b[38;5;244mdiv\u001b(B\u001b[m\u001b[38;5;64m></\u001b(B\u001b[m\u001b[38;5;244mdiv\u001b(B\u001b[m\u001b[38;5;64m>\u001b(B\u001b[m\u001b[38;5;244m;\r\n\u001b[38;5;239m\u001b[48;5;235m  4 \r\n  5 \u001b[2C\u001b(B\u001b[m\u001b[38;5;244mbeforeEach(()\u001b[C\u001b(B\u001b[m\u001b[38;5;136m=>\u001b[C\u001b(B\u001b[m\u001b[38;5;244m{\r\n\u001b[38;5;239m\u001b[48;5;235m  6 \u001b[2C\u001b[30m\u001b[48;5;242m \u001b[C\u001b(B\u001b[m\u001b[38;5;136mconst\u001b[C\u001b(B\u001b[m\u001b[38;5;244mCheckout\u001b[C\u001b(B\u001b[m\u001b[38;5;64m=\u001b[C\u001b(B\u001b[m\u001b[38;5;244minjectLoaderCompatibility(\r\n\u001b[38;5;239m\u001b[48;5;235m  7 \u001b[2C\u001b[30m\u001b[48;5;242m \u001b[C\u001b[38;5;242m\u001b[40m \u001b[C\u001b(B\u001b[m\u001b[38;5;244m__dirname,\r\n\u001b[38;5;239m\u001b[48;5;235m  8 \u001b[2C\u001b[30m\u001b[48;5;242m \u001b[C\u001b[38;5;242m\u001b[40m \u001b[C\u001b(B\u001b[m\u001b[38;5;37m'../../../../src/app/checkout/components/Checkout'\u001b(B\u001b[m\u001b[38;5;244m,\r\n\u001b[38;5;239m\u001b[48;5;235m  9 \u001b[2C\u001b[30m\u001b[48;5;242m \u001b[C\u001b[38;5;242m\u001b[40m \u001b[C\u001b(B\u001b[m\u001b[38;5;244m{\r\n\u001b[38;5;239m\u001b[48;5;235m 10 \u001b[2C\u001b[30m\u001b[48;5;242m \u001b[C\u001b[38;5;242m\u001b[40m \u001b[1;26r\u001b[H\u001b[13;11H\u001b(B\u001b[m"
+    ],
+    [
+      0.000219,
+      "\u001b[1;25r\u001b[H\u001b[13;11H\u001b[30m\u001b[48;5;242m \u001b[C\u001b(B\u001b[m\u001b[38;5;37m'../../../spaces/current/scripts/lib/components/PrimaryUsps.js'\u001b(B\u001b[m\u001b[38;5;244m:\u001b[CmockComponent\r\n\u001b[38;5;239m\u001b[48;5;235m 11 \u001b[2C\u001b[30m\u001b[48;5;242m \u001b[C\u001b[38;5;242m\u001b[40m \u001b[C\u001b(B\u001b[m\u001b[38;5;244m}\r\n\u001b[38;5;239m\u001b[48;5;235m 12 \u001b[2C\u001b[30m\u001b[48;5;242m \u001b[C\u001b(B\u001b[m\u001b[38;5;244m);\r\n\u001b[38;5;239m\u001b[48;5;235m 13 \u001b[2C\u001b[30m\u001b[48;5;242m \u001b[C\u001b(B\u001b[m\u001b[38;5;244mcomponent\u001b[C\u001b(B\u001b[m\u001b[38;5;64m=\u001b[C\u001b(B\u001b[m\u001b[38;5;244mshallow(\u001b(B\u001b[m\u001b[38;5;64m<\u001b(B\u001b[m\u001b[38;5;244mCheckout\u001b[C\u001b(B\u001b[m\u001b[38;5;64m/>\u001b(B\u001b[m\u001b[38;5;244m);\r\n\u001b[38;5;239m\u001b[48;5;235m 14 \u001b[2C\u001b(B\u001b[m\u001b[38;5;244m});\r\n\u001b[38;5;239m\u001b[48;5;235m 15 \r\n 16 \u001b[2C\u001b(B\u001b[m\u001b[38;5;244mit(\u001b(B\u001b[m\u001b[38;5;37m'should render the checkout page'\u001b(B\u001b[m\u001b[38;5;244m,\u001b[C()\u001b[C\u001b(B\u001b[m\u001b[38;5;136m=>\u001b[C\u001b(B\u001b[m\u001b[38;5;244m{\r\n\u001b[38;5;239m\u001b[48;5;235m 17 \u001b[2C\u001b[30m\u001b[48;5;242m \u001b[C\u001b(B\u001b[m\u001b[38;5;244mexpect(component.find(\u001b(B\u001b[m\u001b[38;5;37m'.pa\u001b[1;26r\u001b[H\u001b[20;35H\u001b(B\u001b[m"
+    ],
+    [
+      9.5e-05,
+      "\u001b[1;25r\u001b[H\u001b[20;35H\u001b[38;5;37mge-header'\u001b(B\u001b[m\u001b[38;5;244m).find(\u001b(B\u001b[m\u001b[38;5;37m'h1'\u001b(B\u001b[m\u001b[38;5;244m).text()).to.equal(\u001b(B\u001b[m\u001b[38;5;37m'Kassa'\u001b(B\u001b[m\u001b[38;5;244m);\r\n\u001b[38;5;239m\u001b[48;5;235m 18 \u001b[2C\u001b(B\u001b[m\u001b[38;5;244m});\r\n\u001b[38;5;239m\u001b[48;5;235m 19 \u001b(B\u001b[m\u001b[38;5;244m}\u001b(B\u001b[m\u001b[38;5;81m)\u001b(B\u001b[m\u001b[38;5;244m;\r\n\u001b(B\u001b[m\u001b[38;5;240m\u001b[1m~                                                                                                                       \u001b[23;1H\u001b[1;26r\u001b[H\u001b[24d\u001b(B\u001b[m"
+    ],
+    [
+      0.006807,
+      "\u001b[1;25r\u001b[H\u001b[24d\u001b[38;5;230m\u001b[48;5;245m\u001b[1m NORMAL \u001b(B\u001b[m\u001b[38;5;245m\u001b[48;5;241m\u001b[38;5;254m +0 ~0 -0  master \u001b[38;5;241m\u001b[48;5;235m\u001b[38;5;240m <test.config.js  \u001b(B\u001b[m\u001b[38;5;244m\u001b[1m 6:Checkout-spec.js  \u001b(B\u001b[m\u001b[38;5;240m\u001b[48;5;235m  \u001b[38;5;235m\u001b[38;5;240m javascript \u001b[38;5;241m\u001b[38;5;254m\u001b[48;5;241m utf-8[unix] \u001b[38;5;245m\u001b[38;5;230m\u001b[48;5;245m  13% \u001b[1m   3/22☰\u001b(B\u001b[m\u001b[38;5;230m\u001b[48;5;245m :  1 \u001b[38;5;166m\u001b[24;1H\u001b[1;26r\u001b[H\u001b[3;5H\u001b[?12l\u001b[?25h\u001b(B\u001b[m"
+    ],
+    [
+      2.550314,
+      "\u001b[1;25r\u001b[H\u001b[25;2H\u001b[38;5;244m4:webpack.server.test.config.js\u001b[2C6:Checkout-spec.js\u001b[1;26r\u001b[H\u001b[25;53H\u001b(B\u001b[m"
+    ],
+    [
+      0.005032,
+      "\u001b[3;5H"
+    ],
+    [
+      0.412867,
+      "\u001b[?25l\u001b[26;1H\u001b[30m\u001b[42m[0] 1:nvim*Z                                                                                      \"nvim\" 09:43 11-okt-16\u001b(B\u001b[m\u001b[3;5H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.267862,
+      "\u001b[1;25r\u001b[H\u001b[25;110H\u001b[38;5;244m^[\u001b[1;26r\u001b[H\u001b[3;5H\u001b(B\u001b[m"
+    ],
+    [
+      0.001921,
+      "\u001b[1;25r\u001b[H\u001b[25;110H\u001b[38;5;244m  \u001b[1;26r\u001b[H\u001b[3;5H\u001b(B\u001b[m"
+    ],
+    [
+      0.000136,
+      "\u001b[?25l\u001b[26;1H\u001b[30m\u001b[43mBell in window 1                                                                                                        \u001b(B\u001b[m\u001b[3;5H"
+    ]
+  ]
+}
