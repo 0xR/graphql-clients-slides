@@ -20,14 +20,9 @@ import {
 } from "spectacle";
 
 import CodeSlide from "spectacle-code-slide";
-// Import image preloader util
-import preloader from "spectacle/lib/utils/preloader";
 
 // Import theme
 import createTheme from "spectacle/lib/themes/default";
-
-// Import custom component
-import Interactive from "../assets/interactive";
 
 import AsciinemaPlayer from "./asciinema-player.jsx";
 
@@ -36,19 +31,10 @@ require("normalize.css");
 require("spectacle/lib/themes/default/index.css");
 require("font-awesome/css/font-awesome.css");
 
-const images = {
-  city: require("../assets/city.jpg"),
-  kat: require("../assets/kat.png"),
-  logo: require("../assets/formidable-logo.svg"),
-  markdown: require("../assets/markdown.png")
-};
-
 function notes(noteArray) {
   const listItems = noteArray.map(n => `<li>${n}</li>`);
   return `<ul>${listItems.join('')}</ul>`
 }
-
-preloader(images);
 
 function TitleElement({ children }) {
   const style = {
@@ -362,12 +348,13 @@ const titleSlide = (
     <Heading size={2} fit>
       with Mocha in Jest
     </Heading>
-    <Layout style={{ justifyContent: "space-between" }}>
+    <Layout style={{ justifyContent: "space-between", margin: "0 0 25px 0" }}>
     <TitleElement><Icon name="user" /> Ruben Oostinga</TitleElement>
     <TitleElement><Icon name="twitter" /> @RubenOostinga</TitleElement>
     <TitleElement><Icon name="github" /> https://github.com/0xR</TitleElement>
     <TitleElement><Icon name="building" /> Xebia</TitleElement>
     </Layout>
+    <Text textAlign="right" textSize="1.5rem"><Link href="http://reactnl-2016-jest.surge.sh/">http://reactnl-2016-jest.surge.sh/</Link></Text>
   </Slide>
 );
 
@@ -433,7 +420,10 @@ const finalSlide = (
       Code:&nbsp;
       <Link href="https://github.com/0xR/snapshot-experiments/pull/1" >https://github.com/0xR/snapshot-experiments/pull/1</Link>
     </Text>
-    <Text>Link to slides will be posted on <Icon name="twitter" /> @RubenOostinga</Text>
+    <Text>
+      Slides:&nbsp;
+      <Link href="http://reactnl-2016-jest.surge.sh/">http://reactnl-2016-jest.surge.sh/</Link></Text>
+    <Text>For the upcoming blogpost, follow <Icon name="twitter" /> @RubenOostinga</Text>
   </Slide>
 );
 
