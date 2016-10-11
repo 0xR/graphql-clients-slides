@@ -139,6 +139,7 @@ const lessonsLearnedMigrationSection = [
       <MyListItem>Snapshot tests with CLI integration and cleanup</MyListItem>
       <MyListItem>Mocking which actually works</MyListItem>
       <MyListItem>Fast watch mode</MyListItem>
+      <MyListItem>Tests affected by your changes run first</MyListItem>
       <MyListItem>Working stacktraces</MyListItem>
       <MyListItem>Coverage of not imported files</MyListItem>
     </List>
