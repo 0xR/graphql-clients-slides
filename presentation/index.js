@@ -4,8 +4,6 @@ import React from "react";
 // Import Spectacle Core tags
 import {
   Appear,
-  BlockQuote,
-  Cite,
   CodePane,
   Deck,
   Fit,
@@ -16,8 +14,6 @@ import {
   Link,
   ListItem,
   List,
-  Markdown,
-  Quote,
   Slide,
   Spectacle,
   Text
@@ -124,7 +120,7 @@ const lessonsLearnedMigrationSection = [
   <Slide {...slideProps} >
     <Heading size={3} fit>Downsides of migration to Jest</Heading>
     <List>
-      <MyListItem>Slow when you:</MyListItem>
+      <MyListItem>Slow (> 10s for a suite) when you:</MyListItem>
       <List margin="0 0 0 3rem">
         <MyListItem>resetModules every test</MyListItem>
         <MyListItem>Start express every test</MyListItem>
@@ -226,6 +222,15 @@ const cssModulesSection = [
 const injectLoaderSection = [
   <Slide {...slideProps} >
     <Heading size={3} fit >
+    Webpack inject loader / proxyquire
+    </Heading>
+    <CodePane
+      lang="jsx"
+      source={require("!raw!../includes/inject-loader.js")}
+    />
+  </Slide>,
+  <Slide {...slideProps} >
+    <Heading size={3} fit >
     Inject loader compatibility
     </Heading>
     <CodePane
@@ -249,15 +254,6 @@ const injectLoaderSection = [
     ]}
     textSize="15pt"
   />,
-  <Slide {...slideProps} >
-    <Heading size={3} fit >
-    Webpack inject loader / proxyquire
-    </Heading>
-    <CodePane
-      lang="jsx"
-      source={require("!raw!../includes/inject-loader.js")}
-    />
-  </Slide>
 ];
 
 const supertestSection = [
@@ -322,7 +318,17 @@ const snapshotTestingSection = [
     <Heading size={3} fit>
       What is snapshot testing
     </Heading>
-  </Slide>
+    <AsciinemaPlayer src="assets/snapshot-testing.json" autoplay fontSize="big"/>
+  </Slide>,
+  <Slide {...slideProps} >
+    <Heading size={3} fit>What problem does snapshot testing solve?</Heading>
+    <List>
+      <MyListItem>You want to assert everything, but not maintain all assertions</MyListItem>
+      <MyListItem>Makes testing easy, so no excuse for no tests</MyListItem>
+      <MyListItem>Find unexpected regressions easily</MyListItem>
+      <MyListItem>Record of the render output</MyListItem>
+    </List>
+  </Slide>,
 ];
 
 const reactWarningsSection = [
