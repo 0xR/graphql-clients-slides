@@ -43,6 +43,11 @@ const images = {
   markdown: require("../assets/markdown.png")
 };
 
+function notes(noteArray) {
+  const listItems = noteArray.map(n => `<li>${n}</li>`);
+  return `<ul>${listItems.join('')}</ul>`
+}
+
 preloader(images);
 
 function TitleElement({ children }) {
@@ -78,7 +83,14 @@ const slideProps = { maxWidth: "100%", maxHeight: "100%" };
 
 // Sections
 const talkBackgroundSection = [
-  <Slide {...slideProps} >
+  <Slide {...slideProps} notes={notes([
+    'Talk first about using chai-jest-snapshot in mocha, not great, talk to improve',
+    'I don\'t like technical migrations',
+    'Want to avoid rewriting tests',
+    'We have a good setup:',
+    'Mocha with mocha-webpack, Everyone is using mocha, It is using webpack as is, It takes about 15 seconds to get feedback on file change, Mocks are difficult to work with, Stack traces of different code',
+    'Why migrate to a Facebook maintained testrunner:, Christoph Podjer worked on for over a year, Rebuild for DX, has great snapshot testing, every JS project at facebook uses',
+  ])}>
     <Heading size={3} fit>
       About this talk
     </Heading>
@@ -94,7 +106,15 @@ const talkBackgroundSection = [
     </Fill>
     </Layout>
   </Slide>,
-  <Slide {...slideProps} >
+  <Slide {...slideProps} notes={notes([
+    'So I build a poc',
+    'Combining Jest and Chai was difficult',
+    'Eventually figured out it was not my fault and submitted a PR',
+    'Released in Jest 16',
+    'Then converted own codebase',
+    'Took about 40 hours',
+    'Did waste a day working on own error',
+  ])}>
     <Heading size={3} fit>
       About this talk
     </Heading>
@@ -131,7 +151,9 @@ const lessonsLearnedMigrationSection = [
       <MyListItem>Migrating existing mock injectors is difficult</MyListItem>
     </List>
   </Slide>,
-  <Slide {...slideProps} >
+  <Slide {...slideProps} notes={notes([
+    'We can do TDD now',
+  ])}>
     <Heading size={3} fit>
       Upsides of the migration
     </Heading>
@@ -142,12 +164,21 @@ const lessonsLearnedMigrationSection = [
       <MyListItem>Tests affected by your changes run first</MyListItem>
       <MyListItem>Working stacktraces</MyListItem>
       <MyListItem>Coverage of not imported files</MyListItem>
+      <MyListItem>Lots of little things which improve DX</MyListItem>
     </List>
   </Slide>
 ];
 
 const migrateExpectSection = [
   <Slide {...slideProps} >
+    <Heading size={3} fit>
+      Migrating to Jest
+    </Heading>
+  </Slide>,
+  <Slide {...slideProps} notes={notes([
+    'This is probably the recommended way',
+    'This didn\'t work before my PR',
+  ])}>
     <Heading size={3} fit>
       Alias jasmine and chai
     </Heading>
@@ -166,7 +197,12 @@ const migrateExpectSection = [
       source={require("!raw!../includes/combined-expect-example.js")}
     />
   </Slide>,
-  <Slide {...slideProps} >
+  <Slide {...slideProps} notes={notes([
+    'Chai expect.not is not writable',
+    'Accessing it has side-effects',
+    'Fortunately javascript is dynamic enough',
+    'Object assign is really useful',
+  ])}>
     <Heading size={3} fit>
     Combine jasmine and chai
     </Heading>
@@ -179,16 +215,10 @@ const migrateExpectSection = [
 ];
 
 const cssModulesSection = [
-  <Slide {...slideProps} >
-    <Heading size={3} fit>
-      Ensure CSS modules still work
-    </Heading>
-    <CodePane
-      lang="jsx"
-      source={require("!raw!../includes/css-modules-preprocessor.js")}
-    />
-  </Slide>,
-  <Slide {...slideProps} >
+  <Slide {...slideProps} notes={notes([
+    'The class should exist in the css file',
+    'Generated css class should be in snapshot',
+  ])}>
     <Heading size={3} fit>
       Snapshots with CSS modules
     </Heading>
@@ -215,12 +245,45 @@ const cssModulesSection = [
         />
       </Fill>
     </Layout>
-  </Slide>
+  </Slide>,
+  <Slide {...slideProps} notes={notes([
+    'I like more safety',
+    'Jest can implement a preprocessor',
+    'Preprocessor should be synchronous',
+    'PostCSS can parse the modules',
+  ])}>
+    <Heading size={3} fit>
+      The solution in the documentation
+    </Heading>
+    <List>
+      <MyListItem>Replaces the CSS import with an es2015 Proxy</MyListItem>
+      <MyListItem>Ensure this works for all classes <pre>styles.foobar === 'foobar'</pre></MyListItem>
+      <MyListItem>Doesn't parse the CSS file to see if the class exists</MyListItem>
+    </List>
+  </Slide>,
+  <Slide {...slideProps} notes={notes([
+    'Preprocessor should be synchronous',
+    'Means that it can\'t recursively resolve imported files',
+    'Idea: parse css files before test',
+  ])}>
+    <Heading size={3} fit>
+      Ensure CSS modules still work
+    </Heading>
+    <CodePane
+      lang="jsx"
+      source={require("!raw!../includes/css-modules-preprocessor.js")}
+    />
+  </Slide>,
 ];
 
 const injectLoaderSection = [
   <Slide {...slideProps} >
-    <Heading size={3} fit >
+    <Heading size={3} fit notes={notes([
+    'Returns a new instance with mocks',
+    'Should be replaces with calls to jest.mock',
+    'Had around 45 tests which use this',
+    'Don\'t want to migrate all tests',
+  ])}>
     Webpack inject loader / proxyquire
     </Heading>
     <CodePane
@@ -334,7 +397,11 @@ const snapshotTestingSection = [
     </Heading>
     <AsciinemaPlayer src="assets/snapshot-testing.json" autoplay fontSize="big"/>
   </Slide>,
-  <Slide {...slideProps} >
+  <Slide {...slideProps} notes={notes([
+    'look at your snapshot',
+    'regression',
+    'works well with code review',
+  ])}>
     <Heading size={3} fit>What problem does snapshot testing solve?</Heading>
     <List>
       <MyListItem>You want to assert everything, but not maintain all assertions</MyListItem>
