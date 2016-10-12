@@ -182,8 +182,8 @@ const cssModulesSection = [
       The solution in the documentation
     </Heading>
     <List>
-      <Appear><ListItem>Replaces the CSS import with an es2015 Proxy</ListItem></Appear>
-      <Appear><ListItem>Ensure this works for all classes: <CodePane textSize="2.5rem">styles.foobar === 'foobar'</CodePane></ListItem></Appear>
+      <Appear><ListItem>Replaces the CSS import with an ES2015 Proxy</ListItem></Appear>
+      <Appear><ListItem>Ensures this works for all classes: <CodePane textSize="2.5rem">styles.foobar === 'foobar'</CodePane></ListItem></Appear>
       <Appear><ListItem>Doesn't parse the CSS file to see if the class exists</ListItem></Appear>
     </List>
   </Slide>,
@@ -215,6 +215,16 @@ const cssModulesSection = [
     <CodePane
       lang="jsx"
       source={require("!raw!../includes/App.snap.js")}
+      textSize="1rem"
+    />
+  </Slide>,
+  <Slide {...slideProps}>
+    <Heading size={3} fit>
+      Future idea: parsing CSS module imports
+    </Heading>
+    <CodePane
+      lang="jsx"
+      source={require("!raw!../includes/App-webpack.snap.js")}
       textSize="1rem"
     />
   </Slide>,
@@ -251,16 +261,6 @@ const injectLoaderSection = [
     Use a VIM macro to automate migration
     </Heading>
     <AsciinemaPlayer src="assets/inject-loader-compatibility-macro.json" autoplay fontSize="big"/>
-  </Slide>,
-  <Slide {...slideProps} >
-    <Heading size={3} fit >
-    Inject loader compatibility
-    </Heading>
-    <CodePane
-      lang="jsx"
-      source={require("!raw!../includes/inject-loader-compatibility-implementation.js")}
-      textSize="0.7rem"
-    />
   </Slide>,
   <CodeSlide
     transition={[]}
