@@ -1,4 +1,3 @@
-// Import React
 import React from "react";
 
 // Import Spectacle Core tags
@@ -53,7 +52,6 @@ function Icon({ name, ...rest }) {
   return <i className={`fa fa-${name}`} aria-hidden="true" {...rest} ></i>;
 }
 
-const MyListItem = (props) => <ListItem textSize="2rem" {...props} />;
 const theme = createTheme({
   primary: "#f9c300",
   secondary: "black",
@@ -69,21 +67,14 @@ const slideProps = { maxWidth: "100%", maxHeight: "100%" };
 
 // Sections
 const talkBackgroundSection = [
-  <Slide {...slideProps} notes={notes([
-    'Talk first about using chai-jest-snapshot in mocha, not great, talk to improve',
-    'I don\'t like technical migrations',
-    'Want to avoid rewriting tests',
-    'We have a good setup:',
-    'Mocha with mocha-webpack, Everyone is using mocha, It is using webpack as is, It takes about 15 seconds to get feedback on file change, Mocks are difficult to work with, Stack traces of different code',
-    'Why migrate to a Facebook maintained testrunner:, Christoph Podjer worked on for over a year, Rebuild for DX, has great snapshot testing, every JS project at facebook uses',
-  ])}>
+  <Slide {...slideProps} >
     <Heading size={3} fit>
       About this talk
     </Heading>
     <Layout style={{ alignItems: "center" }}>
     <Fill style={{ flex: 2 }}>
       <Appear><Image src="../assets/twitter-program-online.png" /></Appear>
-      <Appear><Image src="../assets/twitter-switching-jest.png" /></Appear>
+      <Appear><Text>@cpojer: What do you think about switching to Jest?</Text></Appear>
     </Fill>
     <Fill style={{ flex: 3 }}>
     <Appear><Text textSize="2rem" >What about chai and its plugins?</Text></Appear>
@@ -92,65 +83,42 @@ const talkBackgroundSection = [
     </Fill>
     </Layout>
   </Slide>,
-  <Slide {...slideProps} notes={notes([
-    'So I build a poc',
-    'Combining Jest and Chai was difficult',
-    'Eventually figured out it was not my fault and submitted a PR',
-    'Released in Jest 16',
-    'Then converted own codebase',
-    'Took about 40 hours',
-    'Did waste a day working on own error',
-  ])}>
-    <Heading size={3} fit>
-      About this talk
-    </Heading>
-    <Layout style={{ alignItems: "center" }}>
-    <Fill>
-      <Image src="../assets/github-jest-pr.png" />
-      <Image src="../assets/jest-blog-chai.png" />
-    </Fill>
-    <Fill>
-      <Appear>
-      <div>
-        <Image src="../assets/github-usejest.png" />
-        <Image src="../assets/test-passed.png" />
-      </div>
-      </Appear>
-      <Appear><Image src="../assets/twitter-pivot.png" /></Appear>
-    </Fill>
-    </Layout>
-  </Slide>
+  <Slide {...slideProps} >
+    <Appear><Text>Started a PoC</Text></Appear>
+    <Appear><Text fit>Merged PR in Jest to allow chai to be <code>global.expect</code></Text></Appear>
+    <Appear><Text fit>Migrated 683 tests in ~40 hours</Text></Appear>
+  </Slide>,
+  <Slide {...slideProps} >
+    <Image src="../assets/twitter-pivot.png" width="100%"/>
+  </Slide>,
 ];
 
 const lessonsLearnedMigrationSection = [
   <Slide {...slideProps} >
+    <Heading size={3} fit>Lessons learned</Heading>
+  </Slide>,
+  <Slide {...slideProps} >
     <Heading size={3} fit>Downsides of migration to Jest</Heading>
     <List>
-      <MyListItem>Slow (> 10s for a suite) when you:</MyListItem>
-      <List margin="0 0 0 3rem">
-        <MyListItem>resetModules every test</MyListItem>
-        <MyListItem>Start express every test</MyListItem>
-        <MyListItem>Run coverage</MyListItem>
-        <MyListItem>Don't use the cache</MyListItem>
-      </List>
-      <MyListItem>Cache sometimes confusing</MyListItem>
-      <MyListItem>Migrating existing mock injectors is difficult</MyListItem>
+      <Appear><ListItem>Slow (> 10s for a suite) when you:</ListItem></Appear>
+      <Appear><List margin="0 0 0 3rem">
+        <ListItem>resetModules every test</ListItem>
+        <ListItem>Start express every test</ListItem>
+        <ListItem>Run coverage</ListItem>
+        <ListItem>Don't use the cache</ListItem>
+      </List></Appear>
+      <Appear><ListItem>Cache sometimes confusing</ListItem></Appear>
+      <Appear><ListItem>Migrating existing mock injectors is difficult</ListItem></Appear>
     </List>
   </Slide>,
-  <Slide {...slideProps} notes={notes([
-    'We can do TDD now',
-  ])}>
+  <Slide {...slideProps} >
     <Heading size={3} fit>
       Upsides of the migration
     </Heading>
     <List>
-      <MyListItem>Snapshot tests with CLI integration and cleanup</MyListItem>
-      <MyListItem>Mocking which actually works</MyListItem>
-      <MyListItem>Fast watch mode</MyListItem>
-      <MyListItem>Tests affected by your changes run first</MyListItem>
-      <MyListItem>Working stacktraces</MyListItem>
-      <MyListItem>Coverage of not imported files</MyListItem>
-      <MyListItem>Lots of little things which improve DX</MyListItem>
+      <Appear><ListItem>Snapshot tests with CLI integration and cleanup</ListItem></Appear>
+      <Appear><ListItem>Solved the issues we had with mocha-webpack</ListItem></Appear>
+      <Appear><ListItem>Lots of little things which improve DX</ListItem></Appear>
     </List>
   </Slide>
 ];
@@ -161,17 +129,14 @@ const migrateExpectSection = [
       Migrating to Jest
     </Heading>
   </Slide>,
-  <Slide {...slideProps} notes={notes([
-    'This is probably the recommended way',
-    'This didn\'t work before my PR',
-  ])}>
+  <Slide {...slideProps} >
     <Heading size={3} fit>
       Alias jasmine and chai
     </Heading>
     <CodePane
       lang="jsx"
       source={require("!raw!../includes/alias-jasmine.js")}
-      textSize="20pt"
+      textSize="2.3rem"
     />
   </Slide>,
   <Slide {...slideProps} >
@@ -181,100 +146,94 @@ const migrateExpectSection = [
     <CodePane
       lang="jsx"
       source={require("!raw!../includes/combined-expect-example.js")}
+      textSize="1.5rem"
     />
   </Slide>,
-  <Slide {...slideProps} notes={notes([
-    'Chai expect.not is not writable',
-    'Accessing it has side-effects',
-    'Fortunately javascript is dynamic enough',
-    'Object assign is really useful',
-  ])}>
+  <Slide {...slideProps} >
     <Heading size={3} fit>
     Combine jasmine and chai
     </Heading>
     <CodePane
       lang="jsx"
       source={require("!raw!../includes/combine-jasmine-chai.js")}
-      textSize="0.7rem"
+      textSize="1.3rem"
+    />
+  </Slide>,
+  <Slide {...slideProps} >
+    <Heading size={3} fit>
+    Combine jasmine and chai
+    </Heading>
+    <CodePane
+      lang="jsx"
+      source={require("!raw!../includes/combine-jasmine-chai-2.js")}
+      textSize="1.5rem"
     />
   </Slide>
 ];
 
 const cssModulesSection = [
-  <Slide {...slideProps} notes={notes([
-    'The class should exist in the css file',
-    'Generated css class should be in snapshot',
-  ])}>
+  <Slide {...slideProps}>
     <Heading size={3} fit>
       Snapshots with CSS modules
     </Heading>
-    <Layout>
-      <Fill >
-        <CodePane
-          lang="jsx"
-          source={require("!raw!../includes/App.css")}
-          textSize="0.7rem"
-          style={{ margin: "0 0 25px 0" }}
-        />
-        <CodePane
-          lang="jsx"
-          source={require("!raw!../includes/App.jsx")}
-          textSize="0.7rem"
-        />
-      </Fill>
-      <div style={{width: "25px"}}/>
-      <Fill>
-        <CodePane
-          lang="jsx"
-          source={require("!raw!../includes/App.snap.js")}
-          textSize="0.7rem"
-        />
-      </Fill>
-    </Layout>
   </Slide>,
-  <Slide {...slideProps} notes={notes([
-    'I like more safety',
-    'Jest can implement a preprocessor',
-    'Preprocessor should be synchronous',
-    'PostCSS can parse the modules',
-  ])}>
+  <Slide {...slideProps} >
     <Heading size={3} fit>
       The solution in the documentation
     </Heading>
     <List>
-      <MyListItem>Replaces the CSS import with an es2015 Proxy</MyListItem>
-      <MyListItem>Ensure this works for all classes <pre>styles.foobar === 'foobar'</pre></MyListItem>
-      <MyListItem>Doesn't parse the CSS file to see if the class exists</MyListItem>
+      <Appear><ListItem>Replaces the CSS import with an es2015 Proxy</ListItem></Appear>
+      <Appear><ListItem>Ensure this works for all classes: <CodePane textSize="2.5rem">styles.foobar === 'foobar'</CodePane></ListItem></Appear>
+      <Appear><ListItem>Doesn't parse the CSS file to see if the class exists</ListItem></Appear>
     </List>
   </Slide>,
-  <Slide {...slideProps} notes={notes([
-    'Preprocessor should be synchronous',
-    'Means that it can\'t recursively resolve imported files',
-    'Idea: parse css files before test',
-  ])}>
+  <Slide {...slideProps}>
     <Heading size={3} fit>
-      Ensure CSS modules still work
+      Snapshots with CSS modules
     </Heading>
     <CodePane
       lang="jsx"
-      source={require("!raw!../includes/css-modules-preprocessor.js")}
+      source={require("!raw!../includes/App.css")}
+      textSize="1.5rem"
+      style={{ margin: "0 0 25px 0" }}
+    />
+  </Slide>,
+  <Slide {...slideProps}>
+    <Heading size={3} fit>
+      Snapshots with CSS modules
+    </Heading>
+    <CodePane
+      lang="jsx"
+      source={require("!raw!../includes/App.jsx")}
+      textSize="1rem"
+    />
+  </Slide>,
+  <Slide {...slideProps}>
+    <Heading size={3} fit>
+      Snapshots with CSS modules
+    </Heading>
+    <CodePane
+      lang="jsx"
+      source={require("!raw!../includes/App.snap.js")}
+      textSize="1rem"
     />
   </Slide>,
 ];
 
 const injectLoaderSection = [
   <Slide {...slideProps} >
-    <Heading size={3} fit notes={notes([
-    'Returns a new instance with mocks',
-    'Should be replaces with calls to jest.mock',
-    'Had around 45 tests which use this',
-    'Don\'t want to migrate all tests',
-  ])}>
+    <Heading size={3} fit >
+    Webpack inject loader / proxyquire
+    </Heading>
+  </Slide>,
+  <Slide {...slideProps} >
+    <Heading size={3} fit >
     Webpack inject loader / proxyquire
     </Heading>
     <CodePane
       lang="jsx"
       source={require("!raw!../includes/inject-loader.js")}
+      textSize="1.5rem"
     />
   </Slide>,
   <Slide {...slideProps} >
@@ -284,6 +243,7 @@ const injectLoaderSection = [
     <CodePane
       lang="jsx"
       source={require("!raw!../includes/inject-loader-compatibility.js")}
+      textSize="1.4rem"
     />
   </Slide>,
   <Slide {...slideProps} >
@@ -310,12 +270,13 @@ const injectLoaderSection = [
       { loc: [0, 270], title: "injectLoaderCompatibility" },
       { loc: [3, 5], title: "Reset the modules first" },
       { loc: [6, 7], title: "Take the files to inject" },
-      { loc: [8, 16], title: "Iterate over the those" },
+      { loc: [8, 16], title: "Iterate over those" },
       { loc: [13, 15], title: "Inject the mock using Jest" },
       { loc: [18, 19], title: "Return the module" },
       { loc: [21, 22], title: "Expose as a global" },
     ]}
-    textSize="15pt"
+    {...{ maxWidth: '100%' }}
+    textSize="1.3rem"
   />,
 ];
 
@@ -364,15 +325,9 @@ const contentSlide = (
       Contents
     </Heading>
     <List>
-      <MyListItem>What is snapshot testing</MyListItem>
-      <MyListItem>Migrating to Jest</MyListItem>
-        <List margin="0 0 0 3rem">
-          <MyListItem>Porting over expect</MyListItem>
-          <MyListItem>CSS modules</MyListItem>
-          <MyListItem>Webpack inject loader / proxyquire</MyListItem>
-          <MyListItem>Async</MyListItem>
-          <MyListItem>Failing tests on React warning</MyListItem>
-        </List>
+      <Appear><ListItem>What is snapshot testing</ListItem></Appear>
+      <Appear><ListItem>Migrating to Jest</ListItem></Appear>
+      <Appear><ListItem>Lessons learned</ListItem></Appear>
     </List>
   </Slide>
 );
@@ -384,17 +339,13 @@ const snapshotTestingSection = [
     </Heading>
     <AsciinemaPlayer src="assets/snapshot-testing.json" autoplay fontSize="big"/>
   </Slide>,
-  <Slide {...slideProps} notes={notes([
-    'look at your snapshot',
-    'regression',
-    'works well with code review',
-  ])}>
+  <Slide {...slideProps} >
     <Heading size={3} fit>What problem does snapshot testing solve?</Heading>
     <List>
-      <MyListItem>You want to assert everything, but not maintain all assertions</MyListItem>
-      <MyListItem>Makes testing easy, so no excuse for no tests</MyListItem>
-      <MyListItem>Find unexpected regressions easily</MyListItem>
-      <MyListItem>Record of the render output</MyListItem>
+      <Appear><ListItem>You want to assert everything, but not maintain all assertions</ListItem></Appear>
+      <Appear><ListItem>Makes testing easy, so no excuse for no tests</ListItem></Appear>
+      <Appear><ListItem>Find unexpected regressions easily</ListItem></Appear>
+      <Appear><ListItem>Record of the render output</ListItem></Appear>
     </List>
   </Slide>,
 ];
