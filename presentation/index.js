@@ -97,7 +97,7 @@ const titleSlide = (
 
 const backgroundSlide = (
   <Slide {...slideProps} >
-    <Heading size={1} fit>
+    <Heading size={2} fit>
     Background
     </Heading>
   </Slide>
@@ -149,6 +149,26 @@ const pickingLibrariesSection = [
   </Slide>
 ];
 
+const plainGraphQlSection = [
+  <Slide {...slideProps} >
+    <Heading size={4}>
+      What problems does GraphQL itself solve?
+    </Heading>
+    <List>
+      <Appear><ListItem>Avoiding multiple server roundtrips</ListItem></Appear>
+      <Appear><ListItem>Avoid overfetching</ListItem></Appear>
+      <Appear><ListItem>Have a schema for cross team communication</ListItem></Appear>
+    </List>
+  </Slide>,
+  <Slide {...slideProps} >
+    <Heading size={2} fit>
+    Demo plain redux
+    </Heading>
+  </Slide>
+]
+
+
+
 // Should be a proper component to ensure HMR works
 export default class Presentation extends React.Component {
   render() {
@@ -159,6 +179,7 @@ export default class Presentation extends React.Component {
             titleSlide,
             backgroundSlide,
             ...pickingLibrariesSection,
+            ...plainGraphQlSection,
             finalSlide,
           ]}
         </Deck>
