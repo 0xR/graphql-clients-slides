@@ -1,9 +1,0 @@
-/* App.css */
-.heading {
-  line-height: 1.2;
-  composes: default-font from "./typography.css";
-}
-
-.paragraph {
-  composes: default-font from "./typography.css";
-}
