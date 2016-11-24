@@ -77,7 +77,7 @@ const theme = createTheme({
 const slideProps = { maxWidth: "100%", maxHeight: "100%" };
 
 const slidesUrl = "http://graphql-london-web-clients.surge.sh/";
-const githubUrl = "https://github.com/0xR/snapshot-experiments/pull/1";
+const githubUrl = "https://github.com/0xR/graphql-clients";
 
 // Sections
 const titleSlide = (
@@ -97,14 +97,14 @@ const titleSlide = (
 
 const backgroundSlide = (
   <Slide {...slideProps} >
-    <Heading size={2} fit>
+    <Heading size={4}>
     Background
     </Heading>
   </Slide>
 );
 const finalSlide = (
   <Slide {...slideProps} >
-    <Heading size={2} fit>
+    <Heading size={4}>
     The End
     </Heading>
     <Text>
@@ -161,14 +161,95 @@ const plainGraphQlSection = [
     </List>
   </Slide>,
   <Slide {...slideProps} >
-    <Heading size={2} fit>
-    Demo plain redux
+    <Heading size={2}>
+    Demo eslint plugin plain redux
+    </Heading>
+  </Slide>
+];
+
+
+const colocationSection = [
+  <Slide {...slideProps} >
+    <Heading size={4}>
+      Query colocation - Plain JS
+    </Heading>
+    <CodePane
+      lang="jsx"
+      source={require("!raw!../includes/plain-colocation.js")}
+    />
+  </Slide>,
+  <Slide {...slideProps} >
+    <Heading size={4}>
+      Query colocation - Lokka
+    </Heading>
+    <CodePane
+      lang="jsx"
+      source={require("!raw!../includes/lokka-colocation.js")}
+    />
+  </Slide>,
+]
+
+const stateManagementSection = [
+  <Slide {...slideProps} >
+    <Heading size={4} >
+    Demo app
+    </Heading>
+  </Slide>,
+  <Slide {...slideProps} >
+    <Heading size={4}>
+    What logic has to be written?
+    </Heading>
+    <List>
+      <Appear><ListItem>Loading state</ListItem></Appear>
+      <Appear><ListItem>Error state</ListItem></Appear>
+      <Appear><ListItem>State selectors</ListItem></Appear>
+      <Appear><ListItem>Cache management</ListItem></Appear>
+      <Appear><ListItem>State normalization</ListItem></Appear>
+    </List>
+  </Slide>,
+  // TODO
+];
+
+
+const apolloSection = [
+  <Slide {...slideProps} >
+    <Heading size={4}>
+    Apollo client
+    </Heading>
+    <List>
+      <Appear><ListItem>Manages your state</ListItem></Appear>
+      <Appear><ListItem>Has implementations for Android / iOS</ListItem></Appear>
+      <Appear><ListItem>Uses redux</ListItem></Appear>
+      <Appear><ListItem>Supports app local state</ListItem></Appear>
+      <Appear><ListItem>Works with any frontend framework</ListItem></Appear>
+      <Appear><ListItem>Runtime query compilation or Webpack loader</ListItem></Appear>
+      <Appear><ListItem>Components are unaware of Apollo wrapper</ListItem></Appear>
+    </List>
+  </Slide>,
+  <Slide {...slideProps} >
+    <Heading size={4}>
+    Apollo colocation
+    </Heading>
+    <CodePane
+      lang="jsx"
+      source={require("!raw!../includes/apollo-example.js")}
+    />
+  </Slide>,
+  <Slide {...slideProps} >
+    <Heading size={4}>
+    Apollo example
+    </Heading>
+    <CodePane
+      lang="jsx"
+      source={require("!raw!../includes/apollo-example-2.js")}
+    />
+  </Slide>,
+  <Slide {...slideProps} >
+    <Heading size={4} >
+    Demo apollo with Redux devtools
     </Heading>
   </Slide>
 ]
-
-
-
 // Should be a proper component to ensure HMR works
 export default class Presentation extends React.Component {
   render() {
@@ -180,6 +261,9 @@ export default class Presentation extends React.Component {
             backgroundSlide,
             ...pickingLibrariesSection,
             ...plainGraphQlSection,
+            ...colocationSection,
+            ...stateManagementSection,
+            ...apolloSection,
             finalSlide,
           ]}
         </Deck>
