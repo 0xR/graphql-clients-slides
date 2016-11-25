@@ -40,7 +40,8 @@ require("spectacle/lib/themes/default/index.css");
 require("font-awesome/css/font-awesome.css");
 
 const images = {
-  scaling: require("../assets/solving-scaling.jpg")
+  scaling: require("../assets/solving-scaling.jpg"),
+  itdepends: require("../assets/itdepends-big.jpg")
 };
 
 preloader(images);
@@ -107,21 +108,24 @@ const backgroundSlide = (
     </Heading>
   </Slide>
 );
-const finalSlide = (
+const finalSlideSection = [
+  <Slide {...slideProps} >
+    <Image src={images.itdepends.replace("/", "")} height="700" />
+  </Slide>,
   <Slide {...slideProps} >
     <Heading size={4}>
     The End
     </Heading>
     <Text>
-      Code:&nbsp;
-      <Link href={githubUrl} >{githubUrl}</Link>
+    Code:&nbsp;
+    <Link href={githubUrl} >{githubUrl}</Link>
     </Text>
     <Text>
-      Slides:&nbsp;
-      <Link href={slidesUrl}>{slidesUrl}</Link></Text>
+    Slides:&nbsp;
+    <Link href={slidesUrl}>{slidesUrl}</Link></Text>
     <Text>For the upcoming blogpost, follow <Icon name="twitter" /> @RubenOostinga</Text>
   </Slide>
-);
+];
 
 const pickingLibrariesSection = [
   <Slide {...slideProps} >
@@ -225,8 +229,7 @@ const apolloSection = [
       <Appear><ListItem>Manages your state</ListItem></Appear>
       <Appear><ListItem>Has implementations for Android / iOS</ListItem></Appear>
       <Appear><ListItem>Uses redux</ListItem></Appear>
-      <Appear><ListItem>Supports app local state</ListItem></Appear>
-      <Appear><ListItem>Works with any frontend framework</ListItem></Appear>
+      <Appear><ListItem>Works with any GraphQL backend</ListItem></Appear>
       <Appear><ListItem>Runtime query compilation or Webpack loader</ListItem></Appear>
       <Appear><ListItem>Components are unaware of Apollo wrapper</ListItem></Appear>
     </List>
@@ -256,12 +259,75 @@ const apolloSection = [
   </Slide>
 ];
 
+const relaySection = [
+  <Slide {...slideProps} >
+    <Heading size={4}>
+    Relay
+    </Heading>
+    <List>
+      <Appear><ListItem>Relay specific GraphQL server</ListItem></Appear>
+      <Appear><ListItem>Highly optimized fetching by default</ListItem></Appear>
+      <Appear><ListItem>Query compilation with a Babel plugin</ListItem></Appear>
+      <Appear><ListItem>Components call Relay specific API's</ListItem></Appear>
+    </List>
+  </Slide>,
+  <Slide {...slideProps} >
+    <Heading size={4}>
+    Relay specific server changes
+    </Heading>
+    <List>
+      <Appear><ListItem>Refetch any object by global id</ListItem></Appear>
+      <Appear><ListItem>Cursor based pagination</ListItem></Appear>
+      <Appear><ListItem>Mutations have an identifier</ListItem></Appear>
+    </List>
+  </Slide>,
+  <Slide {...slideProps} >
+    <Heading size={4}>
+    Relay 2
+    </Heading>
+    <List>
+      <Appear><ListItem>Complete rewrite</ListItem></Appear>
+      <Appear><ListItem>Prefetching</ListItem></Appear>
+      <Appear><ListItem>Local state management</ListItem></Appear>
+      <Appear><ListItem>Custom GraphQL extension</ListItem></Appear>
+      <Appear><ListItem>Streaming connection responses</ListItem></Appear>
+      <Appear><ListItem>In production at Facebook at the end of the year</ListItem></Appear>
+    </List>
+  </Slide>,
+  <Slide {...slideProps} >
+    <Heading size={4} >
+    Demo relay with Relay devtools
+    </Heading>
+  </Slide>
+];
 //TODO
-//comparison table
 //relay slide
 //relay2 slide
 //support slides
 //complexity chart
+//performance section
+// what do I pick?
+const performanceSection = [
+  <Slide {...slideProps} >
+    <Heading size={4}>
+    Performance
+    </Heading>
+    <Table style={{ fontSize: "1.5rem" }}>
+      <TableRow>
+        <th />
+        <th>Lokka</th>
+        <th>Apollo</th>
+        <th>Relay</th>
+      </TableRow>
+      <TableRow>
+        <td>Bundle size (minified, not gzipped)</td>
+        <td>8k</td>
+        <td>193k (148k without query parser)</td>
+        <td>216k</td>
+      </TableRow>
+    </Table>
+  </Slide>,
+]
 
 const comparisonTableSection = [
   <Slide {...slideProps} bgColor="white">
@@ -325,8 +391,23 @@ const comparisonTableSection = [
         <td>{emoji(":white_check_mark:")}</td>
       </TableRow>
     </Table>
+  </Slide>,
+  <Slide {...slideProps} >
+    <Heading size={4}>
+    What do I pick?
+    </Heading>
+    <List>
+      <Appear><ListItem>Content site? Lokka with Redux</ListItem></Appear>
+      <Appear><ListItem></ListItem></Appear>
+      //TODO
+    </List>
   </Slide>
 ];
+// size of runtime
+//386K  apollo-client
+//635K  lokka-client
+//208K  plain-redux
+//409K  relay-client
 
 // Should be a proper component to ensure HMR works
 export default class Presentation extends React.Component {
@@ -342,8 +423,10 @@ export default class Presentation extends React.Component {
             ...colocationSection,
             ...stateManagementSection,
             ...apolloSection,
+            ...relaySection,
+            ...performanceSection,
             ...comparisonTableSection,
-            finalSlide
+            ...finalSlideSection
           ]}
         </Deck>
       </Spectacle>
