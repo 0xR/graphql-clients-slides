@@ -1,5 +1,8 @@
 import React from "react";
 
+import {emojify} from "react-emojione";
+import emojiSprites from "!!file!react-emojione/assets/emojione.sprites.png";
+
 // Import Spectacle Core tags
 import {
   Appear,
@@ -18,7 +21,11 @@ import {
   List,
   Slide,
   Spectacle,
-  Text
+  Text,
+  Table,
+  TableHeaderItem,
+  TableRow,
+  TableItem
 } from "spectacle";
 
 import preloader from "spectacle/lib/utils/preloader";
@@ -33,19 +40,19 @@ require("spectacle/lib/themes/default/index.css");
 require("font-awesome/css/font-awesome.css");
 
 const images = {
-  scaling: require("../assets/solving-scaling.jpg"),
+  scaling: require("../assets/solving-scaling.jpg")
 };
 
 preloader(images);
 
 function notes(noteArray) {
-  const listItems = noteArray.map(n => `<li>${n}</li>`);
-  return `<ul>${listItems.join('')}</ul>`
+  const listItems = noteArray.map((n) => `<li>${n}</li>`);
+  return `<ul>${listItems.join("")}</ul>`;
 }
 
 function TitleElement({ children }) {
   const style = {
-    flex: "0 0 auto",
+    flex: "0 0 auto"
   };
   return (
     <Fit {...{ style }}>
@@ -56,23 +63,21 @@ function TitleElement({ children }) {
   );
 }
 
+function emoji(text) {
+  return emojify(text, {
+    styles: {
+      backgroundImage: `url(${emojiSprites})`
+    }
+  });
+}
+
 function Icon({ name, ...rest }) {
-  return <i className={`fa fa-${name}`} aria-hidden="true" {...rest} ></i>;
+  return <i className={`fa fa-${name}`} aria-hidden="true" {...rest} />;
 }
 
 const theme = createTheme({
   primary: "#e10098"
 });
-//const theme = createTheme({
-  //primary: "#E10098",
-  //secondary: "black",
-  //tertiary: "black",
-  //quartenary: "white"
-//}, {
-  //primary: "Open Sans Condensed",
-  //secondary: "PressStart2P",
-  //tertiary: "Source Code Pro for Powerline",
-//});
 
 const slideProps = { maxWidth: "100%", maxHeight: "100%" };
 
@@ -186,8 +191,8 @@ const colocationSection = [
       lang="jsx"
       source={require("!raw!../includes/lokka-colocation.js")}
     />
-  </Slide>,
-]
+  </Slide>
+];
 
 const stateManagementSection = [
   <Slide {...slideProps} >
@@ -206,7 +211,7 @@ const stateManagementSection = [
       <Appear><ListItem>Cache management</ListItem></Appear>
       <Appear><ListItem>State normalization</ListItem></Appear>
     </List>
-  </Slide>,
+  </Slide>
   // TODO
 ];
 
@@ -249,7 +254,80 @@ const apolloSection = [
     Demo apollo with Redux devtools
     </Heading>
   </Slide>
-]
+];
+
+//TODO
+//comparison table
+//relay slide
+//relay2 slide
+//support slides
+//complexity chart
+
+const comparisonTableSection = [
+  <Slide {...slideProps} bgColor="white">
+    <Heading size={4} >
+    Comparison state managers
+    </Heading>
+    <Table style={{ fontSize: "1.5rem" }}>
+      <TableRow>
+        <TableHeaderItem />
+        <TableHeaderItem>Apollo</TableHeaderItem>
+        <TableHeaderItem>Relay</TableHeaderItem>
+      </TableRow>
+      <TableRow>
+        <td>Dev tools</td>
+        <td>{emoji(":white_check_mark:")}</td>
+        <td>{emoji(":white_check_mark:")}</td>
+      </TableRow>
+      <TableRow>
+        <td>Optimistic rendering</td>
+        <td>{emoji(":white_check_mark:")}</td>
+        <td>{emoji(":white_check_mark:")}</td>
+      </TableRow>
+      <TableRow>
+        <td>Small API</td>
+        <td>{emoji(":neutral_face:")}</td>
+        <td>{emoji(":sob:")}</td>
+      </TableRow>
+      <TableRow>
+        <td>Works with any GraphQL server</td>
+        <td>{emoji(":white_check_mark:")}</td>
+        <td>{emoji(":x:")}</td>
+      </TableRow>
+      <TableRow>
+        <td>Works with any frontend</td>
+        <td>{emoji(":white_check_mark:")}</td>
+        <td>{emoji(":x:")}</td>
+      </TableRow>
+      <TableRow>
+        <td>Local state</td>
+        <td>{emoji(":white_check_mark:")}</td>
+        <td>{emoji(":x:")}</td>
+      </TableRow>
+      <TableRow>
+        <td>Integrates with redux easily</td>
+        <td>{emoji(":white_check_mark:")}</td>
+        <td>{emoji(":x:")}</td>
+      </TableRow>
+      <TableRow>
+        <td>Prefetching</td>
+        <td>{emoji(":neutral_face:")}</td>
+        <td>{emoji(":x:")}Relay 2</td>
+      </TableRow>
+      <TableRow>
+        <td>Query compilation</td>
+        <td>{emoji(":x:")} webpack loader</td>
+        <td>{emoji(":white_check_mark:")}</td>
+      </TableRow>
+      <TableRow>
+        <td>Highly Optimized by default</td>
+        <td>{emoji(":x:")}</td>
+        <td>{emoji(":white_check_mark:")}</td>
+      </TableRow>
+    </Table>
+  </Slide>
+];
+
 // Should be a proper component to ensure HMR works
 export default class Presentation extends React.Component {
   render() {
@@ -264,11 +342,13 @@ export default class Presentation extends React.Component {
             ...colocationSection,
             ...stateManagementSection,
             ...apolloSection,
-            finalSlide,
+            ...comparisonTableSection,
+            finalSlide
           ]}
         </Deck>
       </Spectacle>
     );
   }
 }
+
 
