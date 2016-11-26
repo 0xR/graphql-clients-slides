@@ -80,7 +80,7 @@ const theme = createTheme({
   primary: "#e10098"
 });
 
-const slideProps = { maxWidth: "100%", maxHeight: "100%" };
+const slideProps = { maxWidth: "80%", maxHeight: "100%" };
 
 const slidesUrl = "http://graphql-london-web-clients.surge.sh/";
 const githubUrl = "https://github.com/0xR/graphql-clients";
@@ -300,13 +300,7 @@ const relaySection = [
     </Heading>
   </Slide>
 ];
-//TODO
-//relay slide
-//relay2 slide
-//support slides
-//complexity chart
-//performance section
-// what do I pick?
+
 const performanceSection = [
   <Slide {...slideProps} >
     <Heading size={4}>
@@ -440,12 +434,29 @@ const comparisonTableSection = [
     What do I pick?
     </Heading>
     <List>
-      <Appear><ListItem>Content site? Lokka with Redux</ListItem></Appear>
-      <Appear><ListItem></ListItem></Appear>
-      //TODO
+      <Appear><ListItem>App not really complex or needs a fast page load? Use simple client</ListItem></Appear>
+      <Appear><ListItem>Have to start now? Use apollo</ListItem></Appear>
+      <Appear><ListItem>Can postpone making a decision? Wait for Relay 2 and reconsider</ListItem></Appear>
     </List>
   </Slide>
 ];
+
+const supportSection = [
+  <Slide {...slideProps} >
+    <Heading size={4}>
+    Support
+    </Heading>
+    <List>
+      <Appear><ListItem>Lokka - Kadira</ListItem></Appear>
+      <Appear><ListItem>Apollo - Meteor</ListItem></Appear>
+      <Appear><ListItem>Relay - Facebook</ListItem></Appear>
+    </List>
+  </Slide>
+];
+
+//TODO
+//complexity chart
+
 // Should be a proper component to ensure HMR works
 export default class Presentation extends React.Component {
   render() {
@@ -462,6 +473,7 @@ export default class Presentation extends React.Component {
             ...apolloSection,
             ...relaySection,
             ...performanceSection,
+            ...supportSection,
             ...comparisonTableSection,
             ...finalSlideSection
           ]}
