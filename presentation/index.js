@@ -386,7 +386,7 @@ const comparisonTableSection = [
       </Appear>
       <Appear>
         <TableRow>
-          <td>Small API</td>
+          <td>Easy to replace</td>
           <td>{emoji("neutral")}</td>
           <td>{emoji("cry")}</td>
         </TableRow>
