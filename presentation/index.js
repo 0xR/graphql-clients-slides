@@ -315,19 +315,40 @@ const performanceSection = [
     <Table style={{ fontSize: "1.5rem" }}>
       <TableRow>
         <th />
+        <th>Own client</th>
         <th>Lokka</th>
         <th>Apollo</th>
         <th>Relay</th>
       </TableRow>
       <TableRow>
         <td>Bundle size (minified, not gzipped)</td>
+        <td>0.3k</td>
         <td>8k</td>
         <td>193k (148k without query parser)</td>
         <td>216k</td>
       </TableRow>
+      <Appear>
+        <TableRow>
+        <td>Time to interactive (ms)</td>
+        <td>1420</td>
+        <td>3515,6</td>
+        <td>2335,4</td>
+        <td>2613</td>
+        </TableRow>
+      </Appear>
+      <Appear>
+      <TableRow>
+      <td>Total bundle size</td>
+      <td>208k</td>
+      <td>635k?!</td>
+      <td>386k</td>
+      <td>409k</td>
+      </TableRow>
+      </Appear>
     </Table>
   </Slide>,
 ]
+
 
 const comparisonTableSection = [
   <Slide {...slideProps} bgColor="white">
@@ -335,61 +356,83 @@ const comparisonTableSection = [
     Comparison state managers
     </Heading>
     <Table style={{ fontSize: "1.5rem" }}>
-      <TableRow>
-        <TableHeaderItem />
-        <TableHeaderItem>Apollo</TableHeaderItem>
-        <TableHeaderItem>Relay</TableHeaderItem>
-      </TableRow>
-      <TableRow>
-        <td>Dev tools</td>
-        <td>{emoji(":white_check_mark:")}</td>
-        <td>{emoji(":white_check_mark:")}</td>
-      </TableRow>
-      <TableRow>
-        <td>Optimistic rendering</td>
-        <td>{emoji(":white_check_mark:")}</td>
-        <td>{emoji(":white_check_mark:")}</td>
-      </TableRow>
-      <TableRow>
-        <td>Small API</td>
-        <td>{emoji(":neutral_face:")}</td>
-        <td>{emoji(":sob:")}</td>
-      </TableRow>
-      <TableRow>
-        <td>Works with any GraphQL server</td>
-        <td>{emoji(":white_check_mark:")}</td>
-        <td>{emoji(":x:")}</td>
-      </TableRow>
-      <TableRow>
-        <td>Works with any frontend</td>
-        <td>{emoji(":white_check_mark:")}</td>
-        <td>{emoji(":x:")}</td>
-      </TableRow>
-      <TableRow>
-        <td>Local state</td>
-        <td>{emoji(":white_check_mark:")}</td>
-        <td>{emoji(":x:")}</td>
-      </TableRow>
-      <TableRow>
-        <td>Integrates with redux easily</td>
-        <td>{emoji(":white_check_mark:")}</td>
-        <td>{emoji(":x:")}</td>
-      </TableRow>
-      <TableRow>
-        <td>Prefetching</td>
-        <td>{emoji(":neutral_face:")}</td>
-        <td>{emoji(":x:")}Relay 2</td>
-      </TableRow>
-      <TableRow>
-        <td>Query compilation</td>
-        <td>{emoji(":x:")} webpack loader</td>
-        <td>{emoji(":white_check_mark:")}</td>
-      </TableRow>
-      <TableRow>
-        <td>Highly Optimized by default</td>
-        <td>{emoji(":x:")}</td>
-        <td>{emoji(":white_check_mark:")}</td>
-      </TableRow>
+      <Appear>
+        <TableRow>
+          <TableHeaderItem />
+          <TableHeaderItem>Apollo</TableHeaderItem>
+          <TableHeaderItem>Relay</TableHeaderItem>
+        </TableRow>
+      </Appear>
+      <Appear>
+        <TableRow>
+          <td>Dev tools</td>
+          <td>{emoji(":white_check_mark:")}</td>
+          <td>{emoji(":white_check_mark:")}</td>
+        </TableRow>
+      </Appear>
+      <Appear>
+        <TableRow>
+          <td>Optimistic rendering</td>
+          <td>{emoji(":white_check_mark:")}</td>
+          <td>{emoji(":white_check_mark:")}</td>
+        </TableRow>
+      </Appear>
+      <Appear>
+        <TableRow>
+          <td>Small API</td>
+          <td>{emoji(":neutral_face:")}</td>
+          <td>{emoji(":sob:")}</td>
+        </TableRow>
+      </Appear>
+      <Appear>
+        <TableRow>
+          <td>Works with any GraphQL server</td>
+          <td>{emoji(":white_check_mark:")}</td>
+          <td>{emoji(":x:")}</td>
+        </TableRow>
+      </Appear>
+      <Appear>
+        <TableRow>
+          <td>Works with any frontend</td>
+          <td>{emoji(":white_check_mark:")}</td>
+          <td>{emoji(":x:")}</td>
+        </TableRow>
+      </Appear>
+      <Appear>
+        <TableRow>
+          <td>Local state</td>
+          <td>{emoji(":white_check_mark:")}</td>
+          <td>{emoji(":x:")}</td>
+        </TableRow>
+      </Appear>
+      <Appear>
+        <TableRow>
+          <td>Integrates with redux easily</td>
+          <td>{emoji(":white_check_mark:")}</td>
+          <td>{emoji(":x:")}</td>
+        </TableRow>
+      </Appear>
+      <Appear>
+        <TableRow>
+          <td>Prefetching</td>
+          <td>{emoji(":neutral_face:")}</td>
+          <td>{emoji(":x:")}Relay 2</td>
+        </TableRow>
+      </Appear>
+      <Appear>
+        <TableRow>
+          <td>Query compilation</td>
+          <td>{emoji(":x:")} webpack loader</td>
+          <td>{emoji(":white_check_mark:")}</td>
+        </TableRow>
+      </Appear>
+      <Appear>
+        <TableRow>
+          <td>Highly Optimized by default</td>
+          <td>{emoji(":x:")}</td>
+          <td>{emoji(":white_check_mark:")}</td>
+        </TableRow>
+      </Appear>
     </Table>
   </Slide>,
   <Slide {...slideProps} >
@@ -403,12 +446,6 @@ const comparisonTableSection = [
     </List>
   </Slide>
 ];
-// size of runtime
-//386K  apollo-client
-//635K  lokka-client
-//208K  plain-redux
-//409K  relay-client
-
 // Should be a proper component to ensure HMR works
 export default class Presentation extends React.Component {
   render() {
