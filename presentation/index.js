@@ -1,8 +1,5 @@
 import React from "react";
 
-import {emojify} from "react-emojione";
-import emojiSprites from "!!file!react-emojione/assets/emojione.sprites.png";
-
 // Import Spectacle Core tags
 import {
   Appear,
@@ -41,7 +38,11 @@ require("font-awesome/css/font-awesome.css");
 
 const images = {
   scaling: require("../assets/solving-scaling.jpg"),
-  itdepends: require("../assets/itdepends-big.jpg")
+  itdepends: require("../assets/itdepends-big.jpg"),
+  check: require("../assets/emoji/check.svg"),
+  cross: require("../assets/emoji/cross.svg"),
+  cry: require("../assets/emoji/cry.svg"),
+  neutral: require("../assets/emoji/neutral.svg")
 };
 
 preloader(images);
@@ -64,13 +65,25 @@ function TitleElement({ children }) {
   );
 }
 
-function emoji(text) {
-  return emojify(text, {
-    styles: {
-      backgroundImage: `url(${emojiSprites})`
-    }
-  });
+const emojiStyle = {
+  /* Emoji Sizing */
+  fontSize: "inherit",
+  height: "3ex",
+  width: "3.1ex",
+  minHeight: "20px",
+  minWidth: "20px",
+
+  /* Inline alignment adjust the margins  */
+  display: "inline-block",
+  margin: "-.2ex .15em .2ex",
+  lineHeight: "normal",
+  verticalAlign: "middle"
+};
+
+function emoji(type) {
+  return <img style={emojiStyle} src={images[type]} />;
 }
+
 
 function Icon({ name, ...rest }) {
   return <i className={`fa fa-${name}`} aria-hidden="true" {...rest} />;
@@ -340,8 +353,8 @@ const performanceSection = [
       </TableRow>
       </Appear>
     </Table>
-  </Slide>,
-]
+  </Slide>
+];
 
 
 const comparisonTableSection = [
@@ -360,71 +373,71 @@ const comparisonTableSection = [
       <Appear>
         <TableRow>
           <td>Dev tools</td>
-          <td>{emoji(":white_check_mark:")}</td>
-          <td>{emoji(":white_check_mark:")}</td>
+          <td>{emoji("check")}</td>
+          <td>{emoji("check")}</td>
         </TableRow>
       </Appear>
       <Appear>
         <TableRow>
           <td>Optimistic rendering</td>
-          <td>{emoji(":white_check_mark:")}</td>
-          <td>{emoji(":white_check_mark:")}</td>
+          <td>{emoji("check")}</td>
+          <td>{emoji("check")}</td>
         </TableRow>
       </Appear>
       <Appear>
         <TableRow>
           <td>Small API</td>
-          <td>{emoji(":neutral_face:")}</td>
-          <td>{emoji(":sob:")}</td>
+          <td>{emoji("neutral")}</td>
+          <td>{emoji("cry")}</td>
         </TableRow>
       </Appear>
       <Appear>
         <TableRow>
           <td>Works with any GraphQL server</td>
-          <td>{emoji(":white_check_mark:")}</td>
-          <td>{emoji(":x:")}</td>
+          <td>{emoji("check")}</td>
+          <td>{emoji("cross")}</td>
         </TableRow>
       </Appear>
       <Appear>
         <TableRow>
           <td>Works with any frontend</td>
-          <td>{emoji(":white_check_mark:")}</td>
-          <td>{emoji(":x:")}</td>
+          <td>{emoji("check")}</td>
+          <td>{emoji("cross")}</td>
         </TableRow>
       </Appear>
       <Appear>
         <TableRow>
           <td>Local state</td>
-          <td>{emoji(":white_check_mark:")}</td>
-          <td>{emoji(":x:")}</td>
+          <td>{emoji("check")}</td>
+          <td>{emoji("cross")}</td>
         </TableRow>
       </Appear>
       <Appear>
         <TableRow>
           <td>Integrates with redux easily</td>
-          <td>{emoji(":white_check_mark:")}</td>
-          <td>{emoji(":x:")}</td>
+          <td>{emoji("check")}</td>
+          <td>{emoji("cross")}</td>
         </TableRow>
       </Appear>
       <Appear>
         <TableRow>
           <td>Prefetching</td>
-          <td>{emoji(":neutral_face:")}</td>
-          <td>{emoji(":x:")}Relay 2</td>
+          <td>{emoji("neutral")}</td>
+          <td>{emoji("cross")}Relay 2</td>
         </TableRow>
       </Appear>
       <Appear>
         <TableRow>
           <td>Query compilation</td>
-          <td>{emoji(":x:")} webpack loader</td>
-          <td>{emoji(":white_check_mark:")}</td>
+          <td>{emoji("cross")} webpack loader</td>
+          <td>{emoji("check")}</td>
         </TableRow>
       </Appear>
       <Appear>
         <TableRow>
           <td>Highly Optimized by default</td>
-          <td>{emoji(":x:")}</td>
-          <td>{emoji(":white_check_mark:")}</td>
+          <td>{emoji("cross")}</td>
+          <td>{emoji("check")}</td>
         </TableRow>
       </Appear>
     </Table>
