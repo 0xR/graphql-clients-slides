@@ -1,0 +1,130 @@
+background
+    picked libraries
+        webpack
+        babel
+        react from angular
+        redux
+        jest with snapshot testing
+        react storybook
+        maybe styled-components
+picking JS libraries
+    Does it solve problems I have
+        productivity
+        useful abstraction
+        avoid tech envy
+        https://twitter.com/i/moments/801085643547930624
+    Does it introduce less problems than it solves
+        easy to learn, API surface
+        make my app slower
+        testable
+    Is it well supported
+        less of in issue for smaller libs
+        support yourself
+        commit activity
+    Can I migrate away when things change
+        flexibility
+        better solution
+        tbh, react or preact?
+        change support
+        version 2
+        business requirements change
+Plain graphql
+    important for whether you need a client
+    Avoiding multiple rountrips
+        microservice
+        under fetching
+        server rendering
+    Over fetching
+        Big domain
+        more latency than bandwidth
+        Multiple clients / views 
+    Have schema for cross team communication
+        multiple teams
+        contract driven development
+        automatic mocking
+        find breaking API changes
+    Might introduce problem
+        learn it, maintain server
+        ensure team autonomy
+    demo eslint plugin
+        colocation does not work
+colocation
+    code example
+lokka
+    code example
+state management difficulty
+    https://github.com/jaredly/reactconf/blob/master/Managing%20App%20State.pdf
+    smart clients
+        abstract state management
+            loading state
+            Error state
+            cache management
+                invalidation
+            interactive websites
+            productivity app
+        state selectors
+        optimistic updates
+        error handling
+        state normalization
+            write heavy applications
+            fetching same resource multiple sources
+            fetching same resource over time
+Apollo
+    documentation wrong
+    runtime query parser inline queries
+    integration with redux
+        any frontend framework
+        serverside rendering
+        app local state
+    works with any graphql backend
+    runtime  query compiler or separate file
+    Compose the data fetching on any component
+    redux devtools demo
+Relay
+    specific server implementation
+    build time query compiler
+    React Only
+    difficult to integrate with redux
+    Every component is wrapped in Relay container
+    serverside rendering support third party
+relay2
+    faster / simpler
+    complete rewrite
+    native prefetching
+    local state management
+    streaming connection
+    custom extension of graphql
+    mirgration path with a compatiblity layer
+    announced end of the year @facebook react native -> to the web
+performance
+    more problems than it solves
+    bundle size
+    tti
+    prefetching
+support
+    lokka
+        kadira performance monitoring for meteor
+        creators of react storybook
+        creators of learngraphql.com
+        last week announced to stop on metor
+        small company in sri lanka
+        Not much commit activity
+    apollo
+        meteor funding 31M
+        blogposts / talks
+        leverage redux ecosystem
+    Relay
+        desktop app native
+        every react native app used relay
+        used main facebook site
+        relay 2
+            issues closed
+Lokka
+    small bundle size
+    nice fragment syntax
+    cache 
+        avoid same query
+        refetch
+Comparison tabel
+    API -> add new problems
+conclusion
