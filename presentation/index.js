@@ -42,7 +42,8 @@ const images = {
   check: require("../assets/emoji/check.svg"),
   cross: require("../assets/emoji/cross.svg"),
   cry: require("../assets/emoji/cry.svg"),
-  neutral: require("../assets/emoji/neutral.svg")
+  neutral: require("../assets/emoji/neutral.svg"),
+  complexity: require("../assets/complexity.svg")
 };
 
 preloader(images);
@@ -228,8 +229,7 @@ const stateManagementSection = [
       <Appear><ListItem>Cache management</ListItem></Appear>
       <Appear><ListItem>State normalization</ListItem></Appear>
     </List>
-  </Slide>
-  // TODO
+  </Slide>,
 ];
 
 
@@ -283,6 +283,24 @@ const relaySection = [
       <Appear><ListItem>Query compilation with a Babel plugin</ListItem></Appear>
       <Appear><ListItem>Components call Relay specific API's</ListItem></Appear>
     </List>
+  </Slide>,
+  <Slide {...slideProps} >
+    <Heading size={4}>
+    Relay example
+    </Heading>
+    <CodePane
+      lang="jsx"
+      source={require("!raw!../includes/relay-example.js")}
+    />
+  </Slide>,
+  <Slide {...slideProps} >
+    <Heading size={4}>
+    Relay example
+    </Heading>
+    <CodePane
+      lang="jsx"
+      source={require("!raw!../includes/relay-example-2.js")}
+    />
   </Slide>,
   <Slide {...slideProps} >
     <Heading size={4}>
@@ -441,6 +459,12 @@ const comparisonTableSection = [
         </TableRow>
       </Appear>
     </Table>
+  </Slide>,
+  <Slide {...slideProps} bgColor="white">
+    <Heading size={4}>
+    How complex is your App?
+    </Heading>
+     <Image src={images.complexity} width="100%"/>
   </Slide>,
   <Slide {...slideProps} >
     <Heading size={4}>
