@@ -1,12 +1,17 @@
 background
+    frontend architect
+    help teams setup and design
+    do presentations for sharing knowledge
+    currently considering graphql for client
+    created some poc apps
     picked libraries
-        webpack
-        babel
-        react from angular
-        redux
+        webpack babel
+        react from angular, redux
         jest with snapshot testing
         react storybook
-        maybe styled-components
+Contents
+    plain gql important for whether you need a client
+    End with a comparison table of apollo and relay
 picking JS libraries
     Does it solve problems I have
         productivity
@@ -14,6 +19,7 @@ picking JS libraries
         avoid tech envy
         https://twitter.com/i/moments/801085643547930624
     Does it introduce less problems than it solves
+        still flexible or more framework
         easy to learn, API surface
         make my app slower
         testable
@@ -28,50 +34,72 @@ picking JS libraries
         change support
         version 2
         business requirements change
+    Quote heraclitus
 Plain graphql
-    important for whether you need a client
     Avoiding multiple rountrips
-        microservice
+        microservices
+        or proper REST
         under fetching
-        server rendering
+        server rendering for inital pageload
     Over fetching
         Big domain
         more latency than bandwidth
-        Multiple clients / views 
+        Multiple clients / views
     Have schema for cross team communication
         multiple teams
         contract driven development
         automatic mocking
+            graphql-tools apollo
         find breaking API changes
-    Might introduce problem
-        learn it, maintain server
+    Might introduce problems
+        learn it
+        maintain server
         ensure team autonomy
+    plain client code
+        POST json
+        Stringify query / variables
+        error handling
     demo eslint plugin
         colocation does not work
 colocation
     code example
-lokka
+    spread syntax
+    query in different file
+    string driven development
+    stringly typed
+Lokka
+    small bundle size
+    nice fragment syntax
+    watch query cache 
+        avoid same query
+        refetch
     code example
 state management difficulty
-    https://github.com/jaredly/reactconf/blob/master/Managing%20App%20State.pdf
-    smart clients
-        abstract state management
-            loading state
-            Error state
-            cache management
-                invalidation
-            interactive websites
-            productivity app
-        state selectors
+    demo apps
+        show network tab
+        all clients
+        redux devtools
+            state tree
+        relay devtools
+            no state
+    what logic has to be written
+        loading state
+        Error state
         optimistic updates
-        error handling
-        state normalization
             write heavy applications
+        cache management
+            invalidation
+        interactive websites
+        productivity app
+        state normalization
             fetching same resource multiple sources
             fetching same resource over time
 Apollo
-    documentation wrong
-    runtime query parser inline queries
+    manages your state
+        loading state
+        error state
+        state selectors
+        state normalization
     integration with redux
         any frontend framework
         serverside rendering
@@ -79,7 +107,6 @@ Apollo
     works with any graphql backend
     runtime  query compiler or separate file
     Compose the data fetching on any component
-    redux devtools demo
 Relay
     specific server implementation
     build time query compiler
@@ -87,12 +114,16 @@ Relay
     difficult to integrate with redux
     Every component is wrapped in Relay container
     serverside rendering support third party
+Relay specific server changes
+    global id was difficult in PoC
+    Typename + id => base64
+    can do different pagination, best integrated
 relay2
-    faster / simpler
     complete rewrite
+    faster / simpler
     native prefetching
     local state management
-    streaming connection
+    streaming pagination
     custom extension of graphql
     mirgration path with a compatiblity layer
     announced end of the year @facebook react native -> to the web
@@ -119,12 +150,6 @@ support
         used main facebook site
         relay 2
             issues closed
-Lokka
-    small bundle size
-    nice fragment syntax
-    cache 
-        avoid same query
-        refetch
 Comparison tabel
     API -> add new problems
 conclusion

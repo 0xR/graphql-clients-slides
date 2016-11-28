@@ -115,13 +115,25 @@ const titleSlide = (
   </Slide>
 );
 
-const backgroundSlide = (
+const backgroundSlide = [
   <Slide {...slideProps} >
     <Heading size={4}>
     Background
     </Heading>
-  </Slide>
-);
+  </Slide>,
+  <Slide {...slideProps} >
+    <Heading size={4}>
+    Contents
+    </Heading>
+    <List>
+      <Appear><ListItem>Criteria for picking a technology</ListItem></Appear>
+      <Appear><ListItem>GraphQL without a client lib</ListItem></Appear>
+      <Appear><ListItem>Simple client: Lokka</ListItem></Appear>
+      <Appear><ListItem>State managers: Apollo and Relay</ListItem></Appear>
+    </List>
+  </Slide>,
+];
+
 const finalSlideSection = [
   <Slide {...slideProps} >
     <Image src={images.itdepends.replace("/", "")} height="700" />
@@ -137,7 +149,7 @@ const finalSlideSection = [
     <Text>
     Slides:&nbsp;
     <Link href={slidesUrl}>{slidesUrl}</Link></Text>
-    <Text>For the upcoming blogpost, follow <Icon name="twitter" /> @RubenOostinga</Text>
+    <Text>For upcoming blogposts, follow <Icon name="twitter" /> @RubenOostinga</Text>
   </Slide>
 ];
 
@@ -184,14 +196,32 @@ const plainGraphQlSection = [
     </List>
   </Slide>,
   <Slide {...slideProps} >
-    <Heading size={2}>
-    Demo eslint plugin plain redux
+    <Heading size={4}>
+      Write your own GraphQL client
+    </Heading>
+    <CodePane
+      lang="jsx"
+      source={require("!raw!../includes/plain-client-example.js")}
+    />
+  </Slide>,
+  <Slide {...slideProps} >
+    <Heading size={4}>
+    Demo eslint plugin
     </Heading>
   </Slide>
 ];
 
 
 const colocationSection = [
+  <Slide {...slideProps} >
+    <Heading size={4}>
+      What new problem/challenge was introduced?
+    </Heading>
+    <List>
+      <Appear><ListItem>You have to add fields to your query</ListItem></Appear>
+      <Appear><ListItem>Query is in a different file than component</ListItem></Appear>
+    </List>
+  </Slide>,
   <Slide {...slideProps} >
     <Heading size={4}>
       Query colocation - Plain JS
@@ -203,19 +233,38 @@ const colocationSection = [
   </Slide>,
   <Slide {...slideProps} >
     <Heading size={4}>
+      Lokka
+    </Heading>
+    <List>
+    <Appear><ListItem>Small bundle size</ListItem></Appear>
+    <Appear><ListItem>Nice fragment syntax</ListItem></Appear>
+    <Appear><ListItem>Allows watching query</ListItem></Appear>
+    </List>
+  </Slide>,
+  <Slide {...slideProps} >
+    <Heading size={4}>
       Query colocation - Lokka
     </Heading>
     <CodePane
       lang="jsx"
       source={require("!raw!../includes/lokka-colocation.js")}
     />
-  </Slide>
+  </Slide>,
+  <Slide {...slideProps} >
+    <Heading size={4}>
+      Lokka
+    </Heading>
+    <CodePane
+      lang="jsx"
+      source={require("!raw!../includes/lokka-example.js")}
+    />
+  </Slide>,
 ];
 
 const stateManagementSection = [
   <Slide {...slideProps} >
     <Heading size={4} >
-    Demo app
+    Demo proof of concept apps
     </Heading>
   </Slide>,
   <Slide {...slideProps} >
@@ -225,6 +274,7 @@ const stateManagementSection = [
     <List>
       <Appear><ListItem>Loading state</ListItem></Appear>
       <Appear><ListItem>Error state</ListItem></Appear>
+      <Appear><ListItem>Optimistic updates</ListItem></Appear>
       <Appear><ListItem>State selectors</ListItem></Appear>
       <Appear><ListItem>Cache management</ListItem></Appear>
       <Appear><ListItem>State normalization</ListItem></Appear>
@@ -236,12 +286,17 @@ const stateManagementSection = [
 const apolloSection = [
   <Slide {...slideProps} >
     <Heading size={4}>
+    GraphQL based state management
+    </Heading>
+  </Slide>,
+  <Slide {...slideProps} >
+    <Heading size={4}>
     Apollo client
     </Heading>
     <List>
       <Appear><ListItem>Manages your state</ListItem></Appear>
       <Appear><ListItem>Has implementations for Android / iOS</ListItem></Appear>
-      <Appear><ListItem>Uses redux</ListItem></Appear>
+      <Appear><ListItem>Uses Redux</ListItem></Appear>
       <Appear><ListItem>Works with any GraphQL backend</ListItem></Appear>
       <Appear><ListItem>Runtime query compilation or Webpack loader</ListItem></Appear>
       <Appear><ListItem>Components are unaware of Apollo wrapper</ListItem></Appear>
@@ -264,11 +319,6 @@ const apolloSection = [
       lang="jsx"
       source={require("!raw!../includes/apollo-example-2.js")}
     />
-  </Slide>,
-  <Slide {...slideProps} >
-    <Heading size={4} >
-    Demo apollo with Redux devtools
-    </Heading>
   </Slide>
 ];
 
@@ -278,9 +328,11 @@ const relaySection = [
     Relay
     </Heading>
     <List>
-      <Appear><ListItem>Relay specific GraphQL server</ListItem></Appear>
       <Appear><ListItem>Highly optimized fetching by default</ListItem></Appear>
       <Appear><ListItem>Query compilation with a Babel plugin</ListItem></Appear>
+      <Appear><ListItem>Relay specific GraphQL server</ListItem></Appear>
+      <Appear><ListItem>React only</ListItem></Appear>
+      <Appear><ListItem>No local state management</ListItem></Appear>
       <Appear><ListItem>Components call Relay specific API's</ListItem></Appear>
     </List>
   </Slide>,
@@ -321,14 +373,9 @@ const relaySection = [
       <Appear><ListItem>Prefetching</ListItem></Appear>
       <Appear><ListItem>Local state management</ListItem></Appear>
       <Appear><ListItem>Custom GraphQL extension</ListItem></Appear>
-      <Appear><ListItem>Streaming connection responses</ListItem></Appear>
+      <Appear><ListItem>Streaming pagination responses</ListItem></Appear>
       <Appear><ListItem>In production at Facebook at the end of the year</ListItem></Appear>
     </List>
-  </Slide>,
-  <Slide {...slideProps} >
-    <Heading size={4} >
-    Demo relay with Relay devtools
-    </Heading>
   </Slide>
 ];
 
@@ -502,7 +549,7 @@ export default class Presentation extends React.Component {
         <Deck>
           {[
             titleSlide,
-            backgroundSlide,
+            ...backgroundSlide,
             ...pickingLibrariesSection,
             ...plainGraphQlSection,
             ...colocationSection,
